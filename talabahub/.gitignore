@@ -1,0 +1,16 @@
+# Runtime va maxfiy fayllar
+node_modules/
+.env
+
+# SQLite bazasi (runtime) — data/ papkasi qoladi, ichidagi baza fayllari kuzatilmaydi
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Foydalanuvchi yuklagan fayllar (uploads) — papka qoladi, ichidagilar kuzatilmaydi
+public/uploads/*
+!public/uploads/.gitkeep
+
+# OS/log
+*.log
+.DS_Store

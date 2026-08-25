@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalabaHub — talabalar uchun yagona platforma</title>
+<meta name="description" content="Qo‘qon talabalari uchun yagona platforma: uy-joy, hamxona, part-time ish, arzon jihoz bozori va talabalarga chegirmalar — hammasi bir saytda.">
+<link rel="icon" href="/images/cropped-favicon-32x32.png" sizes="32x32">
+<style>
+  /* Sarlavhalar uchun mahalliy Avenir shrifti (dizayn sayqali) */
+  @font-face{font-family:'Avenir';src:url('/fonts/avenir.woff') format('woff');font-weight:400 900;font-display:swap}
+
+  :root{
+    --ink:#0d1414; --green:#003F3F; --green-2:#12564f; --cream:#F7F5F1;
+    --lime:#FFFE15; --gold:#b99653; --line:rgba(0,63,63,.14);
+    --font:'Helvetica Neue',Helvetica,Arial,'Segoe UI',system-ui,sans-serif;
+    --display:'Avenir','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;
+    --glass:rgba(255,255,255,.68); --blur:saturate(180%) blur(24px);
+    --sh:0 22px 60px rgba(0,40,40,.16),0 3px 10px rgba(0,40,40,.06);
+    --r:24px; --sec-gap:84px;
+  }
+  *{box-sizing:border-box}
+  html.lenis,html.lenis body{height:auto}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font);letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1.02;text-transform:uppercase;margin:0}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  /* landonorris hover */
+  .ln{position:relative;text-decoration:none;padding:.06em .22em;border-radius:4px;
+    background-image:linear-gradient(var(--lime),var(--lime));background-repeat:no-repeat;
+    background-position:left center;background-size:0% 100%;
+    transition:background-size .38s cubic-bezier(.2,.85,.25,1),color .28s ease}
+  .ln:hover,.ln:focus-visible{color:#0a0a0a;background-size:100% 100%;outline:none}
+
+  /* header */
+  .hd{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:14px 26px;background:rgba(12,30,41,.78);backdrop-filter:var(--blur);
+    -webkit-backdrop-filter:var(--blur);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+  .brand{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-family:var(--display);
+    font-weight:900;font-size:1.18rem;letter-spacing:-.02em;color:#fff}
+  .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(255,254,21,.22)}
+  .brand b{color:var(--lime)}
+  .hd nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .hd nav a{font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.02em;text-decoration:none}
+  .hd .cta{background:var(--lime);color:#0a0a0a;padding:9px 18px;border-radius:999px;font-weight:800;border:none;cursor:pointer;font-family:var(--font)}
+
+  /* hero */
+  .hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;overflow:hidden;background:#0C1E29;color:#fff}
+  .hero video,.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,30,41,.94),rgba(12,30,41,.34) 50%,rgba(12,30,41,.55))}
+  .hero .in{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;padding:0 26px 7vh}
+  .kick{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--lime);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.4rem,8vw,6rem)}
+  .hero h1 .char{display:inline-block;will-change:transform}
+  .hero p{max-width:600px;margin:20px 0 0;font-size:clamp(1rem,2.1vw,1.2rem);line-height:1.6;font-weight:400;opacity:.94}
+  .hero .btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;
+    font-weight:800;font-size:.86rem;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;cursor:pointer;
+    font-family:var(--font);border:none;transition:transform .25s,background .25s}
+  .btn-l{background:var(--lime);color:#0a0a0a}
+  .btn-o{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(8px)}
+  .btn:hover{transform:translateY(-2px)}
+
+  /* service quick-nav (chips) */
+  .snav{position:relative;z-index:3;max-width:1200px;margin:-34px auto 0;padding:0 26px;
+    display:flex;gap:10px;flex-wrap:wrap}
+  .snav a{display:inline-flex;align-items:center;gap:8px;background:var(--glass);backdrop-filter:var(--blur);
+    -webkit-backdrop-filter:var(--blur);border:1px solid rgba(255,255,255,.6);border-radius:999px;
+    padding:11px 18px;font-weight:800;font-size:.86rem;text-decoration:none;color:var(--green);
+    box-shadow:0 10px 30px rgba(0,40,40,.12);transition:transform .25s,box-shadow .25s}
+  .snav a:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+  .snav a .e{font-size:1.1rem}
+
+  /* umumiy */
+  .wrap{max-width:1200px;margin:0 auto;padding:70px 26px}
+  .lead{font-size:clamp(1.15rem,2.5vw,1.6rem);font-weight:500;line-height:1.45;letter-spacing:-.02em;max-width:840px;margin:0 0 40px;text-transform:none}
+  .svc{margin-top:var(--sec-gap);scroll-margin-top:80px}
+  .svc:first-of-type{margin-top:0}
+  .svc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+  .svc-head .t{display:flex;align-items:center;gap:14px}
+  .svc-head .ic{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    font-size:1.5rem;background:var(--green);color:var(--lime);box-shadow:0 10px 26px rgba(0,40,40,.22);flex:none}
+  .sec-t{font-size:clamp(1.6rem,4vw,2.5rem)}
+  .sec-s{color:#4a5a58;margin:6px 0 0;font-size:1.02rem;text-transform:none;font-weight:400;max-width:640px}
+  .svc-head .add{white-space:nowrap;background:rgba(0,63,63,.08);color:var(--green);border:1px solid var(--line);
+    padding:11px 18px;border-radius:999px;font-weight:800;font-size:.82rem;cursor:pointer;font-family:var(--font);text-transform:uppercase;letter-spacing:.03em}
+  .svc-head .add:hover{background:var(--green);color:#fff}
+
+  /* statistika */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin:0 0 8px}
+  .stat{background:var(--glass);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);
+    border:1px solid rgba(255,255,255,.6);border-radius:var(--r);padding:26px 24px;box-shadow:0 10px 34px rgba(0,40,40,.1)}
+  .stat b{display:block;font-size:2.4rem;font-weight:800;letter-spacing:-.04em;color:var(--green);line-height:1;font-family:var(--display)}
+  .stat span{display:block;margin-top:8px;color:#4a5a58;font-size:.94rem}
+
+  /* kartalar (barcha xizmatlar uchun umumiy) */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px}
+  .card{position:relative;padding:0;cursor:pointer;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;
+    background:var(--glass);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);
+    border:1px solid rgba(255,255,255,.6);border-radius:var(--r);overflow:hidden;
+    box-shadow:0 12px 38px rgba(0,40,40,.1);text-transform:none;letter-spacing:normal;
+    opacity:0;transform:translateY(30px);
+    transition:transform .7s cubic-bezier(.2,.8,.25,1),box-shadow .35s,opacity .7s}
+  .card.in{opacity:1;transform:none}
+  .card:hover{box-shadow:var(--sh)}
+  .card .ph{position:relative;overflow:hidden;aspect-ratio:16/10;background:linear-gradient(135deg,#0C1E29,#12564f)}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.25,1)}
+  .card:hover .ph img{transform:scale(1.06)}
+  .card .ph-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(255,254,21,.9)}
+  .card .city{position:absolute;top:14px;left:14px;background:rgba(0,63,63,.85);backdrop-filter:blur(6px);
+    color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:6px 13px;border-radius:999px;max-width:70%}
+  .card .price{position:absolute;bottom:14px;right:14px;background:var(--lime);color:#0a0a0a;
+    font-size:.72rem;font-weight:800;padding:6px 13px;border-radius:999px}
+  .card .top{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#ffcf1a,#ff8a00);color:#231a00;
+    font-size:.68rem;font-weight:900;letter-spacing:.06em;padding:6px 12px;border-radius:999px;
+    box-shadow:0 6px 16px rgba(255,138,0,.4);display:flex;align-items:center;gap:4px}
+  .card .bd{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+  .card .bd h3{font-size:1.2rem;letter-spacing:-.02em;text-transform:none}
+  .card .bd p{margin:10px 0 16px;color:#455351;line-height:1.6;font-size:.95rem;flex:1}
+  .card .more{color:var(--green);font-weight:800;font-size:.86rem;text-transform:uppercase;letter-spacing:.03em}
+  .grid .empty{color:#6a7876;grid-column:1/-1;padding:8px 2px}
+
+  /* monetizatsiya bandi */
+  .promo{margin-top:var(--sec-gap);background:linear-gradient(135deg,#0C1E29,#12564f);color:#fff;
+    border-radius:30px;padding:48px 40px;display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center;box-shadow:var(--sh)}
+  .promo h2{font-size:clamp(1.5rem,3.6vw,2.2rem);margin-bottom:12px}
+  .promo p{margin:0;opacity:.92;line-height:1.6;text-transform:none;font-weight:400}
+  .promo .badge-top{display:inline-flex;align-items:center;gap:6px;background:rgba(255,254,21,.16);
+    color:var(--lime);border:1px solid rgba(255,254,21,.4);padding:6px 14px;border-radius:999px;font-weight:800;font-size:.8rem;margin-bottom:16px}
+  .promo .act{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:12px}
+  @media(max-width:760px){.promo{grid-template-columns:1fr;padding:36px 26px}.promo .act{justify-content:flex-start}}
+
+  /* CTA */
+  .cta-box{margin-top:var(--sec-gap);background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;
+    border-radius:30px;padding:52px 40px;text-align:center;box-shadow:var(--sh)}
+  .cta-box h2{font-size:clamp(1.5rem,4vw,2.4rem);margin-bottom:14px}
+  .cta-box p{margin:0 auto 26px;max-width:520px;opacity:.92;line-height:1.6;text-transform:none;font-weight:400}
+  .cta-box .btn-l{color:#0a0a0a}
+
+  /* footer */
+  .ft{background:#0C1E29;color:rgba(255,255,255,.82);padding:46px 26px;text-align:center;margin-top:0}
+  .ft .brand{justify-content:center;margin-bottom:16px}
+  .ft a{text-decoration:none;margin:0 8px;font-weight:600}
+  .ft .sm{margin-top:16px;font-size:.84rem;opacity:.6}
+
+  /* modal (item detail) */
+  .ov{position:fixed;inset:0;z-index:100;display:none;align-items:flex-start;justify-content:center;
+    padding:40px 18px;background:rgba(12,30,41,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow-y:auto}
+  .ov.open{display:flex}
+  .dlg{position:relative;width:100%;max-width:760px;background:rgba(255,255,255,.9);
+    backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid rgba(255,255,255,.7);
+    border-radius:28px;box-shadow:0 46px 110px rgba(12,30,41,.5);overflow:hidden;animation:pop .32s cubic-bezier(.2,.8,.25,1)}
+  @keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+  .dlg .x{position:absolute;top:16px;right:16px;z-index:4;width:44px;height:44px;border-radius:50%;border:none;
+    background:rgba(255,255,255,.88);color:var(--green);font-size:24px;cursor:pointer;
+    box-shadow:0 6px 18px rgba(0,40,40,.2);transition:transform .25s,background .2s}
+  .dlg .x:hover{background:#fff;transform:rotate(90deg)}
+  .dlg .hero-img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .dlg .bd{padding:28px 34px 36px}
+  .dlg .tag{display:inline-block;background:var(--lime);color:#0a0a0a;font-size:.72rem;font-weight:800;
+    letter-spacing:.05em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin:0 8px 14px 0}
+  .dlg .tag-2{background:rgba(0,63,63,.08);color:var(--green);border:1px solid var(--line)}
+  .dlg h2{font-size:clamp(1.5rem,4vw,2.1rem);text-transform:none}
+  .dlg .txt{margin-top:16px;color:#2c403d;line-height:1.85;font-size:1.02rem;text-transform:none;font-weight:400}
+  .dlg .txt p{margin:0 0 14px}
+  .dlg .contact{margin-top:18px;font-weight:800;color:var(--green);font-size:1.05rem}
+  .amen{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .amen span{background:rgba(0,63,63,.07);border:1px solid var(--line);color:var(--green);
+    padding:8px 15px;border-radius:999px;font-size:.86rem;font-weight:600}
+
+  /* to'liq ekran forma */
+  .fs{position:fixed;inset:0;z-index:200;display:none;background:var(--cream);overflow-y:auto}
+  .fs.open{display:block;animation:fsIn .42s cubic-bezier(.2,.8,.25,1)}
+  @keyframes fsIn{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:none}}
+  .fs__bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:14px 26px;background:rgba(12,30,41,.9);backdrop-filter:var(--blur);
+    -webkit-backdrop-filter:var(--blur);color:#fff}
+  .fs__bar h2{font-size:clamp(1rem,2.4vw,1.4rem);text-transform:none}
+  .fs__x{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
+    background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;transition:transform .25s,background .2s}
+  .fs__x:hover{background:rgba(255,255,255,.28);transform:rotate(90deg)}
+  .fs__in{max-width:820px;margin:0 auto;padding:40px 26px 90px}
+  .fs__in h1{font-size:clamp(1.8rem,5vw,2.8rem);margin-bottom:14px;text-transform:none}
+  .fs__lead{font-size:1.1rem;line-height:1.6;color:#3b4a48;margin:0 0 28px;text-transform:none;font-weight:500}
+
+  /* ariza / e'lon formasi */
+  .frm{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .frm .full{grid-column:1/-1}
+  .fld label{display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;
+    letter-spacing:.04em;color:var(--green);margin-bottom:7px}
+  .fld input,.fld select,.fld textarea{width:100%;padding:13px 15px;border-radius:14px;
+    border:1px solid var(--line);background:rgba(255,255,255,.85);font:inherit;font-size:.98rem;
+    color:var(--ink);transition:border-color .2s,box-shadow .2s}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--green);
+    box-shadow:0 0 0 3px rgba(0,63,63,.16)}
+  .fld textarea{resize:vertical;min-height:92px}
+  .fld .req{color:#c62828}
+  .frm .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .frm-msg{grid-column:1/-1;padding:14px 18px;border-radius:14px;font-weight:600;display:none}
+  .frm-msg.ok{display:block;background:rgba(20,140,80,.12);border:1px solid rgba(20,140,80,.4);color:#14663f}
+  .frm-msg.err{display:block;background:rgba(198,40,40,.1);border:1px solid rgba(198,40,40,.4);color:#a01d1d}
+  .frm-actions{grid-column:1/-1;display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:6px}
+  .frm-note{font-size:.85rem;color:#5a6b69;text-transform:none;font-weight:400}
+  .frm-ok{text-align:center;padding:30px 10px}
+  .frm-ok .tick{width:70px;height:70px;border-radius:50%;background:var(--lime);color:#0C1E29;
+    display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;
+    margin:0 auto 20px;animation:tickIn .5s cubic-bezier(.2,.8,.25,1)}
+  @keyframes tickIn{from{transform:scale(0) rotate(-40deg);opacity:0}to{transform:none;opacity:1}}
+  .frm-ok h3{font-size:1.4rem;margin-bottom:10px;text-transform:none}
+  .frm-ok p{color:#4a5a58;line-height:1.6;text-transform:none;font-weight:400}
+  @media(max-width:640px){.frm{grid-template-columns:1fr}}
+
+  @media(max-width:620px){.wrap{padding:52px 20px}.dlg .bd{padding:22px 22px 28px}.cta-box{padding:40px 24px}:root{--sec-gap:64px}}
+  @media(prefers-reduced-motion:reduce){.card{opacity:1;transform:none}}
+</style>
+  <link rel="stylesheet" href="/css/ku-ux.css">
+</head>
+<body>
+
+<header class="hd">
+  <a class="brand" href="/" id="brandLink"><span class="dot"></span><span id="brandText">Talaba<b>Hub</b></span></a>
+  <nav>
+    <a class="ln" href="#uy-joy">Uy-joy</a>
+    <a class="ln" href="#hamxona">Hamxona</a>
+    <a class="ln" href="#ish">Ish</a>
+    <a class="ln" href="#bozor">Bozor</a>
+    <a class="ln" href="#chegirmalar">Chegirmalar</a>
+    <button class="cta" type="button" id="advNav">E'lon joylash</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <video autoplay muted loop playsinline poster="/shaharcha/img/joylashuv.jpg">
+    <source src="/shaharcha/media/hero.webm" type="video/webm">
+    <source src="/shaharcha/media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="scrim"></div>
+  <div class="in">
+    <span class="kick" id="heroKick">Qo‘qon talabalari uchun</span>
+    <h1 id="heroT">Talaba hayoti — bitta joyda</h1>
+    <p id="heroP">Uy-joy, hamxona, part-time ish, arzon jihoz bozori va talabalarga chegirmalar. Kerakli hamma narsa bitta platformada.</p>
+    <div class="btns">
+      <a class="btn btn-l" href="#uy-joy">Xizmatlarni ko‘rish</a>
+      <button class="btn btn-o" type="button" id="advHero">E'lon / reklama joylash</button>
+    </div>
+  </div>
+</section>
+
+<nav class="snav" aria-label="Xizmatlar">
+  <a href="#uy-joy"><span class="e">🏠</span> Uy-joy</a>
+  <a href="#hamxona"><span class="e">🤝</span> Hamxona</a>
+  <a href="#ish"><span class="e">💼</span> Ish</a>
+  <a href="#bozor"><span class="e">🛒</span> Bozor</a>
+  <a href="#chegirmalar"><span class="e">🎟️</span> Chegirmalar</a>
+</nav>
+
+<main class="wrap">
+  <p class="lead">Talabalik hayoti faqat darsdan iborat emas. <span class="ln">TalabaHub</span> — universitetga yaqin turar joy topishdan tortib, hamxona, part-time ish, arzon jihoz va talabalarga chegirmalargacha — barchasini bitta joyda jamlaydi.</p>
+
+  <div class="stats" id="stats">
+    <div class="stat"><b id="stRes">—</b><span>Uy-joy varianti</span></div>
+    <div class="stat"><b id="stJobs">—</b><span>Ish e‘loni</span></div>
+    <div class="stat"><b id="stMarket">—</b><span>Bozor e‘loni</span></div>
+    <div class="stat"><b id="stPartners">—</b><span>Chegirma sherigi</span></div>
+  </div>
+
+  <!-- Xizmat bo'limlari JS orqali to'ldiriladi -->
+  <section class="svc" id="uy-joy" data-svc="residences">
+    <div class="svc-head">
+      <div class="t"><div class="ic">🏠</div><div><h2 class="sec-t">Uy-joy</h2><p class="sec-s">Universitetga yaqin, xavfsiz va qulay turar joy variantlari.</p></div></div>
+      <button class="add" type="button" data-adv="Uy-joy">+ E'lon joylash</button>
+    </div>
+    <div class="grid" id="grid-residences"></div>
+  </section>
+
+  <section class="svc" id="hamxona" data-svc="roommates">
+    <div class="svc-head">
+      <div class="t"><div class="ic">🤝</div><div><h2 class="sec-t">Hamxona qidiruv</h2><p class="sec-s">Ijara xarajatlarini bo‘lishadigan mos hamxona toping yoki bo‘sh joyingizni e‘lon qiling.</p></div></div>
+      <button class="add" type="button" data-adv="Hamxona">+ E'lon joylash</button>
+    </div>
+    <div class="grid" id="grid-roommates"></div>
+  </section>
+
+  <section class="svc" id="ish" data-svc="jobs">
+    <div class="svc-head">
+      <div class="t"><div class="ic">💼</div><div><h2 class="sec-t">Part-time ish</h2><p class="sec-s">Dars jadvaliga mos keladigan ish va stajirovka imkoniyatlari.</p></div></div>
+      <button class="add" type="button" data-adv="Ish">+ Ish e'loni</button>
+    </div>
+    <div class="grid" id="grid-jobs"></div>
+  </section>
+
+  <section class="svc" id="bozor" data-svc="market">
+    <div class="svc-head">
+      <div class="t"><div class="ic">🛒</div><div><h2 class="sec-t">Talabalar bozori</h2><p class="sec-s">Arzon jihoz, mebel, texnika va kitoblar — talabadan talabaga.</p></div></div>
+      <button class="add" type="button" data-adv="Bozor">+ Mahsulot qo'shish</button>
+    </div>
+    <div class="grid" id="grid-market"></div>
+  </section>
+
+  <section class="svc" id="chegirmalar" data-svc="partners">
+    <div class="svc-head">
+      <div class="t"><div class="ic">🎟️</div><div><h2 class="sec-t">Talabalarga chegirmalar</h2><p class="sec-s">Kafe, sport zali, kurslar va boshqa sherik bizneslardan maxsus chegirmalar.</p></div></div>
+      <button class="add" type="button" data-adv="Chegirma (sherik biznes)">+ Sherik bo'lish</button>
+    </div>
+    <div class="grid" id="grid-partners"></div>
+  </section>
+
+  <!-- Monetizatsiya bandi -->
+  <section class="promo" id="reklama">
+    <div>
+      <span class="badge-top">★ TOP joylashtirish</span>
+      <h2>E'loningizni minglab talabaga ko‘rsating</h2>
+      <p id="promoNote">Uy egasimisiz, ish beruvchimisiz yoki biznesingizga talaba mijoz kerakmi? E'loningizni joylang — "TOP" tarif bilan ro‘yxat tepasida, alohida nishon bilan ajralib turadi.</p>
+    </div>
+    <div class="act">
+      <button class="btn btn-l" type="button" id="advPromo">E'lon / reklama joylash</button>
+    </div>
+  </section>
+
+  <div class="cta-box" id="aloqa">
+    <h2>Savolingiz bormi?</h2>
+    <p>Xizmatlar, e'lon joylash yoki hamkorlik bo‘yicha biz bilan bog‘laning — yordam beramiz.</p>
+    <button class="btn btn-l" type="button" id="advCta">Xabar qoldirish</button>
+    <a class="btn btn-o" id="ctaPhone" href="tel:" style="margin-left:8px;display:none">Qo‘ng‘iroq qilish</a>
+    <a class="btn btn-o" id="ctaTg" href="#" target="_blank" rel="noopener" style="margin-left:8px;display:none">Telegram</a>
+  </div>
+</main>
+
+<footer class="ft">
+  <div class="brand"><span class="dot"></span><span id="brandTextFt">Talaba<b>Hub</b></span></div>
+  <div id="ftLinks">
+    <a class="ln" href="#uy-joy">Uy-joy</a>
+    <a class="ln" href="#ish">Ish</a>
+    <a class="ln" href="#chegirmalar">Chegirmalar</a>
+    <a class="ln" href="#" id="ftTg" target="_blank" rel="noopener" style="display:none">Telegram</a>
+  </div>
+  <div class="sm">© <span id="ftYear"></span> <span id="ftBrand">TalabaHub</span> — talabalar uchun yagona platforma</div>
+</footer>
+
+<!-- Item detali modali -->
+<div class="ov" id="ov" role="dialog" aria-modal="true">
+  <div class="dlg">
+    <button class="x" id="x" aria-label="Yopish">&times;</button>
+    <div id="dc"></div>
+  </div>
+</div>
+
+<!-- Ariza / e'lon formasi (to'liq ekran) -->
+<div class="fs" id="af" role="dialog" aria-modal="true">
+  <div class="fs__bar"><h2 id="afBarTitle">E'lon / reklama joylash</h2>
+    <button class="fs__x" id="afx" aria-label="Yopish">&times;</button></div>
+  <div class="fs__in" id="afIn">
+    <h1 id="afTitle">E'lon / reklama joylash</h1>
+    <p class="fs__lead" id="afLead">Ma'lumotlaringizni qoldiring — koordinatorimiz bir ish kuni ichida bog‘lanadi.</p>
+    <form class="frm" id="afForm" novalidate>
+      <input type="hidden" id="afSubject" value="">
+      <div class="fld"><label for="afName">Ism-familiya <span class="req">*</span></label>
+        <input id="afName" name="name" type="text" required autocomplete="name" placeholder="Alisher Karimov"></div>
+      <div class="fld"><label for="afPhone">Telefon <span class="req">*</span></label>
+        <input id="afPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+998 90 123 45 67"></div>
+      <div class="fld"><label for="afEmail">Email</label>
+        <input id="afEmail" name="email" type="email" autocomplete="email" placeholder="ism@example.com"></div>
+      <div class="fld"><label for="afTopic" id="afTopicLabel">Mavzu</label>
+        <input id="afTopic" name="topic" type="text" placeholder="Qaysi xizmat / e'lon"></div>
+
+      <!-- Faqat uy-joy arizasida ko'rinadi -->
+      <div class="fld" data-housing><label for="afGender">Jinsi</label>
+        <select id="afGender" name="gender"><option value="">Tanlanmagan</option><option>Erkak</option><option>Ayol</option></select></div>
+      <div class="fld" data-housing><label for="afFaculty">Fakultet / yo‘nalish</label>
+        <input id="afFaculty" name="faculty" type="text" placeholder="Axborot texnologiyalari"></div>
+      <div class="fld" data-housing><label for="afCourse">Kurs</label>
+        <select id="afCourse" name="course"><option value="">Tanlanmagan</option><option>1-kurs</option><option>2-kurs</option><option>3-kurs</option><option>4-kurs</option><option>Magistratura</option></select></div>
+      <div class="fld" data-housing><label for="afCity">Qaysi shahar/tumandan</label>
+        <input id="afCity" name="city" type="text" placeholder="Farg‘ona viloyati, Rishton"></div>
+      <div class="fld" data-housing><label for="afRes">Turar joy varianti</label>
+        <select id="afRes" name="residence"><option value="">Farqi yo‘q / maslahat kerak</option></select></div>
+      <div class="fld" data-housing><label for="afDur">Muddat</label>
+        <select id="afDur" name="duration"><option value="">Tanlanmagan</option><option>Bir semestr</option><option>To‘liq o‘quv yili</option><option>Yozgi (qisqa muddat)</option></select></div>
+
+      <div class="fld full"><label for="afMessage" id="afMessageLabel">Xabar / batafsil</label>
+        <textarea id="afMessage" name="message" placeholder="E'lon matni, narx, aloqa yoki savolingiz..."></textarea></div>
+      <div class="hp"><label for="afWeb">Website</label><input id="afWeb" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="frm-msg" id="afMsg"></div>
+      <div class="frm-actions">
+        <button class="btn btn-l" type="submit">Yuborish</button>
+        <span class="frm-note">* bilan belgilangan maydonlar majburiy</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/vendor/gsap.min.js"></script>
+<script src="/js/vendor/split-type.min.js"></script>
+<script src="/js/vendor/lenis.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  var DATA = { residences:[], roommates:[], jobs:[], market:[], partners:[] };
+  var ov=document.getElementById('ov'), dc=document.getElementById('dc');
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];});}
+  function paras(s){return String(s||'').split(/\n{2,}/).map(function(p){return '<p>'+esc(p).replace(/\n/g,'<br>')+'</p>';}).join('');}
+  function fix(u){return (u && u.indexOf('http')!==0 && u.charAt(0)!=='/') ? '/'+u : u;}
+  function clip(s,n){s=String(s||'').replace(/\n+/g,' ').trim();return s.length>n?s.slice(0,n-1)+'…':s;}
+  function chipList(arr){return arr.map(function(x){return String(x||'').trim();}).filter(Boolean);}
+
+  // Har bir xizmat: kartani va modalni qanday chizishni belgilaydi
+  var SERVICES = {
+    residences:{ icon:'🏠', map:function(r){return {title:r.name,meta:r.city,badge:r.price,summary:r.summary,body:r.description||r.summary,image:r.image,featured:r.featured,chips:chipList(String(r.amenities||'').split('\n')),link:r.link,cta:'apply'};}},
+    roommates:{ icon:'🤝', map:function(r){return {title:r.title,meta:r.area,badge:r.budget,summary:clip(r.about,120),body:r.about,image:r.image,featured:0,chips:chipList([r.gender,r.faculty,r.course]),contact:r.contact,cta:'contact'};}},
+    jobs:{ icon:'💼', map:function(r){return {title:r.title,meta:r.company,badge:r.pay,summary:clip(r.description,120),body:r.description,image:'',featured:r.featured,chips:chipList([r.jobtype,r.area]),contact:r.contact,link:r.link,cta:'contact'};}},
+    market:{ icon:'🛒', map:function(r){return {title:r.title,meta:r.category,badge:r.price,summary:clip(r.description,120),body:r.description,image:r.image,featured:r.featured,chips:chipList([r.condition,r.area]),contact:r.contact,cta:'contact'};}},
+    partners:{ icon:'🎟️', map:function(r){return {title:r.name,meta:r.category,badge:r.discount,summary:clip(r.description,120),body:r.description,image:r.image,featured:r.featured,chips:chipList([r.area]),link:r.link,cta:'link'};}}
+  };
+
+  function card(svc,i){
+    var s=SERVICES[svc], m=s.map(DATA[svc][i]);
+    return '<button class="card" data-svc="'+svc+'" data-i="'+i+'" type="button">'+
+      '<div class="ph">'+
+        (m.image?'<img src="'+esc(fix(m.image))+'" alt="'+esc(m.title)+'" loading="lazy">':'<div class="ph-fallback">'+s.icon+'</div>')+
+        (m.featured?'<span class="top">★ TOP</span>':'')+
+        (m.meta?'<span class="city">'+esc(m.meta)+'</span>':'')+
+        (m.badge?'<span class="price">'+esc(m.badge)+'</span>':'')+
+      '</div>'+
+      '<div class="bd"><h3>'+esc(m.title)+'</h3>'+
+        (m.summary?'<p>'+esc(m.summary)+'</p>':'')+
+        '<span class="more">Batafsil →</span></div></button>';
+  }
+
+  function reveal(el){
+    var c=el.querySelectorAll('.card');
+    if(!('IntersectionObserver' in window)){c.forEach(function(x){x.classList.add('in');});return;}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    c.forEach(function(x){io.observe(x);});
+  }
+
+  function renderService(svc){
+    var g=document.getElementById('grid-'+svc); if(!g) return;
+    var items=DATA[svc]||[];
+    if(!items.length){ g.innerHTML='<p class="empty">Hozircha e‘lon yo‘q — birinchi bo‘lib joylang!</p>'; return; }
+    g.innerHTML=items.map(function(_,i){return card(svc,i);}).join('');
+    reveal(g);
+  }
+
+  function open(svc,i){
+    var s=SERVICES[svc], m=s.map(DATA[svc][i]); if(!m) return;
+    dc.innerHTML=(m.image?'<img class="hero-img" src="'+esc(fix(m.image))+'" alt="'+esc(m.title)+'">':'')+
+      '<div class="bd">'+
+      (m.featured?'<span class="tag">★ TOP</span>':'')+
+      (m.meta?'<span class="tag tag-2">'+esc(m.meta)+'</span>':'')+
+      (m.badge?'<span class="tag">'+esc(m.badge)+'</span>':'')+
+      '<h2>'+esc(m.title)+'</h2>'+
+      '<div class="txt">'+paras(m.body||m.summary)+'</div>'+
+      (m.chips&&m.chips.length?'<div class="amen">'+m.chips.map(function(a){return '<span>'+esc(a)+'</span>';}).join('')+'</div>':'')+
+      (m.contact?'<p class="contact">📞 '+esc(m.contact)+'</p>':'')+
+      ctaHtml(svc,m)+
+      '</div>';
+    ov.classList.add('open'); document.body.style.overflow='hidden';
+    if(window.__lenis) window.__lenis.stop();
+    var a=document.getElementById('dlgApply'); if(a) a.addEventListener('click',function(){close();openAdv('Uy-joy: '+m.title,true,m.title);});
+  }
+  function ctaHtml(svc,m){
+    if(m.cta==='apply') return '<div style="margin-top:22px"><button class="btn btn-l" type="button" id="dlgApply">Ariza qoldirish</button></div>';
+    if(m.cta==='link'&&m.link) return '<div style="margin-top:22px"><a class="btn btn-l" href="'+esc(fix(m.link))+'" target="_blank" rel="noopener">Batafsil / havola</a></div>';
+    return '';
+  }
+  function close(){ ov.classList.remove('open'); dc.innerHTML=''; document.body.style.overflow=''; if(window.__lenis) window.__lenis.start(); }
+
+  document.querySelectorAll('.grid').forEach(function(g){
+    g.addEventListener('click',function(e){var c=e.target.closest?e.target.closest('.card'):null; if(c) open(c.getAttribute('data-svc'),+c.getAttribute('data-i'));});
+  });
+  document.getElementById('x').addEventListener('click',close);
+  ov.addEventListener('click',function(e){if(e.target===ov) close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') close();});
+
+  /* ---------- ARIZA / E'LON FORMASI ---------- */
+  var af=document.getElementById('af'), afForm=document.getElementById('afForm'),
+      afMsg=document.getElementById('afMsg'), afIn=document.getElementById('afIn');
+  var housing=[].slice.call(document.querySelectorAll('[data-housing]'));
+
+  function setMode(applyMode){
+    housing.forEach(function(el){ el.style.display=applyMode?'':'none'; });
+    document.getElementById('afBarTitle').textContent = applyMode?'Uy-joy uchun ariza':'E’lon / reklama joylash';
+    document.getElementById('afTitle').textContent = applyMode?'Uy-joy uchun ariza':'E’lon / reklama joylash';
+    document.getElementById('afLead').textContent = applyMode
+      ? 'Arizani to‘ldiring — koordinatorimiz bir ish kuni ichida bog‘lanadi va joy mavjudligini tasdiqlaydi.'
+      : 'E’loningiz yoki reklama so‘rovingizni qoldiring — koordinatorimiz bir ish kuni ichida bog‘lanadi.';
+    document.getElementById('afTopicLabel').textContent = applyMode?'Turar joy (ixtiyoriy)':'Mavzu / xizmat';
+    document.getElementById('afMessageLabel').textContent = applyMode?'Qo‘shimcha izoh':'E’lon matni / xabar';
+  }
+
+  function openApplyHousing(prefill){
+    setMode(true);
+    document.getElementById('afSubject').value='';
+    var sel=document.getElementById('afRes');
+    if(sel && sel.options.length<=1){
+      DATA.residences.forEach(function(r){ var o=document.createElement('option'); o.textContent=r.name; sel.appendChild(o); });
+    }
+    var topic=document.getElementById('afTopic'); if(topic) topic.value='';
+    if(prefill && sel){ for(var i=0;i<sel.options.length;i++) if(sel.options[i].textContent===prefill) sel.selectedIndex=i; }
+    showForm();
+  }
+  function openAdv(subject, applyMode, prefillRes){
+    if(applyMode){ openApplyHousing(prefillRes); if(subject) document.getElementById('afSubject').value=subject; return; }
+    setMode(false);
+    document.getElementById('afSubject').value=subject||'';
+    var topic=document.getElementById('afTopic'); if(topic) topic.value=subject||'';
+    showForm();
+  }
+  function showForm(){
+    af.classList.add('open'); document.body.style.overflow='hidden';
+    if(window.__lenis) window.__lenis.stop();
+    af.scrollTop=0; afMsg.className='frm-msg';
+    var n=document.getElementById('afName'); if(n) setTimeout(function(){n.focus();},250);
+  }
+  function closeApply(){ af.classList.remove('open'); document.body.style.overflow=''; if(window.__lenis) window.__lenis.start(); }
+  window.__openApplyFor = function(name){ close(); openApplyHousing(name); };
+
+  document.getElementById('afx').addEventListener('click',closeApply);
+  ['advNav','advHero','advPromo','advCta'].forEach(function(id){
+    var b=document.getElementById(id); if(b) b.addEventListener('click',function(){openAdv('',false,'');});
+  });
+  document.querySelectorAll('[data-adv]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var subj=b.getAttribute('data-adv');
+      if(subj==='Uy-joy') openApplyHousing(); else openAdv(subj,false,'');
+    });
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&af.classList.contains('open')) closeApply(); });
+
+  function showMsg(t,kind){ afMsg.textContent=t; afMsg.className='frm-msg '+kind; }
+
+  afForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(afForm);
+    var applyMode = housing[0] && housing[0].style.display!=='none';
+    var subject=(document.getElementById('afSubject').value||'').trim();
+    var topic=(f.get('topic')||'').trim();
+    var msg=(f.get('message')||'').trim();
+    var noteParts=[];
+    if(!applyMode && subject) noteParts.push('['+subject+']');
+    if(!applyMode && topic && topic!==subject) noteParts.push(topic);
+    if(msg) noteParts.push(msg);
+    var payload={
+      name:(f.get('name')||'').trim(), phone:(f.get('phone')||'').trim(),
+      email:(f.get('email')||'').trim(),
+      gender:applyMode?(f.get('gender')||''):'',
+      faculty:applyMode?((f.get('faculty')||'').trim()):'',
+      course:applyMode?(f.get('course')||''):'',
+      city:applyMode?((f.get('city')||'').trim()):'',
+      residence:applyMode?(f.get('residence')||''):(subject||topic),
+      duration:applyMode?(f.get('duration')||''):'',
+      note:noteParts.join(' — '),
+      website:f.get('website')||''
+    };
+    if(payload.name.length<3){ showMsg('Ism-familiyani to‘liq kiriting.','err'); return; }
+    if(payload.phone.replace(/\D/g,'').length<7){ showMsg('Telefon raqamini to‘g‘ri kiriting.','err'); return; }
+    var btn=afForm.querySelector('[type="submit"]');
+    btn.classList.add('ku-busy'); showMsg('','');
+    fetch('/api/public/apply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){ return r.json().then(function(j){ return {s:r.status,j:j}; }); })
+      .then(function(res){
+        btn.classList.remove('ku-busy');
+        if(res.j && res.j.ok){
+          afIn.innerHTML='<div class="frm-ok"><div class="tick">✓</div>'+
+            '<h3>Qabul qilindi!</h3>'+
+            '<p>'+esc(res.j.message||'Tez orada siz bilan bog‘lanamiz.')+'</p>'+
+            '<div style="margin-top:24px"><button class="btn btn-l" type="button" id="afDone">Yopish</button></div></div>';
+          var d=document.getElementById('afDone'); if(d) d.addEventListener('click',closeApply);
+        } else {
+          showMsg((res.j&&res.j.error)||'Yuborilmadi. Keyinroq urinib ko‘ring.','err');
+        }
+      })
+      .catch(function(){ btn.classList.remove('ku-busy'); showMsg('Tarmoq xatosi. Internetni tekshirib, qayta urinib ko‘ring.','err'); });
+  });
+
+  /* ---------- Hero animatsiya ---------- */
+  function anim(){
+    if(window.Lenis){
+      var l=new Lenis({duration:1.15,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));},smoothWheel:true});
+      window.__lenis=l;
+      (function raf(t){l.raf(t);requestAnimationFrame(raf);})(0);
+    }
+    if(window.gsap && window.SplitType){
+      var sp=new SplitType('#heroT',{types:'lines,words,chars'});
+      gsap.from(sp.chars,{yPercent:120,opacity:0,duration:1.1,ease:'expo.out',stagger:.03,delay:.15});
+      gsap.from('#heroKick',{y:20,opacity:0,duration:.9,ease:'expo.out',delay:.1});
+      gsap.from('#heroP',{y:24,opacity:0,duration:1,ease:'expo.out',delay:.5});
+      gsap.from('.hero .btns',{y:24,opacity:0,duration:1,ease:'expo.out',delay:.7});
+      gsap.from('.snav a',{y:16,opacity:0,duration:.7,ease:'expo.out',stagger:.06,delay:.8});
+    }
+  }
+
+  function setBrand(name){
+    if(!name) return;
+    var safe=esc(name);
+    document.getElementById('brandText').textContent=name;
+    document.getElementById('brandTextFt').textContent=name;
+    document.getElementById('ftBrand').textContent=name;
+    document.title=name+' — talabalar uchun yagona platforma';
+  }
+
+  /* ---------- Ma'lumotlarni yuklash ---------- */
+  document.getElementById('ftYear').textContent=new Date().getFullYear();
+  fetch('/api/public/site').then(function(r){return r.json();}).then(function(d){
+    if(!d||!d.ok) throw new Error('no data');
+    ['residences','roommates','jobs','market','partners'].forEach(function(k){ DATA[k]=Array.isArray(d[k])?d[k]:[]; });
+    var s=d.settings||{};
+    setBrand(s.brand_name);
+    if(s.brand_tagline) document.getElementById('heroKick').textContent=s.brand_tagline;
+    if(s.hero_title) document.getElementById('heroT').textContent=s.hero_title;
+    if(s.hero_intro) document.getElementById('heroP').textContent=s.hero_intro;
+    if(s.advertise_note) document.getElementById('promoNote').textContent=s.advertise_note;
+    // Aloqa tugmalari
+    if(s.contact_phone){var a=document.getElementById('ctaPhone');a.href='tel:'+String(s.contact_phone).replace(/[^\d+]/g,'');a.textContent=s.contact_phone;a.style.display='';}
+    if(s.contact_telegram){
+      var tg=String(s.contact_telegram).replace(/^@/,'');
+      ['ctaTg','ftTg'].forEach(function(id){var el=document.getElementById(id);el.href='https://t.me/'+tg;el.style.display='';});
+    }
+    // Statistika
+    document.getElementById('stRes').textContent=DATA.residences.length;
+    document.getElementById('stJobs').textContent=DATA.jobs.length;
+    document.getElementById('stMarket').textContent=DATA.market.length;
+    document.getElementById('stPartners').textContent=DATA.partners.length;
+    // Bo'limlarni chizamiz
+    Object.keys(SERVICES).forEach(renderService);
+  }).catch(function(){ Object.keys(SERVICES).forEach(renderService); }).then(anim);
+})();
+</script>
+<script src="/ku-ux.js" defer></script>
+</body>
+</html>

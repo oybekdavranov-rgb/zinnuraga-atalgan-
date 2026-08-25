@@ -1,0 +1,22 @@
+{
+  "name": "talabahub",
+  "version": "3.0.0",
+  "private": true,
+  "description": "TalabaHub — talabalar uchun yagona platforma (uy-joy, hamxona, ish, bozor, chegirmalar)",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "SITE_PROFILE=hub node server.js",
+    "dev": "SITE_PROFILE=hub node server.js",
+    "test": "node --test",
+    "lint": "eslint . || true"
+  },
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0"
+  }
+}
