@@ -352,6 +352,7 @@
   <div class="fs__bar"><h2 id="afBarTitle">E'lon / reklama joylash</h2>
     <button class="fs__x" id="afx" aria-label="Yopish">&times;</button></div>
   <div class="fs__in" id="afIn">
+    <div id="afFormWrap">
     <h1 id="afTitle">E'lon / reklama joylash</h1>
     <p class="fs__lead" id="afLead">Ma'lumotlaringizni qoldiring — koordinatorimiz bir ish kuni ichida bog‘lanadi.</p>
     <form class="frm" id="afForm" novalidate>
@@ -388,6 +389,13 @@
         <span class="frm-note">* bilan belgilangan maydonlar majburiy</span>
       </div>
     </form>
+    </div>
+    <div id="afOk" class="frm-ok" style="display:none">
+      <div class="tick">✓</div>
+      <h3>Qabul qilindi!</h3>
+      <p id="afOkMsg">Tez orada siz bilan bog‘lanamiz.</p>
+      <div style="margin-top:24px"><button class="btn btn-l" type="button" id="afDone">Yopish</button></div>
+    </div>
   </div>
 </div>
 
@@ -477,7 +485,8 @@
 
   /* ---------- ARIZA / E'LON FORMASI ---------- */
   var af=document.getElementById('af'), afForm=document.getElementById('afForm'),
-      afMsg=document.getElementById('afMsg'), afIn=document.getElementById('afIn');
+      afMsg=document.getElementById('afMsg'), afIn=document.getElementById('afIn'),
+      afFormWrap=document.getElementById('afFormWrap'), afOk=document.getElementById('afOk');
   var housing=[].slice.call(document.querySelectorAll('[data-housing]'));
 
   function setMode(applyMode){
@@ -510,6 +519,8 @@
     showForm();
   }
   function showForm(){
+    // Muvaffaqiyat panelini yashirib, formani ko'rsatamiz (forma DOM'da doim qoladi)
+    afOk.style.display='none'; afFormWrap.style.display='';
     af.classList.add('open'); document.body.style.overflow='hidden';
     if(window.__lenis) window.__lenis.stop();
     af.scrollTop=0; afMsg.className='frm-msg';
@@ -519,6 +530,7 @@
   window.__openApplyFor = function(name){ close(); openApplyHousing(name); };
 
   document.getElementById('afx').addEventListener('click',closeApply);
+  document.getElementById('afDone').addEventListener('click',closeApply);
   ['advNav','advHero','advPromo','advCta'].forEach(function(id){
     var b=document.getElementById(id); if(b) b.addEventListener('click',function(){openAdv('',false,'');});
   });
@@ -564,11 +576,10 @@
       .then(function(res){
         btn.classList.remove('ku-busy');
         if(res.j && res.j.ok){
-          afIn.innerHTML='<div class="frm-ok"><div class="tick">✓</div>'+
-            '<h3>Qabul qilindi!</h3>'+
-            '<p>'+esc(res.j.message||'Tez orada siz bilan bog‘lanamiz.')+'</p>'+
-            '<div style="margin-top:24px"><button class="btn btn-l" type="button" id="afDone">Yopish</button></div></div>';
-          var d=document.getElementById('afDone'); if(d) d.addEventListener('click',closeApply);
+          // Formani buzmasdan muvaffaqiyat panelini ko'rsatamiz (qayta ochilaveradi)
+          document.getElementById('afOkMsg').textContent = res.j.message || 'Tez orada siz bilan bog‘lanamiz.';
+          afForm.reset();
+          afFormWrap.style.display='none'; afOk.style.display='block';
         } else {
           showMsg((res.j&&res.j.error)||'Yuborilmadi. Keyinroq urinib ko‘ring.','err');
         }
