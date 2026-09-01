@@ -21,9 +21,9 @@
     "ru": "Добро пожаловать в"
   },
   "Discover KU": {
-    "uz": "KU haqida bilib oling",
-    "en": "Discover KU",
-    "ru": "Узнать о KU"
+    "uz": "Imora AI ni bilib oling",
+    "en": "Discover Imora AI",
+    "ru": "Узнать об Imora AI"
   },
   "Watch our Video": {
     "uz": "Videoni tomosha qiling",
@@ -220,10 +220,10 @@
     "en": "About the University",
     "ru": "Об университете"
   },
-  "Kokand University": {
-    "uz": "Kokand University",
-    "en": "Kokand University",
-    "ru": "Kokand University"
+  "Imora AI": {
+    "uz": "Imora AI",
+    "en": "Imora AI",
+    "ru": "Imora AI"
   },
   "The Tutorial Method of Learning": {
     "uz": "Tutorial ta’lim uslubi",
@@ -235,10 +235,10 @@
     "en": "Results & Destinations",
     "ru": "Результаты и направления"
   },
-  "Kokand University Onlayn": {
-    "uz": "Kokand University Onlayn",
-    "en": "Kokand University Onlayn",
-    "ru": "Kokand University Onlayn"
+  "Imora AI Onlayn": {
+    "uz": "Imora AI Onlayn",
+    "en": "Imora AI Onlayn",
+    "ru": "Imora AI Onlayn"
   },
   "Vacancies at Greene’s": {
     "uz": "Universitetdagi vakansiyalar",
@@ -267,7 +267,7 @@
   },
   "Discover Greene’s": {
     "uz": "Universitetni kashf eting",
-    "en": "Discover Kokand University",
+    "en": "Discover Imora AI",
     "ru": "Узнать об университете"
   },
   "Sixth Form College": {
@@ -295,9 +295,9 @@
     "en": "WELCOME TO",
     "ru": "ДОБРО ПОЖАЛОВАТЬ В"
   },
-  "Kokand University oldest tutorial college": {
-    "uz": "Qo‘qon universiteti — zamonaviy ta’lim maskani",
-    "en": "Kokand University — a modern educational institution",
+  "Imora AI oldest tutorial college": {
+    "uz": "Imora AI — zamonaviy ta’lim maskani",
+    "en": "Imora AI — a modern educational institution",
     "ru": "Кокандский университет — современный учебный центр"
   },
   "DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.": {
@@ -351,24 +351,24 @@
     "ru": "Академический лицей"
   },
   "Greene’s Tutorial College": {
-    "uz": "Kokand University",
-    "en": "Kokand University",
-    "ru": "Kokand University"
+    "uz": "Imora AI",
+    "en": "Imora AI",
+    "ru": "Imora AI"
   },
   "Greene’s Online": {
-    "uz": "Kokand University Onlayn",
-    "en": "Kokand University Online",
-    "ru": "Kokand University Онлайн"
+    "uz": "Imora AI Onlayn",
+    "en": "Imora AI Online",
+    "ru": "Imora AI Онлайн"
   },
   "Greene’s Team": {
     "uz": "Universitet jamoasi",
     "en": "Greene’s Team",
     "ru": "Команда Greene’s"
   },
-  "What does Kokand University do?": {
-    "uz": "Kokand University nimasi bilan ajralib turadi?",
-    "en": "What does Kokand University do?",
-    "ru": "Чем выделяется Kokand University?"
+  "What does Imora AI do?": {
+    "uz": "Imora AI nimasi bilan ajralib turadi?",
+    "en": "What does Imora AI do?",
+    "ru": "Чем выделяется Imora AI?"
   },
   "stand out?": {
     "uz": "ajralib turadi?",
@@ -410,10 +410,10 @@
     "en": "Expert Guidance",
     "ru": "Экспертное сопровождение"
   },
-  "“ Kokand University represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Kokand University focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”": {
-    "uz": "“Kokand University zamonaviy ta’limni amaliy tajriba bilan uyg‘unlashtirgani uchun men uchun yangi boshlanishdir. Ko‘plab an’anaviy universitetlardan farqli ravishda, Kokand University real ko‘nikmalar, texnologiyalar, xalqaro imkoniyatlar va shaxsiy rivojlanishga e’tibor qaratadi. Bu muhit meni akademik va kasbiy jihatdan rivojlantirib, global karyeraga tayyorlaydi.”",
-    "en": "“Kokand University represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Kokand University focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”",
-    "ru": "«Kokand University — это новое начало, потому что он объединяет современное образование с практическим опытом. В отличие от многих традиционных университетов, Kokand University делает акцент на реальных навыках, технологиях, международных возможностях и личном развитии. Я верю, что эта среда поможет мне расти академически и профессионально, готовя меня к глобальной карьере»."
+  "“ Imora AI represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Imora AI focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”": {
+    "uz": "“Imora AI zamonaviy ta’limni amaliy tajriba bilan uyg‘unlashtirgani uchun men uchun yangi boshlanishdir. Ko‘plab an’anaviy universitetlardan farqli ravishda, Imora AI real ko‘nikmalar, texnologiyalar, xalqaro imkoniyatlar va shaxsiy rivojlanishga e’tibor qaratadi. Bu muhit meni akademik va kasbiy jihatdan rivojlantirib, global karyeraga tayyorlaydi.”",
+    "en": "“Imora AI represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Imora AI focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”",
+    "ru": "«Imora AI — это новое начало, потому что он объединяет современное образование с практическим опытом. В отличие от многих традиционных университетов, Imora AI делает акцент на реальных навыках, технологиях, международных возможностях и личном развитии. Я верю, что эта среда поможет мне расти академически и профессионально, готовя меня к глобальной карьере»."
   },
   "Learn more about A level retakes at Greene's": {
     "uz": "Universitetda qayta topshirish haqida batafsil",
@@ -430,20 +430,20 @@
     "en": "Read more about the A level in Further Mathematics here.",
     "ru": "Подробнее об A level Further Mathematics читайте здесь."
   },
-  "“What makes Kokand University stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”": {
-    "uz": "“Kokand Universityni ajratib turadigan jihat — individual ta’lim yondashuvidir. Universitet yagona qolipdagi tizim o‘rniga har bir talabaning kuchli tomonlari, maqsadlari va shaxsiy rivojlanishiga e’tibor qaratadi. Bu talabaga samaraliroq o‘qish, o‘ziga ishonchni oshirish va kelajak karyerasiga tayyorlanish imkonini beradi.”",
-    "en": "“What makes Kokand University stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”",
-    "ru": "«Kokand University выделяется индивидуальным подходом к образованию. Университет уделяет внимание сильным сторонам, целям и личному развитию каждого студента, а не использует одинаковую систему для всех. Это помогает учиться эффективнее, укреплять уверенность и готовиться к будущей карьере в поддерживающей среде»."
+  "“What makes Imora AI stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”": {
+    "uz": "“Imora AIni ajratib turadigan jihat — individual ta’lim yondashuvidir. Universitet yagona qolipdagi tizim o‘rniga har bir talabaning kuchli tomonlari, maqsadlari va shaxsiy rivojlanishiga e’tibor qaratadi. Bu talabaga samaraliroq o‘qish, o‘ziga ishonchni oshirish va kelajak karyerasiga tayyorlanish imkonini beradi.”",
+    "en": "“What makes Imora AI stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”",
+    "ru": "«Imora AI выделяется индивидуальным подходом к образованию. Университет уделяет внимание сильным сторонам, целям и личному развитию каждого студента, а не использует одинаковую систему для всех. Это помогает учиться эффективнее, укреплять уверенность и готовиться к будущей карьере в поддерживающей среде»."
   },
   "The Tutorial College": {
     "uz": "Tutorial kolleji",
     "en": "The Tutorial College",
     "ru": "Тьюторский колледж"
   },
-  "“Learning without Boundaries means having access to education beyond traditional limits. Kokand University stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”": {
-    "uz": "“Chegarasiz ta’lim — an’anaviy chegaralardan tashqarida bilim olish imkoniyatidir. Kokand University talabalarni global imkoniyatlar, zamonaviy texnologiyalar, amaliy tajribalar va xalqaro qarashlarni o‘rganishga undashi bilan ajralib turadi. Bu muhit talabalar doimiy o‘qishi, rivojlanishi va dunyo bilan bog‘lanishi uchun sharoit yaratadi.”",
-    "en": "“Learning without Boundaries means having access to education beyond traditional limits. Kokand University stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”",
-    "ru": "«Обучение без границ означает доступ к образованию за пределами традиционных ограничений. Kokand University выделяется тем, что побуждает студентов изучать глобальные возможности, современные технологии, практический опыт и международные взгляды. Университет создает среду для постоянного обучения, роста и связи с миром»."
+  "“Learning without Boundaries means having access to education beyond traditional limits. Imora AI stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”": {
+    "uz": "“Chegarasiz ta’lim — an’anaviy chegaralardan tashqarida bilim olish imkoniyatidir. Imora AI talabalarni global imkoniyatlar, zamonaviy texnologiyalar, amaliy tajribalar va xalqaro qarashlarni o‘rganishga undashi bilan ajralib turadi. Bu muhit talabalar doimiy o‘qishi, rivojlanishi va dunyo bilan bog‘lanishi uchun sharoit yaratadi.”",
+    "en": "“Learning without Boundaries means having access to education beyond traditional limits. Imora AI stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”",
+    "ru": "«Обучение без границ означает доступ к образованию за пределами традиционных ограничений. Imora AI выделяется тем, что побуждает студентов изучать глобальные возможности, современные технологии, практический опыт и международные взгляды. Университет создает среду для постоянного обучения, роста и связи с миром»."
   },
   ", a custom-built online platform, where they can upload their work and review their assessments. Students receive live feedback and can track their progress independently in their own time. Study is in person or online, so geography will not limit academic development.": {
     "uz": ", maxsus yaratilgan onlayn platforma bo‘lib, unda talabalar ishlarini yuklashlari va baholash natijalarini ko‘rishlari mumkin. Talabalar jonli fikr-mulohaza oladi va o‘z vaqtida mustaqil ravishda rivojlanishini kuzatib boradi. O‘qish kampusda yoki onlayn shaklda bo‘lishi mumkin, shuning uchun masofa akademik rivojlanishni cheklamaydi.",
@@ -455,25 +455,25 @@
     "en": "Learning can take place in our campus in Oxford, UK, or online from anywhere in the world. You can also make use of our campuses in Estoril and Lisbon, Portugal as online study spaces.",
     "ru": "Обучение может проходить в нашем кампусе в Оксфорде, Великобритания, или онлайн из любой точки мира. Также можно использовать кампусы в Эшториле и Лиссабоне, Португалия, как пространства для онлайн-обучения."
   },
-  "Kokand University Haqida koproq bilib oling": {
-    "uz": "Kokand University haqida ko‘proq bilib oling",
-    "en": "Learn more about Kokand University",
-    "ru": "Узнайте больше о Kokand University"
+  "Imora AI Haqida koproq bilib oling": {
+    "uz": "Imora AI haqida ko‘proq bilib oling",
+    "en": "Learn more about Imora AI",
+    "ru": "Узнайте больше о Imora AI"
   },
-  "“Collaborative learning at Kokand University helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”": {
-    "uz": "“Kokand Universitydagi hamkorlikda o‘qish talabalarni loyihalar va muhokamalarda birga ishlash orqali jamoaviy ish, muloqot va muammolarni hal qilish ko‘nikmalarini rivojlantiradi. Bu yondashuv talabalar nafaqat o‘qituvchilardan, balki bir-biridan ham o‘rganadigan qo‘llab-quvvatlovchi akademik muhit yaratadi.”",
-    "en": "“Collaborative learning at Kokand University helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”",
-    "ru": "«Совместное обучение в Kokand University помогает студентам развивать командную работу, коммуникацию и навыки решения проблем через проекты и обсуждения. Такой подход создает поддерживающую академическую среду, где студенты учатся не только у преподавателей, но и друг у друга»."
+  "“Collaborative learning at Imora AI helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”": {
+    "uz": "“Imora AIdagi hamkorlikda o‘qish talabalarni loyihalar va muhokamalarda birga ishlash orqali jamoaviy ish, muloqot va muammolarni hal qilish ko‘nikmalarini rivojlantiradi. Bu yondashuv talabalar nafaqat o‘qituvchilardan, balki bir-biridan ham o‘rganadigan qo‘llab-quvvatlovchi akademik muhit yaratadi.”",
+    "en": "“Collaborative learning at Imora AI helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”",
+    "ru": "«Совместное обучение в Imora AI помогает студентам развивать командную работу, коммуникацию и навыки решения проблем через проекты и обсуждения. Такой подход создает поддерживающую академическую среду, где студенты учатся не только у преподавателей, но и друг у друга»."
   },
   "Read more about the tutorial method": {
     "uz": "Tutorial metod haqida batafsil o‘qing",
     "en": "Read more about the tutorial method",
     "ru": "Подробнее о тьюторском методе"
   },
-  "“Kokand University stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”": {
-    "uz": "“Kokand University malakali o‘qituvchilar va mentorlar ko‘magi orqali talabalarni akademik hamda kasbiy jihatdan qo‘llab-quvvatlashi bilan ajralib turadi. Bu yo‘l-yo‘riq talabalarga ishonchni oshirish, ko‘nikmalarni rivojlantirish va kelajak karyera imkoniyatlariga tayyorlanishga yordam beradi.”",
-    "en": "“Kokand University stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”",
-    "ru": "«Kokand University выделяется экспертным сопровождением: квалифицированные преподаватели и наставники поддерживают студентов в учебном и профессиональном развитии. Такая помощь укрепляет уверенность, развивает навыки и готовит к будущим карьерным возможностям»."
+  "“Imora AI stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”": {
+    "uz": "“Imora AI malakali o‘qituvchilar va mentorlar ko‘magi orqali talabalarni akademik hamda kasbiy jihatdan qo‘llab-quvvatlashi bilan ajralib turadi. Bu yo‘l-yo‘riq talabalarga ishonchni oshirish, ko‘nikmalarni rivojlantirish va kelajak karyera imkoniyatlariga tayyorlanishga yordam beradi.”",
+    "en": "“Imora AI stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”",
+    "ru": "«Imora AI выделяется экспертным сопровождением: квалифицированные преподаватели и наставники поддерживают студентов в учебном и профессиональном развитии. Такая помощь укрепляет уверенность, развивает навыки и готовит к будущим карьерным возможностям»."
   },
   "OUR DIRECTOR": {
     "uz": "RAHBARIYAT",
@@ -535,14 +535,14 @@
     "en": "Organizes work to ensure a stable social and spiritual environment among students and protect them from harmful influences. Makes proposals to improve the educational process and strengthen a healthy environment among university youth, and supports their implementation.",
     "ru": "Организует работу по обеспечению стабильной социально-духовной среды среди студентов и защите их от вредных влияний. Вносит предложения по совершенствованию учебного процесса и укреплению здоровой среды среди молодежи университета, а также содействует их реализации."
   },
-  "Qo'qon universiteti boshlang‘ich tashkilot yetakchisi": {
-    "uz": "Qo‘qon universiteti boshlang‘ich tashkilot yetakchisi",
-    "en": "Leader of Kokand University’s primary youth organization",
+  "Imora AI boshlang‘ich tashkilot yetakchisi": {
+    "uz": "Imora AI boshlang‘ich tashkilot yetakchisi",
+    "en": "Leader of Imora AI’s primary youth organization",
     "ru": "Лидер первичной организации Кокандского университета"
   },
-  "“Qo‘qon universiteti boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”": {
-    "uz": "“Qo‘qon universiteti boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”",
-    "en": "“The leader of Kokand University’s primary organization is a responsible leadership role that helps increase students’ social activity, unite young people and support their initiatives in university life.”",
+  "“Imora AI boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”": {
+    "uz": "“Imora AI boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”",
+    "en": "“The leader of Imora AI’s primary organization is a responsible leadership role that helps increase students’ social activity, unite young people and support their initiatives in university life.”",
     "ru": "«Лидер первичной организации Кокандского университета — ответственная руководящая должность, направленная на повышение социальной активности студентов, объединение молодежи и поддержку их инициатив в жизни университета»."
   },
   "Ilmiy ishlar va innovatsiyalar boʻyicha prorektor": {
@@ -577,22 +577,22 @@
   },
   "Kokand universitetidagi tutorim bilan haftalik uchrashuvlarim mustaqil o‘qishning erkinligi va mas’uliyatini yaxshiroq tushunishga yordam beradi. Men o‘qish jarayonimni o‘zim boshqaraman, lekin bu intizom va javobgarlikni talab qiladi. Tutorim esa menga yo‘nalish berib, maqsadlarimga erishishda qo‘llab-quvvatlaydi. Bu jarayon menga mustaqil fikrlash va o‘z ustimda ishlash ko‘nikmasini rivojlantiradi.": {
     "uz": "Kokand universitetidagi tutorim bilan haftalik uchrashuvlarim mustaqil o‘qishning erkinligi va mas’uliyatini yaxshiroq tushunishga yordam beradi. Men o‘qish jarayonimni o‘zim boshqaraman, lekin bu intizom va javobgarlikni talab qiladi. Tutorim esa menga yo‘nalish berib, maqsadlarimga erishishda qo‘llab-quvvatlaydi. Bu jarayon menga mustaqil fikrlash va o‘z ustimda ishlash ko‘nikmasini rivojlantiradi.",
-    "en": "Weekly meetings with my tutor at Kokand University help me better understand the freedom and responsibility of independent study. I manage my own learning process, but it requires discipline and accountability. My tutor guides me and supports me in reaching my goals. This process develops my independent thinking and self-improvement skills.",
-    "ru": "Еженедельные встречи с моим тьютором в Kokand University помогают мне лучше понять свободу и ответственность самостоятельного обучения. Я сам управляю своим учебным процессом, но это требует дисциплины и ответственности. Тьютор направляет меня и поддерживает в достижении целей. Этот процесс развивает самостоятельное мышление и навыки работы над собой."
+    "en": "Weekly meetings with my tutor at Imora AI help me better understand the freedom and responsibility of independent study. I manage my own learning process, but it requires discipline and accountability. My tutor guides me and supports me in reaching my goals. This process develops my independent thinking and self-improvement skills.",
+    "ru": "Еженедельные встречи с моим тьютором в Imora AI помогают мне лучше понять свободу и ответственность самостоятельного обучения. Я сам управляю своим учебным процессом, но это требует дисциплины и ответственности. Тьютор направляет меня и поддерживает в достижении целей. Этот процесс развивает самостоятельное мышление и навыки работы над собой."
   },
-  "Learn more about our Personal Tutors and the wider academic support options available to students at Kokand university": {
-    "uz": "Kokand University talabalari uchun shaxsiy tutorlar va akademik qo‘llab-quvvatlash imkoniyatlari haqida batafsil bilib oling",
-    "en": "Learn more about our Personal Tutors and the wider academic support options available to students at Kokand university",
-    "ru": "Узнайте больше о персональных тьюторах и возможностях академической поддержки для студентов Kokand University"
+  "Learn more about our Personal Tutors and the wider academic support options available to students at Imora AI": {
+    "uz": "Imora AI talabalari uchun shaxsiy tutorlar va akademik qo‘llab-quvvatlash imkoniyatlari haqida batafsil bilib oling",
+    "en": "Learn more about our Personal Tutors and the wider academic support options available to students at Imora AI",
+    "ru": "Узнайте больше о персональных тьюторах и возможностях академической поддержки для студентов Imora AI"
   },
   "IN UNCERTAIN TIMES, QUALITY COUNTS": {
     "uz": "NOANIQ DAVRDA SIFAT MUHIM",
     "en": "IN UNCERTAIN TIMES, QUALITY COUNTS",
     "ru": "В НЕОПРЕДЕЛЕННЫЕ ВРЕМЕНА КАЧЕСТВО ВАЖНО"
   },
-  "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo'lib o'tayotgan Umummilliy AI Hackathonda Qo'qon universiteti talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 🏫 2-kun har bir jamoa o'z loyihalarini mentorlar va ekspertlarga taqdim etish uchun tayyorgarlik jarayonlarini olib bormoqda. Ishtirokchilar jamiyat va kelajak uchun muhim bo‘lgan yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: - Ta'lim sohasida AI platforma - Kasallikni erta aniqlash - Ta'lim jarayonlarida inklyuziv ta'limga muhtoz bo'lgan shaxslar uchun mobil dasturiy ta'minot 🎁 Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.": {
-    "uz": "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo‘lib o‘tayotgan Umummilliy AI Hackathonda Qo‘qon universiteti talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 2-kun har bir jamoa o‘z loyihalarini mentorlar va ekspertlarga taqdim etishga tayyorgarlik ko‘rmoqda. Ishtirokchilar jamiyat va kelajak uchun muhim yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: ta’lim sohasida AI platforma, kasallikni erta aniqlash, inklyuziv ta’limga muhtoj shaxslar uchun mobil dasturiy ta’minot. Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.",
-    "en": "National AI Hackathon Fergana | Day 2 🏫 Kokand University students are actively participating in the National AI Hackathon taking place in Fergana, presenting innovative ideas and technological projects. On day 2, each team is preparing to present its project to mentors and experts. Participants are working on AI-based solutions in areas important for society and the future. Project topics include: an AI platform for education, early disease detection, and mobile software for people who need inclusive education. The best projects will receive valuable prizes and special nominations. The hackathon continues until May 23.",
+  "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo'lib o'tayotgan Umummilliy AI Hackathonda Imora AI talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 🏫 2-kun har bir jamoa o'z loyihalarini mentorlar va ekspertlarga taqdim etish uchun tayyorgarlik jarayonlarini olib bormoqda. Ishtirokchilar jamiyat va kelajak uchun muhim bo‘lgan yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: - Ta'lim sohasida AI platforma - Kasallikni erta aniqlash - Ta'lim jarayonlarida inklyuziv ta'limga muhtoz bo'lgan shaxslar uchun mobil dasturiy ta'minot 🎁 Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.": {
+    "uz": "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo‘lib o‘tayotgan Umummilliy AI Hackathonda Imora AI talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 2-kun har bir jamoa o‘z loyihalarini mentorlar va ekspertlarga taqdim etishga tayyorgarlik ko‘rmoqda. Ishtirokchilar jamiyat va kelajak uchun muhim yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: ta’lim sohasida AI platforma, kasallikni erta aniqlash, inklyuziv ta’limga muhtoj shaxslar uchun mobil dasturiy ta’minot. Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.",
+    "en": "National AI Hackathon Fergana | Day 2 🏫 Imora AI students are actively participating in the National AI Hackathon taking place in Fergana, presenting innovative ideas and technological projects. On day 2, each team is preparing to present its project to mentors and experts. Participants are working on AI-based solutions in areas important for society and the future. Project topics include: an AI platform for education, early disease detection, and mobile software for people who need inclusive education. The best projects will receive valuable prizes and special nominations. The hackathon continues until May 23.",
     "ru": "Национальный AI Hackathon Фергана | 2-й день 🏫 Студенты Кокандского университета активно участвуют в Национальном AI Hackathon в Фергане, представляя инновационные идеи и технологические проекты. Во второй день команды готовятся представить свои проекты наставникам и экспертам. Участники работают над AI-решениями в направлениях, важных для общества и будущего: AI-платформа для образования, раннее выявление заболеваний и мобильное приложение для людей, нуждающихся в инклюзивном образовании. Лучшие проекты будут отмечены ценными призами и специальными номинациями. Хакатон продолжается до 23 мая."
   },
   "Partnerships": {

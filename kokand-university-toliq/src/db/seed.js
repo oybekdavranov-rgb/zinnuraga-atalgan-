@@ -46,9 +46,9 @@ async function seedTable(table, cols, rows) {
 async function seedContent() {
   await seedTable('news', ['title', 'date', 'image', 'excerpt', 'body', 'link', 'sort'], [
     { title: 'Umummilliy AI Hackathon Farg‘ona | 2-kun', date: '23-may 2026', image: 'images/copy-of-greenes4-1-e1707301347593-352x228.jpg', excerpt: 'Ishtirokchilar jamiyat va kelajak uchun muhim yo‘nalishlarda AI yechimlari ustida ishlashmoqda.', body: '🏫 2-kun har bir jamoa o‘z loyihalarini mentorlar va ekspertlarga taqdim etishga tayyorlanmoqda.\n\nHackathon davomida talabalar amaliy ko‘nikmalarni egallab, jamoaviy ishlash va innovatsion g‘oyalarni real mahsulotga aylantirishni o‘rganmoqda.', link: 'https://t.me/kuyoshlarittifoqi' },
-    { title: 'Kokand University talabalari xalqaro tanlovda g‘olib bo‘ldi', date: '09-iyun 2026', image: 'images/homepage-4-1024x683.jpg', excerpt: 'Talabalar xalqaro ilmiy loyihalar tanlovida yuqori natijalarni qo‘lga kiritdi.', body: 'Kokand University talabalari xalqaro miqyosdagi ilmiy-amaliy loyihalar tanlovida ishtirok etib, bilim va ko‘nikmalarini namoyish qildi.\n\nBu g‘alaba universitetning sifatli kadrlar tayyorlashga qaratilgan siyosatining isbotidir.', link: '' },
-    { title: 'Yangi o‘quv yili: qabul jarayoni boshlandi', date: '01-iyul 2026', image: 'images/homepage-3.jpg', excerpt: 'Yangi o‘quv yiliga qabul boshlandi. Yo‘nalishlar va imtiyozlar bilan tanishing.', body: 'Kokand University yangi o‘quv yiliga talabalar qabulini boshladi. Zamonaviy o‘quv dasturlari, amaliyotga yo‘naltirilgan ta’lim va xalqaro hamkorlik imkoniyatlari taklif etiladi.', link: 'https://qabul.kokanduni.uz/' },
-    { title: 'Xalqaro hamkorlik: yangi shartnomalar imzolandi', date: '15-iyun 2026', image: 'images/homepage-8.jpg', excerpt: 'Universitet xorijiy oliy ta’lim muassasalari bilan hamkorlik shartnomalarini imzoladi.', body: 'Kokand University xorijiy universitetlar bilan ta’lim va ilmiy tadqiqot sohasidagi hamkorlikni kengaytirmoqda. Shartnomalar talabalar almashinuvi va qo‘shma dasturlarni nazarda tutadi.', link: '' },
+    { title: 'Imora AI talabalari xalqaro tanlovda g‘olib bo‘ldi', date: '09-iyun 2026', image: 'images/homepage-4-1024x683.jpg', excerpt: 'Talabalar xalqaro ilmiy loyihalar tanlovida yuqori natijalarni qo‘lga kiritdi.', body: 'Imora AI talabalari xalqaro miqyosdagi ilmiy-amaliy loyihalar tanlovida ishtirok etib, bilim va ko‘nikmalarini namoyish qildi.\n\nBu g‘alaba universitetning sifatli kadrlar tayyorlashga qaratilgan siyosatining isbotidir.', link: '' },
+    { title: 'Yangi o‘quv yili: qabul jarayoni boshlandi', date: '01-iyul 2026', image: 'images/homepage-3.jpg', excerpt: 'Yangi o‘quv yiliga qabul boshlandi. Yo‘nalishlar va imtiyozlar bilan tanishing.', body: 'Imora AI yangi o‘quv yiliga talabalar qabulini boshladi. Zamonaviy o‘quv dasturlari, amaliyotga yo‘naltirilgan ta’lim va xalqaro hamkorlik imkoniyatlari taklif etiladi.', link: 'https://qabul.kokanduni.uz/' },
+    { title: 'Xalqaro hamkorlik: yangi shartnomalar imzolandi', date: '15-iyun 2026', image: 'images/homepage-8.jpg', excerpt: 'Universitet xorijiy oliy ta’lim muassasalari bilan hamkorlik shartnomalarini imzoladi.', body: 'Imora AI xorijiy universitetlar bilan ta’lim va ilmiy tadqiqot sohasidagi hamkorlikni kengaytirmoqda. Shartnomalar talabalar almashinuvi va qo‘shma dasturlarni nazarda tutadi.', link: '' },
   ]);
 
   await seedTable('achievements', ['name', 'subtitle', 'image', 'description', 'sort'], [
@@ -58,7 +58,7 @@ async function seedContent() {
   ]);
 
   await seedTable('distinctions', ['title', 'image', 'summary', 'body', 'sort'], [
-    { title: 'Yangi boshlanish', image: 'images/homepage-1.jpg', summary: 'Zamonaviy ta’lim va amaliy tajribaning uyg‘unligi.', body: 'Kokand University har bir talaba uchun yangi boshlanish imkoniyatini yaratadi. Zamonaviy ta’lim amaliy tajriba bilan uyg‘unlashtiriladi: real ko‘nikmalar, texnologiya, xalqaro imkoniyatlar va shaxsiy rivojlanish.' },
+    { title: 'Yangi boshlanish', image: 'images/homepage-1.jpg', summary: 'Zamonaviy ta’lim va amaliy tajribaning uyg‘unligi.', body: 'Imora AI har bir talaba uchun yangi boshlanish imkoniyatini yaratadi. Zamonaviy ta’lim amaliy tajriba bilan uyg‘unlashtiriladi: real ko‘nikmalar, texnologiya, xalqaro imkoniyatlar va shaxsiy rivojlanish.' },
     { title: 'Amaliyotga yo‘naltirilgan ta’lim', image: 'images/homepage-3.jpg', summary: 'Nazariya va amaliyot birligida bilim.', body: 'Ta’lim jarayoni nazariya va amaliyotni uyg‘unlashtirgan. Talabalar bilimlarini loyihalar va real vaziyatlarda qo‘llaydi, mehnat bozoriga tayyor bo‘ladi.' },
     { title: 'Individual yondashuv', image: 'images/homepage-4.jpg', summary: 'Har bir talaba — alohida e’tiborda.', body: 'Universitet har bir talabaning kuchli tomonlari, maqsadlari va shaxsiy rivojlanishiga e’tibor beradi. Bu samarali o‘qish va ishonch hosil qilishga yordam beradi.' },
     { title: 'Chegarasiz ta’lim', image: 'images/homepage-9-1024x884.webp', summary: 'Onlayn va oflayn imkoniyatlar.', body: 'Talabalar joylashuvidan qat’i nazar istalgan vaqtda bilim olishi mumkin. Raqamli platformalar ta’limni qulay va moslashuvchan qiladi.' },
@@ -67,24 +67,24 @@ async function seedContent() {
   ]);
 
   await seedTable('interests', ['title', 'image', 'body', 'link', 'sort'], [
-    { title: 'Yo‘nalishlar', image: 'images/lucia-navarrete-y3tr4-mn6es-unsplash-352x228.jpg', body: 'Kokand University turli ta’lim yo‘nalishlarini taklif etadi: axborot texnologiyalari, iqtisodiyot, biznes boshqaruvi, filologiya va boshqalar.', link: 'https://www.kokanduni.uz/uz' },
+    { title: 'Yo‘nalishlar', image: 'images/lucia-navarrete-y3tr4-mn6es-unsplash-352x228.jpg', body: 'Imora AI turli ta’lim yo‘nalishlarini taklif etadi: axborot texnologiyalari, iqtisodiyot, biznes boshqaruvi, filologiya va boshqalar.', link: 'https://www.kokanduni.uz/uz' },
     { title: 'Bog‘lanish', image: 'images/aptitude-test-2-352x228.jpg', body: 'Maslahatchilar yo‘nalish tanlash, qabul jarayoni va o‘quv sharoitlari bo‘yicha to‘liq ma’lumot beradi.', link: 'https://www.kokanduni.uz/uz/static/contacts' },
     { title: 'O‘quv muddatlari', image: 'images/spires_rgb_edited-1500x500-1-352x228.jpg', body: 'O‘quv yili semestrlarga bo‘lingan; dars jadvali, imtihon sessiyalari va ta’til muddatlari oldindan e’lon qilinadi.', link: 'https://www.kokanduni.uz/uz' },
   ]);
 
   await seedTable('stories', ['title', 'date', 'category', 'image', 'excerpt', 'body', 'link', 'sort'], [
     {
-      title: 'Kokand University talabasi bo‘lish qanday tuyg‘u?',
+      title: 'Imora AI talabasi bo‘lish qanday tuyg‘u?',
       date: '18-iyul 2026', category: 'Talaba hayoti', image: 'images/stories/story-1.jpg',
       excerpt: 'Birinchi kursdan bitiruvgacha — universitetdagi hayot, do‘stlar, ustozlar va o‘zgarishlar haqida talaba hikoyasi.',
-      body: 'Universitetga birinchi qadam qo‘yganimda hammasi yangi va biroz qo‘rqinchli tuyulgandi. Ammo bir necha hafta ichida Kokand University menga ikkinchi uyga aylandi.\n\nBu yerda faqat darslar emas, balki klublar, loyihalar va tadbirlar orqali o‘zimni topdim. Ustozlar har birimizni ismimiz bilan taniydi, savolga har doim vaqt topadi.\n\nEng muhimi — bu yerda men mustaqil fikrlashni, jamoada ishlashni va o‘z g‘oyalarimga ishonishni o‘rgandim.',
+      body: 'Universitetga birinchi qadam qo‘yganimda hammasi yangi va biroz qo‘rqinchli tuyulgandi. Ammo bir necha hafta ichida Imora AI menga ikkinchi uyga aylandi.\n\nBu yerda faqat darslar emas, balki klublar, loyihalar va tadbirlar orqali o‘zimni topdim. Ustozlar har birimizni ismimiz bilan taniydi, savolga har doim vaqt topadi.\n\nEng muhimi — bu yerda men mustaqil fikrlashni, jamoada ishlashni va o‘z g‘oyalarimga ishonishni o‘rgandim.',
       link: '',
     },
     {
       title: 'Amaliyotdan ish o‘rniga: bitiruvchi tajribasi',
       date: '12-iyul 2026', category: 'Karyera', image: 'images/stories/story-2.jpg',
       excerpt: 'Universitetdagi amaliyot uni to‘g‘ridan-to‘g‘ri kompaniyaga olib keldi. Karyera yo‘lining boshlanishi haqida hikoya.',
-      body: 'Uchinchi kursda amaliyotni jiddiy qabul qildim. Har bir vazifani real ish deb bajardim va bu bekorga ketmadi.\n\nAmaliyot tugagach, kompaniya menga ish taklif qildi. Universitetda olgan amaliy ko‘nikmalarim va mustaqil loyihalarim aynan shu paytda asqotdi.\n\nKokand University talabalarga real muhitda o‘rganish imkonini beradi — bu esa diplomdan ham qimmatroq.',
+      body: 'Uchinchi kursda amaliyotni jiddiy qabul qildim. Har bir vazifani real ish deb bajardim va bu bekorga ketmadi.\n\nAmaliyot tugagach, kompaniya menga ish taklif qildi. Universitetda olgan amaliy ko‘nikmalarim va mustaqil loyihalarim aynan shu paytda asqotdi.\n\nImora AI talabalarga real muhitda o‘rganish imkonini beradi — bu esa diplomdan ham qimmatroq.',
       link: '',
     },
     {
@@ -98,7 +98,7 @@ async function seedContent() {
       title: 'Xalqaro almashinuv dasturida bir semestr',
       date: '28-iyun 2026', category: 'Xalqaro imkoniyatlar', image: 'images/stories/story-4.jpg',
       excerpt: 'Xorijiy universitetda o‘qish tajribasi dunyoqarashni qanday o‘zgartirdi — talaba o‘z tajribasini bo‘lishadi.',
-      body: 'Xalqaro almashinuv dasturi menga boshqa madaniyat, boshqa ta’lim uslubi va yangi do‘stlar berdi.\n\nBoshqa mamlakatda o‘qib, o‘z bilimlarimning kuchli tomonlarini ko‘rdim va yangi ko‘nikmalarni egalladim. Til bilan bir qatorda mustaqillik va moslashuvchanlik o‘rgandim.\n\nKokand University’ning xalqaro hamkorligi tufayli bu imkoniyat menga ochildi.',
+      body: 'Xalqaro almashinuv dasturi menga boshqa madaniyat, boshqa ta’lim uslubi va yangi do‘stlar berdi.\n\nBoshqa mamlakatda o‘qib, o‘z bilimlarimning kuchli tomonlarini ko‘rdim va yangi ko‘nikmalarni egalladim. Til bilan bir qatorda mustaqillik va moslashuvchanlik o‘rgandim.\n\nImora AI’ning xalqaro hamkorligi tufayli bu imkoniyat menga ochildi.',
       link: '',
     },
     {
@@ -119,7 +119,7 @@ async function seedContent() {
       title: 'Ustoz va shogird: mentorlik hikoyasi',
       date: '07-iyun 2026', category: 'Ustozlar', image: 'images/stories/story-7.jpg',
       excerpt: 'Bir ustozning to‘g‘ri vaqtdagi maslahati talabaning yo‘nalishini butunlay o‘zgartirdi.',
-      body: 'Men qaysi yo‘nalishni tanlashni bilmay qiynalgan paytimda ustozim menga vaqt ajratdi. U mening qiziqishlarimni tingladi va to‘g‘ri savollarni berdi.\n\nShu suhbatdan keyin o‘zimga to‘g‘ri kelgan sohani tanladim va endi har kuni sevgan ishim bilan shug‘ullanaman.\n\nKokand University’da mentorlik — rasmiyatchilik emas, balki chinakam g‘amxo‘rlik.',
+      body: 'Men qaysi yo‘nalishni tanlashni bilmay qiynalgan paytimda ustozim menga vaqt ajratdi. U mening qiziqishlarimni tingladi va to‘g‘ri savollarni berdi.\n\nShu suhbatdan keyin o‘zimga to‘g‘ri kelgan sohani tanladim va endi har kuni sevgan ishim bilan shug‘ullanaman.\n\nImora AI’da mentorlik — rasmiyatchilik emas, balki chinakam g‘amxo‘rlik.',
       link: '',
     },
     {
@@ -133,7 +133,7 @@ async function seedContent() {
       title: 'Bitiruv kuni: yangi hayotning ostonasida',
       date: '22-may 2026', category: 'Bitiruvchilar', image: 'images/stories/story-9.jpg',
       excerpt: 'To‘rt yillik mehnat, do‘stlik va o‘sish — bitiruvchi universitetdagi eng yorqin damlarini eslaydi.',
-      body: 'Bitiruv kunida orqaga qarab, universitetda o‘tgan yillar ko‘z oldimdan o‘tdi. Birinchi imtihonlar, tungacha davom etgan loyihalar, do‘stlar bilan kulgu.\n\nKokand University menga faqat diplom emas, balki hayotga tayyor shaxsni yasadi.\n\nEndi yangi bosqich boshlanadi, lekin bu yerda olgan bilim va do‘stlik hamisha men bilan qoladi.',
+      body: 'Bitiruv kunida orqaga qarab, universitetda o‘tgan yillar ko‘z oldimdan o‘tdi. Birinchi imtihonlar, tungacha davom etgan loyihalar, do‘stlar bilan kulgu.\n\nImora AI menga faqat diplom emas, balki hayotga tayyor shaxsni yasadi.\n\nEndi yangi bosqich boshlanadi, lekin bu yerda olgan bilim va do‘stlik hamisha men bilan qoladi.',
       link: '',
     },
     {
@@ -146,8 +146,8 @@ async function seedContent() {
     {
       title: 'Talabamiz milliy miqyosda eng yuqori natijani qo‘lga kiritdi',
       date: '10-may 2026', category: 'Yutuqlar', image: 'images/stories/story-11.jpg',
-      excerpt: 'Kokand University talabasi respublika ko‘lamidagi fan imtihonida eng yuqori ballni to‘pladi.',
-      body: 'Universitetimiz talabasi milliy miqyosdagi fan imtihonida eng yuqori natijani qayd etib, mamlakatning eng iqtidorli yoshlari qatoridan joy oldi.\n\nBu muvaffaqiyat ortida qat’iyat, muntazam mehnat va tajribali ustozlarning qo‘llab-quvvatlashi turibdi. Talaba imtihonga oylar davomida rejali tayyorgarlik ko‘rdi.\n\nKokand University har bir talabaning iqtidorini rivojlantirish va yuqori natijalarga erishishi uchun barcha sharoitni yaratadi.',
+      excerpt: 'Imora AI talabasi respublika ko‘lamidagi fan imtihonida eng yuqori ballni to‘pladi.',
+      body: 'Universitetimiz talabasi milliy miqyosdagi fan imtihonida eng yuqori natijani qayd etib, mamlakatning eng iqtidorli yoshlari qatoridan joy oldi.\n\nBu muvaffaqiyat ortida qat’iyat, muntazam mehnat va tajribali ustozlarning qo‘llab-quvvatlashi turibdi. Talaba imtihonga oylar davomida rejali tayyorgarlik ko‘rdi.\n\nImora AI har bir talabaning iqtidorini rivojlantirish va yuqori natijalarga erishishi uchun barcha sharoitni yaratadi.',
       link: '',
     },
   ]);
@@ -275,7 +275,7 @@ async function seedContent() {
   await seedTable('gallery', ['title', 'category', 'image', 'description', 'video', 'sort'], [
     {
       title: 'Bosh oʻquv binosi', category: 'Binolar', image: 'images/gallery/bino-1.jpg', video: '',
-      description: 'Kokand University bosh oʻquv binosi — universitetning yuragi. Bu yerda zamonaviy auditoriyalar, mʼaʼruza zallari va professor-oʻqituvchilar kafedralari joylashgan.\n\nBino arxitekturasi anʼanaviy va zamonaviy uslublarni uygʻunlashtirgan boʻlib, talabalar uchun qulay va ilhomlantiruvchi muhit yaratadi.',
+      description: 'Imora AI bosh oʻquv binosi — universitetning yuragi. Bu yerda zamonaviy auditoriyalar, mʼaʼruza zallari va professor-oʻqituvchilar kafedralari joylashgan.\n\nBino arxitekturasi anʼanaviy va zamonaviy uslublarni uygʻunlashtirgan boʻlib, talabalar uchun qulay va ilhomlantiruvchi muhit yaratadi.',
     },
     {
       title: 'Markaziy hovli va maydon', category: 'Binolar', image: 'images/gallery/bino-2.jpg', video: '',
@@ -311,7 +311,7 @@ async function seedContent() {
     },
     {
       title: 'Kampusning umumiy koʻrinishi', category: 'Binolar', image: 'images/gallery/bino-10.jpg', video: '',
-      description: 'Kokand University kampusi — barcha oʻquv, ilmiy va turar joy binolarini oʻz ichiga olgan yagona hudud. Yashil zonalar va zamonaviy infratuzilma bilan uygʻunlashgan.',
+      description: 'Imora AI kampusi — barcha oʻquv, ilmiy va turar joy binolarini oʻz ichiga olgan yagona hudud. Yashil zonalar va zamonaviy infratuzilma bilan uygʻunlashgan.',
     },
     {
       title: 'Zamonaviy auditoriya', category: 'Ichki koʻrinish', image: 'images/gallery/ichki-1.jpg', video: '',
@@ -385,7 +385,7 @@ async function seedContent() {
       title: 'Bakalavriat — to‘liq ta’lim dasturi',
       subtitle: 'Xalqaro standartlardagi 4 yillik bakalavriat',
       image: 'images/programmes/prog-bakalavr.jpg',
-      intro: 'Kokand University bakalavriat dasturi zamonaviy o‘quv rejasi, amaliyotga yo‘naltirilgan ta’lim va individual yondashuvni birlashtiradi. Har bir talaba nazariy bilim bilan bir qatorda real loyihalarda ishlash tajribasini oladi va kelajakdagi kasbiga to‘liq tayyorlanadi.',
+      intro: 'Imora AI bakalavriat dasturi zamonaviy o‘quv rejasi, amaliyotga yo‘naltirilgan ta’lim va individual yondashuvni birlashtiradi. Har bir talaba nazariy bilim bilan bir qatorda real loyihalarda ishlash tajribasini oladi va kelajakdagi kasbiga to‘liq tayyorlanadi.',
       highlights: 'Xalqaro ta’lim standartlariga muvofiq o‘quv reja\nHar bir talabaga biriktirilgan shaxsiy tyutor (mentor)\nAmaliyot va real loyihalar ustida ishlash\nZamonaviy laboratoriya va raqamli resurslar\nXorijiy universitetlar bilan almashinuv imkoniyati\nDiplom bilan birga amaliy ko‘nikmalar',
       faq: 'Qabul qanday tashkil etilgan? :: Qabul test va suhbat asosida o‘tkaziladi. Batafsil ma’lumot qabul komissiyasidan olinadi.\nGrant va imtiyozlar bormi? :: Ha, iqtidorli talabalar uchun grant va imtiyozli to‘lov shakllari mavjud.\nTa’lim tili qaysi? :: O‘zbek, rus va ingliz tillarida yo‘nalishlar mavjud.',
       link: 'https://qabul.kokanduni.uz/',
@@ -465,7 +465,7 @@ async function seedContent() {
       title: 'Qanday ariza topshirish',
       subtitle: 'Qabul jarayoni — bosqichma-bosqich',
       image: 'images/programmes/prog-ariza.jpg',
-      intro: 'Kokand Universityga hujjat topshirish oddiy va tushunarli. Quyidagi bosqichlar orqali arizangizni topshirasiz va qabul komissiyasi siz bilan bog‘lanadi. Har bir bosqichda maslahatchilar yordam beradi.',
+      intro: 'Imora AIga hujjat topshirish oddiy va tushunarli. Quyidagi bosqichlar orqali arizangizni topshirasiz va qabul komissiyasi siz bilan bog‘lanadi. Har bir bosqichda maslahatchilar yordam beradi.',
       highlights: 'Onlayn ariza to‘ldirish\nKerakli hujjatlarni yuklash\nKirish testi yoki suhbat\nNatijani kutish va tasdiqlash\nShartnoma va ro‘yxatdan o‘tish',
       faq: 'Qanday hujjatlar kerak? :: Pasport, ma’lumot to‘g‘risidagi hujjat va rasm. To‘liq ro‘yxat qabul sahifasida.\nQachon topshirish mumkin? :: Qabul mavsumi davomida. Muddatlar rasmiy saytda e’lon qilinadi.\nOnlayn topshirish bormi? :: Ha, arizani onlayn topshirish mumkin.',
       link: 'https://qabul.kokanduni.uz/',
@@ -473,9 +473,9 @@ async function seedContent() {
     {
       key: 'kochirish',
       title: 'Boshqa muassasadan o‘tish (transfer)',
-      subtitle: 'O‘qishingizni Kokand Universityda davom ettiring',
+      subtitle: 'O‘qishingizni Imora AIda davom ettiring',
       image: 'images/programmes/prog-kochirish.jpg',
-      intro: 'Boshqa oliy ta’lim muassasasida o‘qiyotgan talabalar Kokand Universityga o‘tish (transfer) imkoniyatiga ega. Kreditlar tan olinadi va o‘qish uzluksiz davom etadi. Maslahatchilar jarayonni to‘liq hamrohlik qiladi.',
+      intro: 'Boshqa oliy ta’lim muassasasida o‘qiyotgan talabalar Imora AIga o‘tish (transfer) imkoniyatiga ega. Kreditlar tan olinadi va o‘qish uzluksiz davom etadi. Maslahatchilar jarayonni to‘liq hamrohlik qiladi.',
       highlights: 'Oldingi kreditlarni tan olish\nMos kursga joylashtirish\nHujjatlarni rasmiylashtirishda yordam\nUzluksiz o‘quv jarayoni\nIndividual maslahat',
       faq: 'Kreditlarim tan olinadimi? :: Ha, mos fanlar bo‘yicha kreditlar tan olinadi.\nQaysi kursga o‘taman? :: Oldingi o‘qish natijalariga qarab belgilanadi.\nJarayon qancha davom etadi? :: Hujjatlar to‘liq bo‘lsa, qisqa muddatda hal qilinadi.',
       link: 'https://qabul.kokanduni.uz/',
@@ -485,7 +485,7 @@ async function seedContent() {
       title: 'To‘lov va narxlar',
       subtitle: 'Shaffof to‘lov shartlari',
       image: 'images/programmes/prog-tolov.jpg',
-      intro: 'Kokand University o‘qish to‘lovi shaffof va moslashuvchan. Turli yo‘nalishlar bo‘yicha to‘lov miqdori, bo‘lib-bo‘lib to‘lash va imtiyozli shartlar mavjud. Aniq narxlar qabul komissiyasidan olinadi.',
+      intro: 'Imora AI o‘qish to‘lovi shaffof va moslashuvchan. Turli yo‘nalishlar bo‘yicha to‘lov miqdori, bo‘lib-bo‘lib to‘lash va imtiyozli shartlar mavjud. Aniq narxlar qabul komissiyasidan olinadi.',
       highlights: 'Yo‘nalishlar bo‘yicha aniq narxlar\nBo‘lib-bo‘lib to‘lash imkoniyati\nGrant va chegirmalar\nOnlayn to‘lov tizimi\nMoliyaviy maslahat',
       faq: 'To‘lovni bo‘lib to‘lasa bo‘ladimi? :: Ha, bo‘lib-bo‘lib to‘lash shartlari mavjud.\nChegirmalar bormi? :: Iqtidorli talabalar uchun grant va chegirmalar mavjud.\nNarxlarni qayerdan bilaman? :: Qabul komissiyasi yoki rasmiy sayt orqali.',
       link: 'https://qabul.kokanduni.uz/',
@@ -495,7 +495,7 @@ async function seedContent() {
       title: 'Grant va stipendiyalar',
       subtitle: 'Iqtidor va mehnat qadrlanadi',
       image: 'images/programmes/prog-grant.jpg',
-      intro: 'Kokand University iqtidorli va faol talabalar uchun grant va stipendiyalar taqdim etadi. Akademik yutuqlar, ijtimoiy faollik va tanlovdagi g‘alabalar imtiyozli ta’lim imkoniyatini beradi.',
+      intro: 'Imora AI iqtidorli va faol talabalar uchun grant va stipendiyalar taqdim etadi. Akademik yutuqlar, ijtimoiy faollik va tanlovdagi g‘alabalar imtiyozli ta’lim imkoniyatini beradi.',
       highlights: 'Akademik yutuqlar uchun grant\nTanlov va olimpiada g‘oliblariga imtiyoz\nIjtimoiy faollik uchun stipendiya\nQisman va to‘liq chegirmalar\nHar yili qayta ko‘rib chiqiladi',
       faq: 'Kim grant ola oladi? :: Yuqori natija va faollik ko‘rsatgan talabalar.\nGrant qanday beriladi? :: Ariza va natijalar asosida komissiya qaror qiladi.\nHar yili yangilanadimi? :: Ha, natijaga qarab qayta ko‘rib chiqiladi.',
       link: 'https://qabul.kokanduni.uz/',
@@ -585,7 +585,7 @@ async function seedContent() {
       title: 'Akademik qo‘llab-quvvatlash',
       subtitle: 'Har bir talaba yolg‘iz emas',
       image: 'images/programmes/prog-akademik.jpg',
-      intro: 'Kokand University talabalarga o‘qishda har tomonlama yordam beradi: shaxsiy tyutor, konsultatsiyalar, qo‘shimcha mashg‘ulotlar va o‘quv resurslari. Har bir talaba o‘z salohiyatini to‘liq ochishi uchun sharoit yaratilgan.',
+      intro: 'Imora AI talabalarga o‘qishda har tomonlama yordam beradi: shaxsiy tyutor, konsultatsiyalar, qo‘shimcha mashg‘ulotlar va o‘quv resurslari. Har bir talaba o‘z salohiyatini to‘liq ochishi uchun sharoit yaratilgan.',
       highlights: 'Shaxsiy tyutor (mentor)\nQo‘shimcha konsultatsiyalar\nO‘quv resurslari va kutubxona\nPsixologik qo‘llab-quvvatlash\nKaryera markazi yordami',
       faq: 'Tyutor qanday tayinlanadi? :: Har bir talabaga o‘qish boshida biriktiriladi.\nQo‘shimcha darslar bepulmi? :: Asosiy konsultatsiyalar o‘quv jarayoniga kiradi.\nKutubxona bormi? :: Ha, boy elektron va bosma resurslar mavjud.',
       link: 'https://www.kokanduni.uz/uz',
@@ -605,7 +605,7 @@ async function seedContent() {
       title: 'Talabalar fikri',
       subtitle: 'Ular biz haqimizda nima deydi',
       image: 'images/programmes/prog-fikrlar.jpg',
-      intro: 'Talabalarimiz va bitiruvchilarimizning fikri — biz uchun eng qimmatli baho. Ular Kokand Universityda o‘tkazgan yillari, olgan bilim va tajribalari haqida ochiq gapiradi.',
+      intro: 'Talabalarimiz va bitiruvchilarimizning fikri — biz uchun eng qimmatli baho. Ular Imora AIda o‘tkazgan yillari, olgan bilim va tajribalari haqida ochiq gapiradi.',
       highlights: 'Talabalarning haqiqiy fikrlari\nBitiruvchilar muvaffaqiyati\nO‘qish tajribasi\nUstozlar haqida fikr\nUniversitet hayoti taassurotlari',
       faq: 'Fikrlar haqiqiymi? :: Ha, real talabalar va bitiruvchilardan.\nMen ham fikr qoldirsam bo‘ladimi? :: Albatta — biz fikrlaringizni qadrlaymiz.\nBitiruvchilar qayerda ishlaydi? :: Turli soha va tashkilotlarda muvaffaqiyatli faoliyat yuritadi.',
       link: 'https://www.kokanduni.uz/uz',
@@ -615,7 +615,7 @@ async function seedContent() {
       title: 'Onlayn ta’lim',
       subtitle: 'Bilim — istalgan joyda, istalgan vaqtda',
       image: 'images/programmes/prog-onlayn.jpg',
-      intro: 'Kokand University zamonaviy onlayn ta’lim imkoniyatlarini taklif etadi. Raqamli platformalar, video darslar va interaktiv resurslar orqali talabalar joylashuvidan qat’i nazar sifatli bilim oladi.',
+      intro: 'Imora AI zamonaviy onlayn ta’lim imkoniyatlarini taklif etadi. Raqamli platformalar, video darslar va interaktiv resurslar orqali talabalar joylashuvidan qat’i nazar sifatli bilim oladi.',
       highlights: 'Zamonaviy onlayn platforma\nVideo darslar va interaktiv resurslar\nMoslashuvchan o‘qish jadvali\nOnlayn maslahat va qo‘llab-quvvatlash\nRaqamli kutubxona',
       faq: 'Onlayn diplom beriladimi? :: Dastur turiga qarab tegishli hujjat beriladi.\nQanday qatnashaman? :: Ro‘yxatdan o‘tib, platformaga kirasiz.\nTexnik yordam bormi? :: Ha, onlayn qo‘llab-quvvatlash xizmati mavjud.',
       link: 'https://www.kokanduni.uz/uz',
@@ -625,7 +625,7 @@ async function seedContent() {
       title: 'Bo‘sh ish o‘rinlari (vakansiyalar)',
       subtitle: 'Bizning jamoaga qo‘shiling',
       image: 'images/programmes/prog-vakansiya.jpg',
-      intro: 'Kokand University iqtidorli va tashabbuskor mutaxassislarni o‘z jamoasiga taklif etadi. O‘qituvchilar, ma’muriy xodimlar va turli soha mutaxassislari uchun bo‘sh ish o‘rinlari muntazam e’lon qilinadi.',
+      intro: 'Imora AI iqtidorli va tashabbuskor mutaxassislarni o‘z jamoasiga taklif etadi. O‘qituvchilar, ma’muriy xodimlar va turli soha mutaxassislari uchun bo‘sh ish o‘rinlari muntazam e’lon qilinadi.',
       highlights: 'Zamonaviy va do‘stona ish muhiti\nKasbiy o‘sish imkoniyatlari\nRaqobatbardosh ish haqi\nMalaka oshirish va treninglar\nBarqaror va ishonchli tashkilot',
       faq: 'Qanday ariza topshiraman? :: CV va hujjatlarni belgilangan tartibda topshirasiz.\nQaysi lavozimlar bor? :: O‘qituvchilik, ma’muriy va texnik yo‘nalishlar bo‘yicha.\nTajriba talab qilinadimi? :: Lavozimga qarab turlicha — batafsil e’lonда ko‘rsatiladi.',
       link: 'https://www.kokanduni.uz/uz',
@@ -635,7 +635,7 @@ async function seedContent() {
       title: 'Ustozlar jamoasiga qo‘shiling',
       subtitle: 'Bilimingizni ulashing, kelajakni tarbiyalang',
       image: 'images/programmes/prog-tutor-tarmoq.jpg',
-      intro: 'O‘z sohangizning mutaxassisimisiz va bilimingizni ulashishni istaysizmi? Kokand University professional o‘qituvchilar va mentorlar tarmog‘iga qo‘shilishni taklif etadi. Birga kelajak avlodni tarbiyalaymiz.',
+      intro: 'O‘z sohangizning mutaxassisimisiz va bilimingizni ulashishni istaysizmi? Imora AI professional o‘qituvchilar va mentorlar tarmog‘iga qo‘shilishni taklif etadi. Birga kelajak avlodni tarbiyalaymiz.',
       highlights: 'Professional o‘qituvchilar jamoasi\nMoslashuvchan hamkorlik formati\nMalaka va tajriba almashinuvi\nZamonaviy metodikalar\nMa’naviy va moddiy rag‘bat',
       faq: 'Kim qo‘shilishi mumkin? :: O‘z sohasida tajribaga ega mutaxassislar.\nTo‘liq stavka shartmi? :: Yo‘q, moslashuvchan formatlar mavjud.\nQanday boshlanadi? :: Ariza va suhbatdan so‘ng hamkorlik boshlanadi.',
       link: 'https://www.kokanduni.uz/uz',
@@ -645,9 +645,9 @@ async function seedContent() {
       title: 'Universitetimiz haqida',
       subtitle: 'An’ana va zamonaviylik uyg‘unligi',
       image: 'images/programmes/prog-kollej.jpg',
-      intro: 'Kokand University — xalqaro ta’lim standartlariga asoslangan, amaliyotga yo‘naltirilgan zamonaviy universitet. Bizning maqsadimiz — mustaqil fikrlaydigan, raqobatbardosh va yuksak ma’naviyatli mutaxassislarni tayyorlash.',
+      intro: 'Imora AI — xalqaro ta’lim standartlariga asoslangan, amaliyotga yo‘naltirilgan zamonaviy universitet. Bizning maqsadimiz — mustaqil fikrlaydigan, raqobatbardosh va yuksak ma’naviyatli mutaxassislarni tayyorlash.',
       highlights: 'Xalqaro ta’lim standartlari\nAmaliyotga yo‘naltirilgan ta’lim\nZamonaviy infratuzilma\nXalqaro hamkorlik\nMalakali professor-o‘qituvchilar',
-      faq: 'Universitet qachon tashkil etilgan? :: Kokand University zamonaviy talablarga mos ravishda faoliyat yuritadi.\nQaysi yo‘nalishlar bor? :: IT, iqtisodiyot, biznes, filologiya va boshqalar.\nXalqaro diplom beriladimi? :: Xalqaro standartlarga muvofiq ta’lim beriladi.',
+      faq: 'Universitet qachon tashkil etilgan? :: Imora AI zamonaviy talablarga mos ravishda faoliyat yuritadi.\nQaysi yo‘nalishlar bor? :: IT, iqtisodiyot, biznes, filologiya va boshqalar.\nXalqaro diplom beriladimi? :: Xalqaro standartlarga muvofiq ta’lim beriladi.',
       link: 'https://www.kokanduni.uz/uz',
     },
     {
@@ -655,7 +655,7 @@ async function seedContent() {
       title: 'O‘qitish metodikasi',
       subtitle: 'Har bir talabaga individual yondashuv',
       image: 'images/programmes/prog-metod.jpg',
-      intro: 'Kokand University o‘qitishning zamonaviy va samarali metodikasidan foydalanadi. Nazariya amaliyot bilan uyg‘unlashtiriladi, har bir talabaga individual e’tibor beriladi va mustaqil fikrlash rag‘batlantiriladi.',
+      intro: 'Imora AI o‘qitishning zamonaviy va samarali metodikasidan foydalanadi. Nazariya amaliyot bilan uyg‘unlashtiriladi, har bir talabaga individual e’tibor beriladi va mustaqil fikrlash rag‘batlantiriladi.',
       highlights: 'Individual (tьютorial) yondashuv\nNazariya va amaliyot uyg‘unligi\nInteraktiv va zamonaviy darslar\nMustaqil fikrlashni rivojlantirish\nLoyihaviy va jamoaviy ishlash',
       faq: 'Metodika nimasi bilan farq qiladi? :: Har bir talabaga e’tibor va amaliy yondashuv bilan.\nGuruhlar katta bo‘ladimi? :: Kichik guruhlar orqali sifat ta’minlanadi.\nAmaliyot bormi? :: Ha, o‘quv jarayoni amaliyot bilan uyg‘un.',
       link: 'https://www.kokanduni.uz/uz',
@@ -665,7 +665,7 @@ async function seedContent() {
       title: 'Bizning ustozlarimiz',
       subtitle: 'Tajriba, bilim va g‘amxo‘rlik',
       image: 'images/programmes/prog-ustozlar.jpg',
-      intro: 'Kokand University professor-o‘qituvchilari — o‘z sohasining yetuk mutaxassislari. Ular nafaqat bilim beradi, balki har bir talabaning shaxsiy va kasbiy rivojlanishida yo‘l ko‘rsatuvchi mentor ham bo‘ladi.',
+      intro: 'Imora AI professor-o‘qituvchilari — o‘z sohasining yetuk mutaxassislari. Ular nafaqat bilim beradi, balki har bir talabaning shaxsiy va kasbiy rivojlanishida yo‘l ko‘rsatuvchi mentor ham bo‘ladi.',
       highlights: 'Yuqori malakali mutaxassislar\nAmaliy tajribaga ega o‘qituvchilar\nMentorlik va yo‘naltirish\nXalqaro tajriba\nTalabaga g‘amxo‘rlik',
       faq: 'O‘qituvchilar kim? :: Soha mutaxassislari va tajribali pedagoglar.\nMentor biriktiriladimi? :: Ha, har talabaga shaxsiy tyutor.\nXalqaro o‘qituvchilar bormi? :: Xalqaro hamkorlik doirasida jalb qilinadi.',
       link: 'https://www.kokanduni.uz/uz/static/employes/structure/32',
@@ -675,7 +675,7 @@ async function seedContent() {
       title: 'Natijalar va bitiruvchilar yo‘nalishi',
       subtitle: 'Bilim — muvaffaqiyatli kelajak sari',
       image: 'images/programmes/prog-natija-yonalish.jpg',
-      intro: 'Kokand University bitiruvchilari mehnat bozorida talab qilinadi va turli sohalarda muvaffaqiyatli faoliyat yuritadi. Bizning natijalarimiz — talabalarimizning yutuqlari va ularning yorqin kelajagida aks etadi.',
+      intro: 'Imora AI bitiruvchilari mehnat bozorida talab qilinadi va turli sohalarda muvaffaqiyatli faoliyat yuritadi. Bizning natijalarimiz — talabalarimizning yutuqlari va ularning yorqin kelajagida aks etadi.',
       highlights: 'Yuqori bandlik ko‘rsatkichi\nTanlov va olimpiada g‘alabalari\nXalqaro dasturlarda ishtirok\nMuvaffaqiyatli bitiruvchilar\nKaryera markazi qo‘llab-quvvatlashi',
       faq: 'Bitiruvchilar ishga joylashadimi? :: Ko‘pchilik bitiruvchilar o‘z sohasida ishga joylashadi.\nKaryera yordami bormi? :: Ha, karyera markazi yo‘naltiradi.\nXalqaro imkoniyat bormi? :: Ha, xalqaro dastur va almashinuvlar mavjud.',
       link: 'https://www.kokanduni.uz/uz',
@@ -695,7 +695,7 @@ async function seedContent() {
       title: 'Biz bilan bog‘lanish',
       subtitle: 'Savollaringiz bormi? Biz yordamga tayyormiz',
       image: 'images/programmes/prog-kontakt.jpg',
-      intro: 'Kokand University jamoasi sizning savollaringizga javob berishga har doim tayyor. Qabul, o‘quv dasturlari yoki boshqa masalalar bo‘yicha biz bilan bemalol bog‘laning.',
+      intro: 'Imora AI jamoasi sizning savollaringizga javob berishga har doim tayyor. Qabul, o‘quv dasturlari yoki boshqa masalalar bo‘yicha biz bilan bemalol bog‘laning.',
       highlights: 'Manzil: Farg‘ona viloyati, Qo‘qon shahri\nTelefon: qabul komissiyasi raqami\nEmail: rasmiy elektron pochta\nIsh vaqti: dushanba–shanba\nIjtimoiy tarmoqlar: Telegram, Instagram',
       faq: 'Qanday bog‘lansam bo‘ladi? :: Telefon, email yoki ijtimoiy tarmoqlar orqali.\nQabul bo‘yicha kimga murojaat qilaman? :: Qabul komissiyasiga.\nUniversitetga borsam bo‘ladimi? :: Ha, bevosita tashrif buyurishingiz mumkin.',
       link: 'https://www.kokanduni.uz/uz/static/contacts',
@@ -717,13 +717,13 @@ async function seedContent() {
     our_tutors_url: 'https://website-checker-tool--davronovo425.replit.app/',
     results_title: 'Natijaga erishgan yoshlarimiz',
     results_intro: 'Universitetimiz talabalarining tanlov va olimpiadalardagi yutuqlari.',
-    distinctions_title: 'Kokand University nimasi bilan ajralib turadi?',
+    distinctions_title: 'Imora AI nimasi bilan ajralib turadi?',
     interests_title: 'Sizni qiziqtirishi mumkin',
     news_title: 'Yangiliklar',
-    gallery_title: 'Kokand University galereyasi',
+    gallery_title: 'Imora AI galereyasi',
     gallery_intro: 'Universitet binolari, zamonaviy auditoriyalar va kampus hayoti — bir joyda.',
     gallery_video_url: '',
-    castle_title: 'Kokand University talabalar shaharchasi',
+    castle_title: 'Imora AI talabalar shaharchasi',
     castle_intro: 'Uyingizdan uzoqda — yangi uyingiz. Universitetga yaqin, xavfsiz va qulay turar joy variantlari.',
     castle_phone: '+998 (00) 000-00-00',
     castle_email: 'turarjoy@kokanduni.uz',

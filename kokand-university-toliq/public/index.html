@@ -5,11 +5,11 @@
 var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
 /* ]]> */
 </script>
-<title>Kokand University — zamonaviy taʼlim</title>
-<meta name="description" content="Kokand University — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
-<meta property="og:description" content="Kokand University — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
+<title>Imora AI — zamonaviy taʼlim</title>
+<meta name="description" content="Imora AI — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
+<meta property="og:description" content="Imora AI — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
 <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
-<meta content="Kokand University" name="author"/>
+<meta content="Imora AI" name="author"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="#111111" name="theme-color"/>
 <!-- Uchinchi tomon kuzatuvchilari (Greene's GA4/UA/Ads/GTM, Pagesense) xavfsizlik uchun olib tashlandi -->
@@ -19,9 +19,9 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <link href="https://www.kokanduni.uz/" rel="canonical"/>
 <meta content="uz_UZ" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="Kokand University — zamonaviy taʼlim" property="og:title"/>
+<meta content="Imora AI — zamonaviy taʼlim" property="og:title"/>
 <meta content="https://www.kokanduni.uz/" property="og:url"/>
-<meta content="Kokand University" property="og:site_name"/>
+<meta content="Imora AI" property="og:site_name"/>
 <meta content="2026-02-03T16:37:45+00:00" property="og:updated_time"/>
 <meta content="images/exterior-light-flowers-2-scaled-e1741345651358-916x1024.jpg" property="og:image"/>
 <meta content="images/exterior-light-flowers-2-scaled-e1741345651358-916x1024.jpg" property="og:image:secure_url"/>
@@ -32,13 +32,13 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <meta content="2022-04-07T13:31:13+00:00" property="article:published_time"/>
 <meta content="2026-02-03T16:37:45+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Kokand University — zamonaviy taʼlim" name="twitter:title"/>
+<meta content="Imora AI — zamonaviy taʼlim" name="twitter:title"/>
 <meta content="images/gallery/bino-1.jpg" name="twitter:image"/>
 <meta content="Written by" name="twitter:label1"/>
 <meta content="XIST2 Support" name="twitter:data1"/>
 <meta content="Time to read" name="twitter:label2"/>
 <meta content="Less than a minute" name="twitter:data2"/>
-<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.kokanduni.uz/#person","name":"Kokand University","logo":{"@type":"ImageObject","@id":"https://www.kokanduni.uz/#logo","url":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","contentUrl":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","caption":"Kokand University","inLanguage":"en-GB"},"image":{"@type":"ImageObject","@id":"https://www.kokanduni.uz/#logo","url":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","contentUrl":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","caption":"Kokand University","inLanguage":"en-GB"}},{"@type":"WebSite","@id":"https://www.kokanduni.uz/#website","url":"https://www.kokanduni.uz","name":"Kokand University","publisher":{"@id":"https://www.kokanduni.uz/#person"},"inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":"https://www.kokanduni.uz/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg","url":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg","width":"1920","height":"2146","caption":"Exterior Light & Flowers 2","inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.kokanduni.uz/#webpage","url":"https://www.kokanduni.uz/","name":"Home - Kokand University","datePublished":"2022-04-07T13:31:13+00:00","dateModified":"2026-02-03T16:37:45+00:00","about":{"@id":"https://www.kokanduni.uz/#person"},"isPartOf":{"@id":"https://www.kokanduni.uz/#website"},"primaryImageOfPage":{"@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg"},"inLanguage":"en-GB"},{"@type":"Person","@id":"https://www.kokanduni.uz/author/xist2-support/","name":"XIST2 Support","url":"https://www.kokanduni.uz/author/xist2-support/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/9da7952c9665498ff39f88da63a2d5d834429fe92a4ac8d290a3e3b156f6f722?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/9da7952c9665498ff39f88da63a2d5d834429fe92a4ac8d290a3e3b156f6f722?s=96&d=mm&r=g","caption":"XIST2 Support","inLanguage":"en-GB"}},{"@type":"Article","headline":"Home - Kokand University","datePublished":"2022-04-07T13:31:13+00:00","dateModified":"2026-02-03T16:37:45+00:00","author":{"@id":"https://www.kokanduni.uz/author/xist2-support/","name":"XIST2 Support"},"publisher":{"@id":"https://www.kokanduni.uz/#person"},"name":"Home - Kokand University","@id":"https://www.kokanduni.uz/#richSnippet","isPartOf":{"@id":"https://www.kokanduni.uz/#webpage"},"image":{"@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://www.kokanduni.uz/#webpage"}}]}</script>
+<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.kokanduni.uz/#person","name":"Imora AI","logo":{"@type":"ImageObject","@id":"https://www.kokanduni.uz/#logo","url":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","contentUrl":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","caption":"Imora AI","inLanguage":"en-GB"},"image":{"@type":"ImageObject","@id":"https://www.kokanduni.uz/#logo","url":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","contentUrl":"https://www.kokanduni.uz/wp-content/uploads/2022/04/logo.svg","caption":"Imora AI","inLanguage":"en-GB"}},{"@type":"WebSite","@id":"https://www.kokanduni.uz/#website","url":"https://www.kokanduni.uz","name":"Imora AI","publisher":{"@id":"https://www.kokanduni.uz/#person"},"inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":"https://www.kokanduni.uz/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg","url":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg","width":"1920","height":"2146","caption":"Exterior Light & Flowers 2","inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.kokanduni.uz/#webpage","url":"https://www.kokanduni.uz/","name":"Home - Imora AI","datePublished":"2022-04-07T13:31:13+00:00","dateModified":"2026-02-03T16:37:45+00:00","about":{"@id":"https://www.kokanduni.uz/#person"},"isPartOf":{"@id":"https://www.kokanduni.uz/#website"},"primaryImageOfPage":{"@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg"},"inLanguage":"en-GB"},{"@type":"Person","@id":"https://www.kokanduni.uz/author/xist2-support/","name":"XIST2 Support","url":"https://www.kokanduni.uz/author/xist2-support/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/9da7952c9665498ff39f88da63a2d5d834429fe92a4ac8d290a3e3b156f6f722?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/9da7952c9665498ff39f88da63a2d5d834429fe92a4ac8d290a3e3b156f6f722?s=96&d=mm&r=g","caption":"XIST2 Support","inLanguage":"en-GB"}},{"@type":"Article","headline":"Home - Imora AI","datePublished":"2022-04-07T13:31:13+00:00","dateModified":"2026-02-03T16:37:45+00:00","author":{"@id":"https://www.kokanduni.uz/author/xist2-support/","name":"XIST2 Support"},"publisher":{"@id":"https://www.kokanduni.uz/#person"},"name":"Home - Imora AI","@id":"https://www.kokanduni.uz/#richSnippet","isPartOf":{"@id":"https://www.kokanduni.uz/#webpage"},"image":{"@id":"https://www.kokanduni.uz/wp-content/uploads/2025/03/exterior-light-flowers-2-scaled-e1741345651358.jpg"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://www.kokanduni.uz/#webpage"}}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 <link href="//cdnjs.cloudflare.com" rel="dns-prefetch"/>
 <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
@@ -231,9 +231,9 @@ var log_object = {"ajax_url":"https://www.kokanduni.uz/wp-admin/admin-ajax.php"}
 <noscript>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </link></link></noscript>
-<link href="images/cropped-favicon-32x32.jpg" rel="icon" sizes="32x32"/>
-<link href="images/cropped-favicon-192x192.jpg" rel="icon" sizes="192x192"/>
-<link href="images/cropped-favicon-180x180.jpg" rel="apple-touch-icon"/>
+<link href="images/cropped-favicon-32x32.png" rel="icon" sizes="32x32"/>
+<link href="images/cropped-favicon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="images/cropped-favicon-180x180.png" rel="apple-touch-icon"/>
 <meta content="images/cropped-favicon-192x192.png" name="msapplication-TileImage"/>
 <style id="wp-custom-css" type="text/css">
 			.two_columns-content img {
@@ -274,7 +274,7 @@ body.error404 .container {
 <span class="strapline"><span data-cms-id="cms-0137" data-cms-type="text">Hush Kelibsiz</span></span>
 <img alt="" class="aligncenter wp-image-100" data-cms-id="cms-0002" data-cms-type="image" decoding="async" height="100" sizes="(max-width: 95px) 100vw, 95px" src="images/greenes-logo-no-text-285x300.png" srcset="images/greenes-logo-no-text-285x300.png 285w, images/greenes-logo-no-text.png 290w" width="95"/>
 <h1><span data-cms-id="cms-0138" data-cms-type="text">Welcome To</span><br/><span data-cms-id="cms-0139" data-cms-type="text">
-Kokand University</span></h1>
+Imora AI</span></h1>
 <a class="button" data-cms-id="cms-0003" data-cms-link-text="1" data-cms-type="link" href="#read-more">Discover KU</a>
 <button class="button" data-video-toggle=""><span data-cms-id="cms-0140" data-cms-type="text link">Watch our Video</span></button>
 </div>
@@ -291,7 +291,7 @@ Kokand University</span></h1>
 <header class="site-header-container" id="read-more">
 <div class="site-header">
 <div class="site-header__logo">
-<a data-cms-id="cms-0004" data-cms-link-text="0" data-cms-type="link" href="###############"><img class="ku-logo-light" alt="Kokand University" data-cms-id="cms-0005" data-cms-type="image" src="images/logo2.png"/><img class="ku-logo-dark" alt="Kokand University" data-cms-id="cms-0005" data-cms-type="image" src="images/logo2-white.png"/></a> </div>
+<a data-cms-id="cms-0004" data-cms-link-text="0" data-cms-type="link" href="###############"><img class="ku-logo-light" alt="Imora AI" data-cms-id="cms-0005" data-cms-type="image" src="images/logo2.png"/><img class="ku-logo-dark" alt="Imora AI" data-cms-id="cms-0005" data-cms-type="image" src="images/logo2-white.png"/></a> </div>
 <div class="site-header__content">
 <div class="site-header__top-menu">
 <ul class="top" id="menu-top-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6393" id="menu-item-6393"><a data-cms-id="cms-0006" data-cms-link-text="1" data-cms-type="link" href="https://website-checker-tool--davronovo425.replit.app/" target="_blank" rel="noopener">Our Tutors</a></li>
@@ -371,7 +371,7 @@ Kokand University</span></h1>
 <div class="content_sections-image-slider" id="image_slider-0">
 <div class="content_sections-image-slide">
 <div class="content_sections-content__image">
-<p><img alt="Kokand University" class="content_sections-image" data-cms-id="cms-0392" data-cms-type="image" decoding="async" height="654" loading="lazy" src="images/gallery/bino-2.jpg" width="1024"/></p>
+<p><img alt="Imora AI" class="content_sections-image" data-cms-id="cms-0392" data-cms-type="image" decoding="async" height="654" loading="lazy" src="images/gallery/bino-2.jpg" width="1024"/></p>
 </div>
 </div>
 </div>
@@ -397,7 +397,7 @@ Kokand University</span></h1>
 <div class="introduction-content">
 <div class="introduction-content__left">
 <p class="sub-title"><span data-cms-id="cms-0146" data-cms-type="text">WELCOME TO</span></p>
-<h2><span data-cms-id="cms-0147" data-cms-type="text">Kokand University oldest tutorial college</span></h2>
+<h2><span data-cms-id="cms-0147" data-cms-type="text">Imora AI oldest tutorial college</span></h2>
 <h3><span data-cms-id="cms-0148" data-cms-type="text">DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.</span></h3>
 <p><span data-cms-id="cms-0149" data-cms-type="text">Bugungi kunda O'zbekiston jadal rivojlanish bosqichiga qadam qo'ymoqda. Iqtisodiyot, ta'lim va innovatsiya sohalaridagi tub islohotlar yangi avlod mutaxassislariga bo'lgan ehtiyojni yanada oshirmoqda.</span></p>
 <p><span data-cms-id="cms-0150" data-cms-type="text">Aynan shunday sharoitda bizning universitetimiz zamon talablariga mos, raqobatbardosh va amaliy bilimga ega kadrlarni tayyorlashni o'z oldiga maqsad qilib qo'ygan. </span></p>
@@ -441,7 +441,7 @@ Kokand University</span></h1>
 </section>
 <section class="who_we_are-container wow fadeIn" id="highlights" data-ku-distinctions="">
 <div class="greenes-title__container">
-<h2 class="greenes-title"><span data-cms-id="cms-0159" data-cms-type="text">What does Kokand University do?</span><br/><span data-cms-id="cms-0160" data-cms-type="text"> stand out?</span></h2>
+<h2 class="greenes-title"><span data-cms-id="cms-0159" data-cms-type="text">What does Imora AI do?</span><br/><span data-cms-id="cms-0160" data-cms-type="text"> stand out?</span></h2>
 <p class="greenes-subtitle"><span data-cms-id="cms-0161" data-cms-type="text">Times change: values endure.</span></p>
 </div>
 <div class="who_we_are-content">
@@ -519,7 +519,7 @@ Kokand University</span></h1>
 <h3><span data-cms-id="cms-0168" data-cms-type="text">Fresh start?</span></h3>
 </div>
 <div class="who_we_are-content__section-content">
-<p><span data-cms-id="cms-0169" data-cms-type="text">“ Kokand University represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Kokand University focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”</span></p>
+<p><span data-cms-id="cms-0169" data-cms-type="text">“ Imora AI represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Imora AI focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”</span></p>
 </div>
 <div class="who_we_are-content__section-button">
 <a data-cms-id="cms-0067" data-cms-link-text="1" data-cms-type="link" href="https://t.me/kokanduniversity/16178">Learn more about A level retakes at Greene's</a>
@@ -562,7 +562,7 @@ Kokand University</span></h1>
 <h3><span data-cms-id="cms-0172" data-cms-type="text">Individualised Education</span></h3>
 </div>
 <div class="who_we_are-content__section-content">
-<p><span data-cms-id="cms-0173" data-cms-type="text">“What makes Kokand University stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”</span></p>
+<p><span data-cms-id="cms-0173" data-cms-type="text">“What makes Imora AI stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”</span></p>
 </div>
 <div class="who_we_are-content__section-button">
 <a data-cms-id="cms-0073" data-cms-link-text="1" data-cms-type="link" href="https://qabul.kokanduni.uz/">The Tutorial College</a>
@@ -583,12 +583,12 @@ Kokand University</span></h1>
 <h3><span data-cms-id="cms-0174" data-cms-type="text">Learning without Boundaries</span></h3>
 </div>
 <div class="who_we_are-content__section-content">
-<p><span data-cms-id="cms-0175" data-cms-type="text">“Learning without Boundaries means having access to education beyond traditional limits. Kokand University stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.” </span><em><span data-cms-id="cms-0176" data-cms-type="text">Greene’s Online</span></em><span data-cms-id="cms-0177" data-cms-type="text">, a custom-built online platform, where they can upload their work and review their assessments. Students receive live feedback and can track their progress independently in their own time. Study is in person or online, so geography will not limit academic development.</span></p>
+<p><span data-cms-id="cms-0175" data-cms-type="text">“Learning without Boundaries means having access to education beyond traditional limits. Imora AI stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.” </span><em><span data-cms-id="cms-0176" data-cms-type="text">Greene’s Online</span></em><span data-cms-id="cms-0177" data-cms-type="text">, a custom-built online platform, where they can upload their work and review their assessments. Students receive live feedback and can track their progress independently in their own time. Study is in person or online, so geography will not limit academic development.</span></p>
 <p> </p>
 <p><span style="font-weight: 400;"><span data-cms-id="cms-0178" data-cms-type="text">Learning can take place in our campus in Oxford, UK, or online from anywhere in the world. You can also make use of our campuses in Estoril and Lisbon, Portugal as online study spaces.</span></span></p>
 </div>
 <div class="who_we_are-content__section-button">
-<a data-cms-id="cms-0076" data-cms-link-text="1" data-cms-type="link" href="https://t.me/digital_space_RTM">Kokand University Haqida koproq bilib oling</a>
+<a data-cms-id="cms-0076" data-cms-link-text="1" data-cms-type="link" href="https://t.me/digital_space_RTM">Imora AI Haqida koproq bilib oling</a>
 </div>
 </div>
 <div class="who_we_are-content__section" data-section-num="4">
@@ -606,7 +606,7 @@ Kokand University</span></h1>
 <h3><span data-cms-id="cms-0179" data-cms-type="text">Collaborative Learning</span></h3>
 </div>
 <div class="who_we_are-content__section-content">
-<p><span data-cms-id="cms-0180" data-cms-type="text">“Collaborative learning at Kokand University helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”</span></p>
+<p><span data-cms-id="cms-0180" data-cms-type="text">“Collaborative learning at Imora AI helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”</span></p>
 </div>
 <div class="who_we_are-content__section-button">
 <a data-cms-id="cms-0079" data-cms-link-text="1" data-cms-type="link" href="https://t.me/KUXAB">Read more about the tutorial method</a>
@@ -615,7 +615,7 @@ Kokand University</span></h1>
 <div class="who_we_are-content__section" data-section-num="5">
 <div class="who_we_are-content__section-image">
 <picture class="who_we_are-section__image">
-<img alt="" class="attachment-large size-large" data-cms-id="cms-0080" data-cms-type="image" decoding="async" height="684" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="images/homepage-6-1024x684.jpg" srcset="images/homepage-6-1024x684.jpg 1024w, images/homepage-6-300x200.jpg 300w, images/homepage-6-768x513.jpg 768w, images/homepage-6-1536x1025.jpg 1536w, images/homepage-6.jpg 2048w" title="Kokand University Tutors" width="1024"/>
+<img alt="" class="attachment-large size-large" data-cms-id="cms-0080" data-cms-type="image" decoding="async" height="684" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="images/homepage-6-1024x684.jpg" srcset="images/homepage-6-1024x684.jpg 1024w, images/homepage-6-300x200.jpg 300w, images/homepage-6-768x513.jpg 768w, images/homepage-6-1536x1025.jpg 1536w, images/homepage-6.jpg 2048w" title="Imora AI Tutors" width="1024"/>
 </picture>
 </div>
 <div class="who_we_are-content__section-title">
@@ -627,7 +627,7 @@ Kokand University</span></h1>
 <h3><span data-cms-id="cms-0181" data-cms-type="text">Expert Guidance</span></h3>
 </div>
 <div class="who_we_are-content__section-content">
-<p><span data-cms-id="cms-0182" data-cms-type="text">“Kokand University stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”</span></p>
+<p><span data-cms-id="cms-0182" data-cms-type="text">“Imora AI stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”</span></p>
 </div>
 <div class="who_we_are-content__section-button">
 <a data-cms-id="cms-0082" data-cms-link-text="1" data-cms-type="link" href="https://www.instagram.com/zaxidov_g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">OUR DIRECTOR</a>
@@ -737,8 +737,8 @@ Xorijiy hamkorlar bilan ilmiy-ijodiy aloqalarni rivojlantirish, investitsiya va 
 </div>
 <div class="content_sections-slide">
 <h3><span data-cms-id="cms-0201" data-cms-type="text">Yunusov Abdulhamid Sohibjon oʻgʻli </span></h3>
-<h5><span data-cms-id="cms-0202" data-cms-type="text">Qo'qon universiteti  boshlang‘ich tashkilot yetakchisi</span></h5>
-<p><span data-cms-id="cms-0203" data-cms-type="text">“Qo‘qon universiteti boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”</span></p>
+<h5><span data-cms-id="cms-0202" data-cms-type="text">Imora AI  boshlang‘ich tashkilot yetakchisi</span></h5>
+<p><span data-cms-id="cms-0203" data-cms-type="text">“Imora AI boshlang‘ich tashkilot yetakchisi — talabalarning ijtimoiy faolligini oshirish, yoshlarni birlashtirish va universitet hayotida ularning tashabbuslarini qo‘llab-quvvatlashga xizmat qiluvchi mas’ul hamda yetakchi lavozim egasi.”</span></p>
 </div>
 <div class="content_sections-slide">
 <h3><span data-cms-id="cms-0204" data-cms-type="text">Qobilova Zebo Bakirovna</span></h3>
@@ -770,7 +770,7 @@ Xorijiy hamkorlar bilan ilmiy-ijodiy aloqalarni rivojlantirish, investitsiya va 
 </span></p>
 </div>
 <div class="content_sections-slide">
-<p style="text-align: left;"><span data-cms-id="cms-0212" data-cms-type="text">Learn more about our Personal Tutors and the wider academic support options available to students at Kokand university </span></p>
+<p style="text-align: left;"><span data-cms-id="cms-0212" data-cms-type="text">Learn more about our Personal Tutors and the wider academic support options available to students at Imora AI </span></p>
 <p> </p>
 <p><a class="button" data-cms-id="cms-0092" data-cms-link-text="1" data-cms-type="link" href="https://t.me/kuyoshlarittifoqi">Personal Tutors</a></p>
 <p> </p>
@@ -818,7 +818,7 @@ Xorijiy hamkorlar bilan ilmiy-ijodiy aloqalarni rivojlantirish, investitsiya va 
 <div class="content_sections-slide">
 <p style="text-align: left;"><span data-cms-id="cms-0216" data-cms-type="text">Umummilliy AI Hackathon Farg‘ona | 2-kun
 
-🏫 Farg‘ona shahrida bo'lib o'tayotgan Umummilliy AI Hackathonda Qo'qon universiteti talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar.
+🏫 Farg‘ona shahrida bo'lib o'tayotgan Umummilliy AI Hackathonda Imora AI talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar.
 
 🏫 2-kun har bir jamoa o'z loyihalarini mentorlar va ekspertlarga taqdim etish uchun tayyorgarlik jarayonlarini olib bormoqda. Ishtirokchilar jamiyat va kelajak uchun muhim bo‘lgan yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda.
 
@@ -873,7 +873,7 @@ Hackathon 23-may kuniga qadar davom etadi.
 </div>
 <div class="content_sections-image-slide">
 <div class="content_sections-content__image">
-<p><iframe data-cms-id="cms-0395" data-cms-type="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="390" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yK_1XCmK-KY?feature=oembed&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;listType=user_uploads" title="Hear from Lucia Naylor, Alumna of Kokand University" width="520"></iframe></p>
+<p><iframe data-cms-id="cms-0395" data-cms-type="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="390" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yK_1XCmK-KY?feature=oembed&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;listType=user_uploads" title="Hear from Lucia Naylor, Alumna of Imora AI" width="520"></iframe></p>
 </div>
 </div>
 </div>
@@ -961,7 +961,7 @@ Hackathon 23-may kuniga qadar davom etadi.
 <button class="close unstyled" data-video-toggle=""><span class="v-hidden"><span data-cms-id="cms-0228" data-cms-type="text">Close</span></span><svg height="15.556" viewbox="0 0 15.556 15.556" width="15.556" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#003f3f" stroke-width="2"><path d="m0 0v20" transform="matrix(.70710678 .70710678 -.70710678 .70710678 14.849 .707)"></path><path d="m0 0v20" transform="matrix(.70710678 -.70710678 .70710678 .70710678 .707 .707)"></path></g></svg>
 </button>
 <div class="youtube-video">
-<iframe data-cms-id="cms-0396" data-cms-type="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="360" id="home-video" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AmOfLq-4NJs?feature=oembed&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;listType=user_uploads&amp;enablejsapi=1" title="Welcome to Kokand University" width="640"></iframe>
+<iframe data-cms-id="cms-0396" data-cms-type="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="360" id="home-video" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AmOfLq-4NJs?feature=oembed&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;listType=user_uploads&amp;enablejsapi=1" title="Welcome to Imora AI" width="640"></iframe>
 </div>
 </div>
 </div>
