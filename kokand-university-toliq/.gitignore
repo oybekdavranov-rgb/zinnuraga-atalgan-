@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Maxfiy sozlamalar — HECH QACHON commit qilinmasin
+.env
+.env.*
+!.env.example
+
+# SQLite bazasi va zaxiralar (mahalliy)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/backups/
+
+# Admin paneldan yuklangan fayllar
+public/uploads/*
+!public/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

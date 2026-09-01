@@ -1,0 +1,29 @@
+# Render.com "Blueprint" — bepul web xizmat.
+# Ma'lumotlar bazasi: Neon (bepul PostgreSQL) — DATABASE_URL ni qo'lda kiritasiz.
+# Batafsil yo'riqnoma: RENDER-DEPLOY.md
+services:
+  - type: web
+    name: kokand-university
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      # Neon bazasidan olingan ulanish satri (Dashboard'da qo'lda kiritasiz):
+      - key: DATABASE_URL
+        sync: false
+      - key: DEFAULT_STAFF_EMAIL
+        value: staff@kokandu.uz
+      # Kuchli parollar — Dashboard'da qo'lda kiritasiz (koddа saqlanmaydi):
+      - key: DEFAULT_STAFF_PASSWORD
+        sync: false
+      - key: DEFAULT_EDITOR_EMAIL
+        value: admin@kokandu.uz
+      - key: DEFAULT_EDITOR_PASSWORD
+        sync: false

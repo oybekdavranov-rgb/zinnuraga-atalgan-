@@ -1,0 +1,189 @@
+/* ============================================================
+   KOKAND UNIVERSITY — MAVZU (ku-theme.css)
+   1) 5 ta shrift:  Syne · TAN-MERMAID · Northwell · Comfortaa · Brittany Signature
+   2) Barcha kartalar: 90% shaffof (shisha effekti) + dumaloq burchak
+   3) Imora AI — jonli "ko'rishlar" badge uslubi
+   ------------------------------------------------------------
+   Bu fayl BOSHQA CSS'lardan KEYIN ulanadi (shuning uchun ustun turadi).
+   ============================================================ */
+
+/* Google Fonts (bepul). @import BIRINCHI bo'lishi shart.
+   Syne + Comfortaa — asosiy shriftlar.
+   Playfair Display / Dancing Script / Sacramento — premium 3 shrift uchun
+   chiroyli BEPUL zaxira (fayl bo'lmasa ham sayt tugallangan ko'rinadi). */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Dancing+Script:wght@500;700&family=Sacramento&display=swap');
+
+/* --- Premium shriftlar (fayllarini public/fonts/ ichiga qo'ysangiz ishlaydi) ---
+   Fayl bo'lmasa — pastdagi fallback (zaxira) shriftlar ishlatiladi, sayt buzilmaydi.
+   Fayl nomlari: public/fonts/README-SHRIFTLAR.txt da yozilgan. */
+@font-face {
+  font-family: 'TAN - MERMAID';
+  src: url('/fonts/TAN-MERMAID.woff2') format('woff2'),
+       url('/fonts/TAN-MERMAID.woff') format('woff'),
+       url('/fonts/TAN-MERMAID.ttf') format('truetype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Northwell';
+  src: url('/fonts/Northwell.woff2') format('woff2'),
+       url('/fonts/Northwell.woff') format('woff'),
+       url('/fonts/Northwell.ttf') format('truetype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('/fonts/BrittanySignature.woff2') format('woff2'),
+       url('/fonts/BrittanySignature.woff') format('woff'),
+       url('/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* Shrift o'zgaruvchilari */
+  --font-body:      'Comfortaa', ui-rounded, 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-head:      'Syne', 'Comfortaa', system-ui, sans-serif;
+  --font-display:   'TAN - MERMAID', 'Playfair Display', Georgia, serif;
+  --font-script:    'Northwell', 'Dancing Script', 'Segoe Script', cursive;
+  --font-signature: 'Brittany Signature', 'Sacramento', 'Dancing Script', 'Segoe Script', cursive;
+
+  /* Shisha karta o'zgaruvchilari — bitta joydan sozlanadi */
+  --ku-card-alpha: 0.10;                 /* 0.10 = 90% shaffof. Kerak bo'lsa shuni o'zgartiring */
+  --ku-card-radius: 18px;                /* burchak dumaloqligi */
+  --ku-card-blur: 14px;                  /* shisha xiraligi */
+  --ku-card-bg: rgba(255, 255, 255, var(--ku-card-alpha));
+  --ku-card-border: rgba(255, 255, 255, 0.22);
+  --ku-card-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Qorong'i (dark) rejimda ozgina ko'k tus — o'qilishi uchun */
+:root[data-theme="dark"] {
+  --ku-card-bg: rgba(14, 32, 44, calc(var(--ku-card-alpha) + 0.04));
+  --ku-card-border: rgba(255, 255, 255, 0.14);
+  --ku-card-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------------- SHRIFTLARNI QO'LLASH ---------------- */
+body,
+input, textarea, select, button {
+  font-family: var(--font-body);
+}
+/* Asosiy sarlavhalar — Syne */
+h1, h2, .brand, .sidebar-title, .hd .brand, .greenes-post-content__title {
+  font-family: var(--font-head) !important;
+  letter-spacing: -0.01em;
+}
+/* Bo'lim sarlavhalari — TAN-MERMAID (nafis) */
+h3, h4, .ku-prog__section-title, .ku-modal__head h2, .ku-detail__body h2 {
+  font-family: var(--font-display) !important;
+}
+/* Ko'zga tashlanadigan "eyebrow" / kirish yozuvlari — Northwell (qo'lyozma) */
+.kick, .eyebrow, .ku-kicker, .ku-script,
+.who_we_are-content__section .subtitle, .subtitle {
+  font-family: var(--font-script) !important;
+}
+/* Imzo / iqtibos uslubi — Brittany Signature */
+blockquote, .ku-quote, .signature, .ku-signature, .quote-text {
+  font-family: var(--font-signature) !important;
+}
+
+/* Qo'lda ishlatish uchun yordamchi klasslar */
+.ku-font-syne     { font-family: var(--font-head) !important; }
+.ku-font-mermaid  { font-family: var(--font-display) !important; }
+.ku-font-northwell{ font-family: var(--font-script) !important; }
+.ku-font-comfortaa{ font-family: var(--font-body) !important; }
+.ku-font-brittany { font-family: var(--font-signature) !important; }
+
+/* ---------------- SHISHA KARTALAR (90% shaffof + dumaloq) ---------------- */
+.card, .list-card, .editor-card,
+.g-card, .pcard, .ku-story-card, .ku-ach-card,
+.feat, .step, .stat,
+.greenes-post, .greenes-post-content, .greenes-page,
+.ku-detail, .ku-faq__item, .ku-prog__hl,
+.ku-modal, .g-dlg, .dlg,
+.residence-card, .sh-card, .info-card, .amenity, .tj-card {
+  background: var(--ku-card-bg) !important;
+  -webkit-backdrop-filter: blur(var(--ku-card-blur)) saturate(115%);
+  backdrop-filter: blur(var(--ku-card-blur)) saturate(115%);
+  border: 1px solid var(--ku-card-border) !important;
+  border-radius: var(--ku-card-radius) !important;
+  box-shadow: var(--ku-card-shadow);
+}
+
+/* Ichidagi rasmlar ham karta burchagiga mos dumaloq bo'lsin */
+.card > img:first-child, .g-card img, .pcard img, .ku-story-card__img img,
+.ku-ach-card__img img, .greenes-post .image-overlay img, .ku-detail__img img {
+  border-radius: calc(var(--ku-card-radius) - 6px);
+}
+
+/* Suzuvchi (hover) — ozgina ko'tariladi */
+.g-card, .pcard, .ku-story-card, .greenes-post, .feat, .step {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.g-card:hover, .pcard:hover, .ku-story-card:hover, .greenes-post:hover, .feat:hover, .step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* ---------------- IMORA AI — jonli "ko'rishlar" badge ---------------- */
+.ku-view-badge {
+  position: absolute;
+  top: 10px; right: 10px;
+  z-index: 20;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 9px;
+  font-family: var(--font-body);
+  font-size: 12px; font-weight: 600; line-height: 1;
+  color: #0c1e29;
+  background: rgba(255, 255, 255, 0.74);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  transition: transform .25s ease, background .3s ease;
+}
+.ku-view-badge__eye { font-size: 12px; }
+.ku-view-badge.is-live {
+  background: #FFFE15;
+  transform: scale(1.14);
+}
+:root[data-theme="dark"] .ku-view-badge {
+  color: #0c1e29;
+  background: rgba(255, 254, 21, 0.9);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .g-card, .pcard, .ku-story-card, .greenes-post, .feat, .step,
+  .ku-view-badge { transition: none; }
+}
+
+/* ---------------- ACCESSIBILITY (o'qilishi) ----------------
+   Foydalanuvchi OS'da "yuqori kontrast" so'rasa — kartalar avtomatik
+   quyuqroq bo'ladi (matn aniq o'qiladi). Oddiy holatda 90% shaffof qoladi. */
+@media (prefers-contrast: more) {
+  :root { --ku-card-alpha: 0.62; --ku-card-border: rgba(0, 0, 0, 0.28); }
+  :root[data-theme="dark"] { --ku-card-alpha: 0.66; --ku-card-border: rgba(255, 255, 255, 0.3); }
+}
+/* Windows "High Contrast" (forced-colors) — shishani o'chirib, tizim ranglarига o'tamiz */
+@media (forced-colors: active) {
+  .card, .g-card, .pcard, .ku-story-card, .ku-ach-card, .feat, .step, .stat,
+  .greenes-post, .greenes-post-content, .greenes-page, .ku-detail, .ku-faq__item,
+  .ku-prog__hl, .ku-modal, .g-dlg, .dlg, .residence-card, .sh-card, .info-card,
+  .amenity, .tj-card {
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+    background: Canvas !important; border: 1px solid CanvasText !important;
+  }
+}
+
+/* ---------------- Klaviatura fokus ko'rinishi (accessibility) ---------------- */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid #2b7de9;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+@media (prefers-contrast: more) {
+  a:focus-visible, button:focus-visible, input:focus-visible,
+  select:focus-visible, textarea:focus-visible { outline-width: 4px; }
+}
