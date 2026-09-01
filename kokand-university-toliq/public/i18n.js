@@ -41,9 +41,9 @@
     "ru": "Поиск"
   },
   "Our Tutors": {
-    "uz": "Tutorlarimiz",
-    "en": "Our Tutors",
-    "ru": "Наши тьюторы"
+    "uz": "Bizning jamoa",
+    "en": "Our team",
+    "ru": "Наша команда"
   },
   "Results": {
     "uz": "Natijalar",
@@ -76,54 +76,54 @@
     "ru": "Akademik litsey"
   },
   "Online Sixth Form": {
-    "uz": "Onlayn Sixth Form",
-    "en": "Online Sixth Form",
-    "ru": "Онлайн Sixth Form"
+    "uz": "Onlayn panel",
+    "en": "Online dashboard",
+    "ru": "Онлайн-панель"
   },
   "A Level Two Year": {
-    "uz": "A Level — 2 yillik",
-    "en": "A Level Two Year",
-    "ru": "A Level — 2 года"
+    "uz": "Jonli boshqaruv paneli",
+    "en": "Live dashboard",
+    "ru": "Живая панель"
   },
   "A Level Fast Track": {
-    "uz": "A Level tezlashtirilgan",
-    "en": "A Level Fast Track",
-    "ru": "A Level ускоренный курс"
+    "uz": "Real vaqtli kuzatuv",
+    "en": "Real-time tracking",
+    "ru": "Отслеживание в реальном времени"
   },
   "A Level Retakes": {
-    "uz": "A Level qayta topshirish",
-    "en": "A Level Retakes",
-    "ru": "Пересдача A Level"
+    "uz": "Auditoriya segmentatsiyasi",
+    "en": "Audience segments",
+    "ru": "Сегменты аудитории"
   },
   "GCSE Two Year": {
-    "uz": "GCSE — 2 yillik",
-    "en": "GCSE Two Year",
-    "ru": "GCSE — 2 года"
+    "uz": "Konversiya tahlili",
+    "en": "Conversion analysis",
+    "ru": "Анализ конверсии"
   },
   "GCSE Fast Track": {
-    "uz": "GCSE tezlashtirilgan",
-    "en": "GCSE Fast Track",
-    "ru": "GCSE ускоренный курс"
+    "uz": "Sahifa tahlili",
+    "en": "Page analytics",
+    "ru": "Аналитика страниц"
   },
   "GCSE Retake": {
-    "uz": "GCSE qayta topshirish",
-    "en": "GCSE Retake",
-    "ru": "Пересдача GCSE"
+    "uz": "Xatti-harakat tahlili",
+    "en": "Behavior analysis",
+    "ru": "Анализ поведения"
   },
   "Revision Courses": {
-    "uz": "Takrorlash kurslari",
-    "en": "Revision Courses",
-    "ru": "Курсы повторения"
+    "uz": "Aqlli ogohlantirishlar",
+    "en": "Smart alerts",
+    "ru": "Умные уведомления"
   },
   "Gap Year Programme": {
-    "uz": "Gap Year dasturi",
-    "en": "Gap Year Programme",
-    "ru": "Программа Gap Year"
+    "uz": "Hisobotlar va eksport",
+    "en": "Reports & export",
+    "ru": "Отчёты и экспорт"
   },
   "Private Tuition": {
-    "uz": "Individual ta’lim",
-    "en": "Private Tuition",
-    "ru": "Индивидуальное обучение"
+    "uz": "Moslashuvchan integratsiya",
+    "en": "Easy integration",
+    "ru": "Простая интеграция"
   },
   "Admissions": {
     "uz": "Boshlash",
@@ -131,24 +131,24 @@
     "ru": "Начать"
   },
   "How to Apply": {
-    "uz": "Qanday topshiriladi",
-    "en": "How to Apply",
-    "ru": "Как подать заявку"
+    "uz": "Qanday boshlash",
+    "en": "How to start",
+    "ru": "Как начать"
   },
   "How to Transfer to Greene’s": {
-    "uz": "Universitetga qanday o‘tish mumkin",
-    "en": "How to Transfer to Greene’s",
-    "ru": "Как перевестись в Greene’s"
+    "uz": "Boshqa tizimdan ko‘chib o‘tish",
+    "en": "Migrate from another tool",
+    "ru": "Переход с другого сервиса"
   },
   "Application & Fees": {
-    "uz": "Ariza va to‘lovlar",
-    "en": "Application & Fees",
-    "ru": "Заявка и оплата"
+    "uz": "Narxlar va rejalar",
+    "en": "Pricing & plans",
+    "ru": "Цены и тарифы"
   },
   "Scholarships at Greene’s": {
-    "uz": "Universitet stipendiyalari",
-    "en": "Scholarships at Greene’s",
-    "ru": "Стипендии Greene’s"
+    "uz": "Bepul reja",
+    "en": "Free plan",
+    "ru": "Бесплатный тариф"
   },
   "Examinations": {
     "uz": "Qanday ishlaydi",
@@ -156,39 +156,39 @@
     "ru": "Как это работает"
   },
   "Examinations at Greene’s": {
-    "uz": "Universitetdagi imtihonlar",
-    "en": "Examinations at Greene’s",
-    "ru": "Экзамены в Greene’s"
+    "uz": "Imora AI qanday ishlaydi",
+    "en": "How Imora AI works",
+    "ru": "Как работает Imora AI"
   },
   "Application and Fees": {
-    "uz": "Ariza va to‘lovlar",
-    "en": "Application and Fees",
-    "ru": "Заявка и оплата"
+    "uz": "Ma’lumot qanday yig‘iladi",
+    "en": "How data is collected",
+    "ru": "Как собираются данные"
   },
   "Registration Deadlines": {
-    "uz": "Ro‘yxatdan o‘tish muddatlari",
-    "en": "Registration Deadlines",
-    "ru": "Сроки регистрации"
+    "uz": "Qonunchilikka muvofiqlik",
+    "en": "Compliance (GDPR)",
+    "ru": "Соответствие (GDPR)"
   },
   "Trial Examinations": {
-    "uz": "Sinov imtihonlari",
-    "en": "Trial Examinations",
-    "ru": "Пробные экзамены"
+    "uz": "Ma’lumot sizniki",
+    "en": "You own your data",
+    "ru": "Данные принадлежат вам"
   },
   "A Level Science Practicals": {
-    "uz": "A Level fan amaliyotlari",
-    "en": "A Level Science Practicals",
-    "ru": "Практические занятия A Level"
+    "uz": "Aniq va ishonchli hisob",
+    "en": "Accurate counting",
+    "ru": "Точный подсчёт"
   },
   "GCSE Science Practicals": {
-    "uz": "GCSE fan amaliyotlari",
-    "en": "GCSE Science Practicals",
-    "ru": "Практические занятия GCSE"
+    "uz": "Yengil va tezkor",
+    "en": "Lightweight & fast",
+    "ru": "Лёгкий и быстрый"
   },
   "Results and Post-Results": {
-    "uz": "Natijalar va natijadan keyingi jarayonlar",
-    "en": "Results and Post-Results",
-    "ru": "Результаты и последующие процедуры"
+    "uz": "Ma’lumotdan xulosa va tavsiya",
+    "en": "Insights & recommendations",
+    "ru": "Выводы и рекомендации"
   },
   "Student Life": {
     "uz": "Yordam",
@@ -196,22 +196,22 @@
     "ru": "Поддержка"
   },
   "Term Dates": {
-    "uz": "O‘quv davri sanalari",
-    "en": "Term Dates",
-    "ru": "Даты семестров"
+    "uz": "Yordam va qo‘llanma",
+    "en": "Help & docs",
+    "ru": "Помощь и документация"
   },
   "Academic Support": {
-    "uz": "Akademik qo‘llab-quvvatlash",
-    "en": "Academic Support",
-    "ru": "Академическая поддержка"
+    "uz": "Mijozlarni qo‘llab-quvvatlash",
+    "en": "Customer support",
+    "ru": "Поддержка клиентов"
   },
   "Student Accommodation": {
-    "uz": "Talabalar turar joyi",
-    "en": "Student Accommodation",
-    "ru": "Проживание студентов"
+    "uz": "Hamjamiyat va yangilanishlar",
+    "en": "Community & updates",
+    "ru": "Сообщество и обновления"
   },
   "Testimonials": {
-    "uz": "Fikrlar",
+    "uz": "Mijozlar fikri",
     "en": "Testimonials",
     "ru": "Отзывы"
   },
@@ -226,14 +226,14 @@
     "ru": "Imora AI"
   },
   "The Tutorial Method of Learning": {
-    "uz": "Tutorial ta’lim uslubi",
-    "en": "The Tutorial Method of Learning",
-    "ru": "Тьюторский метод обучения"
+    "uz": "Bizning yondashuvimiz",
+    "en": "Our approach",
+    "ru": "Наш подход"
   },
   "Results & Destinations": {
-    "uz": "Natijalar va yo‘nalishlar",
-    "en": "Results & Destinations",
-    "ru": "Результаты и направления"
+    "uz": "Natijalar va ta’sir",
+    "en": "Results & impact",
+    "ru": "Результаты и влияние"
   },
   "Imora AI Onlayn": {
     "uz": "Imora AI Onlayn",
@@ -241,14 +241,14 @@
     "ru": "Imora AI Onlayn"
   },
   "Vacancies at Greene’s": {
-    "uz": "Universitetdagi vakansiyalar",
-    "en": "Vacancies at Greene’s",
-    "ru": "Вакансии Greene’s"
+    "uz": "Bo‘sh ish o‘rinlari",
+    "en": "Careers",
+    "ru": "Вакансии"
   },
   "Join our Professional Network of Tutors": {
-    "uz": "Professional tutorlar tarmog‘imizga qo‘shiling",
-    "en": "Join our Professional Network of Tutors",
-    "ru": "Присоединяйтесь к профессиональной сети тьюторов"
+    "uz": "Hamkorlik",
+    "en": "Partners",
+    "ru": "Партнёрство"
   },
   "Contact Us": {
     "uz": "Biz bilan bog‘laning",
@@ -346,19 +346,19 @@
     "ru": "Познакомьтесь с нашей командой: Юнусов Абдулхамид, капитан команды"
   },
   "Greene’s Sixth Form": {
-    "uz": "Akademik litsey",
-    "en": "Sixth Form",
-    "ru": "Академический лицей"
+    "uz": "Ko‘p sayt boshqaruvi",
+    "en": "Multi-site management",
+    "ru": "Управление сайтами"
   },
   "Greene’s Tutorial College": {
-    "uz": "Imora AI",
-    "en": "Imora AI",
-    "ru": "Imora AI"
+    "uz": "Imora AI haqida",
+    "en": "About Imora AI",
+    "ru": "Об Imora AI"
   },
   "Greene’s Online": {
-    "uz": "Imora AI Onlayn",
-    "en": "Imora AI Online",
-    "ru": "Imora AI Онлайн"
+    "uz": "Bulutli va xavfsiz",
+    "en": "Cloud & secure",
+    "ru": "Облачно и безопасно"
   },
   "Greene’s Team": {
     "uz": "Universitet jamoasi",
