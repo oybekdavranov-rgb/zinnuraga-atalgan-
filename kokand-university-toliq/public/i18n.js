@@ -476,14 +476,14 @@
     "ru": "«Imora AI выделяется надёжной поддержкой: наша команда всегда поможет с настройкой, интеграцией и пониманием данных. Такая поддержка даёт уверенность, скорость и верные решения»."
   },
   "OUR DIRECTOR": {
-    "uz": "RAHBARIYAT",
-    "en": "OUR DIRECTOR",
-    "ru": "РУКОВОДСТВО"
+    "uz": "BIZNING JAMOA",
+    "en": "OUR TEAM",
+    "ru": "НАША КОМАНДА"
   },
   "Your Goals - Our Expertise": {
-    "uz": "Sizning maqsadlaringiz — bizning tajribamiz",
-    "en": "Your Goals - Our Expertise",
-    "ru": "Ваши цели — наша экспертиза"
+    "uz": "Imora AI ortidagi insonlar",
+    "en": "The people behind Imora AI",
+    "ru": "Люди за Imora AI"
   },
   "Direktor": {
     "uz": "Direktor",
@@ -561,34 +561,34 @@
     "ru": "Подробнее о наших тьюторах"
   },
   "Personal Tutors": {
-    "uz": "Shaxsiy tutorlar",
-    "en": "Personal Tutors",
-    "ru": "Персональные тьюторы"
+    "uz": "Shaxsiy yordam",
+    "en": "Personal support",
+    "ru": "Персональная поддержка"
   },
   "Your education - our expertise": {
-    "uz": "Sizning ta’limingiz — bizning tajribamiz",
-    "en": "Your education - our expertise",
-    "ru": "Ваше образование — наша экспертиза"
+    "uz": "Imora AI — doim yoningizda",
+    "en": "Imora AI — always by your side",
+    "ru": "Imora AI — всегда рядом"
   },
   "What is a Personal Tutor?": {
-    "uz": "Shaxsiy tutor kim?",
-    "en": "What is a Personal Tutor?",
-    "ru": "Что такое персональный тьютор?"
+    "uz": "Imora AI qanday yordam beradi?",
+    "en": "How does Imora AI help?",
+    "ru": "Как помогает Imora AI?"
   },
   "Kokand universitetidagi tutorim bilan haftalik uchrashuvlarim mustaqil o‘qishning erkinligi va mas’uliyatini yaxshiroq tushunishga yordam beradi. Men o‘qish jarayonimni o‘zim boshqaraman, lekin bu intizom va javobgarlikni talab qiladi. Tutorim esa menga yo‘nalish berib, maqsadlarimga erishishda qo‘llab-quvvatlaydi. Bu jarayon menga mustaqil fikrlash va o‘z ustimda ishlash ko‘nikmasini rivojlantiradi.": {
-    "uz": "Kokand universitetidagi tutorim bilan haftalik uchrashuvlarim mustaqil o‘qishning erkinligi va mas’uliyatini yaxshiroq tushunishga yordam beradi. Men o‘qish jarayonimni o‘zim boshqaraman, lekin bu intizom va javobgarlikni talab qiladi. Tutorim esa menga yo‘nalish berib, maqsadlarimga erishishda qo‘llab-quvvatlaydi. Bu jarayon menga mustaqil fikrlash va o‘z ustimda ishlash ko‘nikmasini rivojlantiradi.",
-    "en": "Weekly meetings with my tutor at Imora AI help me better understand the freedom and responsibility of independent study. I manage my own learning process, but it requires discipline and accountability. My tutor guides me and supports me in reaching my goals. This process develops my independent thinking and self-improvement skills.",
-    "ru": "Еженедельные встречи с моим тьютором в Imora AI помогают мне лучше понять свободу и ответственность самостоятельного обучения. Я сам управляю своим учебным процессом, но это требует дисциплины и ответственности. Тьютор направляет меня и поддерживает в достижении целей. Этот процесс развивает самостоятельное мышление и навыки работы над собой."
+    "uz": "Imora AI bilan ishlash men uchun juda oson bo‘ldi. Savol tug‘ilsa, jamoa tez javob beradi va qo‘llanma har doim yonimda. Men saytim ma’lumotini o‘zim boshqaraman, Imora AI esa menga aniq yo‘nalish berib, to‘g‘ri qaror qabul qilishда yordam beradi.",
+    "en": "Working with Imora AI has been very easy for me. When a question comes up, the team responds quickly and the docs are always there. I manage my site's data myself, while Imora AI gives me clear direction and helps me make the right decisions.",
+    "ru": "Работать с Imora AI мне очень легко. Если возникает вопрос, команда быстро отвечает, а документация всегда под рукой. Я сам управляю данными сайта, а Imora AI даёт чёткое направление и помогает принимать верные решения."
   },
   "Learn more about our Personal Tutors and the wider academic support options available to students at Imora AI": {
-    "uz": "Imora AI talabalari uchun shaxsiy tutorlar va akademik qo‘llab-quvvatlash imkoniyatlari haqida batafsil bilib oling",
-    "en": "Learn more about our Personal Tutors and the wider academic support options available to students at Imora AI",
-    "ru": "Узнайте больше о персональных тьюторах и возможностях академической поддержки для студентов Imora AI"
+    "uz": "Imora AI foydalanuvchilari uchun yordam va qo‘llab-quvvatlash imkoniyatlari haqida batafsil bilib oling",
+    "en": "Learn more about the help and support options available to Imora AI users",
+    "ru": "Узнайте больше о возможностях помощи и поддержки для пользователей Imora AI"
   },
   "IN UNCERTAIN TIMES, QUALITY COUNTS": {
-    "uz": "NOANIQ DAVRDA SIFAT MUHIM",
-    "en": "IN UNCERTAIN TIMES, QUALITY COUNTS",
-    "ru": "В НЕОПРЕДЕЛЕННЫЕ ВРЕМЕНА КАЧЕСТВО ВАЖНО"
+    "uz": "MUHIM QARORLARDA — ANIQ MA’LUMOT",
+    "en": "IN KEY DECISIONS, CLEAR DATA COUNTS",
+    "ru": "В ВАЖНЫХ РЕШЕНИЯХ ВАЖНЫ ТОЧНЫЕ ДАННЫЕ"
   },
   "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo'lib o'tayotgan Umummilliy AI Hackathonda Imora AI talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 🏫 2-kun har bir jamoa o'z loyihalarini mentorlar va ekspertlarga taqdim etish uchun tayyorgarlik jarayonlarini olib bormoqda. Ishtirokchilar jamiyat va kelajak uchun muhim bo‘lgan yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: - Ta'lim sohasida AI platforma - Kasallikni erta aniqlash - Ta'lim jarayonlarida inklyuziv ta'limga muhtoz bo'lgan shaxslar uchun mobil dasturiy ta'minot 🎁 Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.": {
     "uz": "Umummilliy AI Hackathon Farg‘ona | 2-kun 🏫 Farg‘ona shahrida bo‘lib o‘tayotgan Umummilliy AI Hackathonda Imora AI talabalari ham faol ishtirok etib, o‘z innovatsion g‘oyalari va texnologik loyihalari bilan qatnashmoqdalar. 2-kun har bir jamoa o‘z loyihalarini mentorlar va ekspertlarga taqdim etishga tayyorgarlik ko‘rmoqda. Ishtirokchilar jamiyat va kelajak uchun muhim yo‘nalishlarda AI asosidagi yechimlar ustida ishlashmoqda. Loyiha mavzulari: ta’lim sohasida AI platforma, kasallikni erta aniqlash, inklyuziv ta’limga muhtoj shaxslar uchun mobil dasturiy ta’minot. Eng yaxshi loyihalar qimmatbaho sovrinlar va maxsus nominatsiyalar bilan taqdirlanadi. Hackathon 23-may kuniga qadar davom etadi.",
@@ -601,19 +601,19 @@
     "ru": "Партнерства"
   },
   "Learning without boundaries.": {
-    "uz": "Chegarasiz ta’lim.",
-    "en": "Learning without boundaries.",
-    "ru": "Обучение без границ."
+    "uz": "Chegarasiz tahlil.",
+    "en": "Analytics without boundaries.",
+    "ru": "Аналитика без границ."
   },
   "“Learning without boundaries” means gaining knowledge freely, without limits of place, time, or method. It encourages students to explore beyond the classroom, take responsibility for their own learning, and use different resources to grow independently. It is about curiosity, flexibility, and continuous self-development.": {
-    "uz": "“Chegarasiz ta’lim” — joy, vaqt yoki uslub bilan cheklanmasdan erkin bilim olish demakdir. Bu talabalarning auditoriyadan tashqarida izlanishi, o‘z ta’limi uchun mas’uliyat olishi va turli resurslardan foydalanib mustaqil rivojlanishini rag‘batlantiradi. Bu qiziqish, moslashuvchanlik va uzluksiz o‘zini rivojlantirish haqidadir.",
-    "en": "“Learning without boundaries” means gaining knowledge freely, without limits of place, time, or method. It encourages students to explore beyond the classroom, take responsibility for their own learning, and use different resources to grow independently. It is about curiosity, flexibility, and continuous self-development.",
-    "ru": "«Обучение без границ» означает свободное получение знаний без ограничений места, времени или метода. Оно побуждает студентов выходить за рамки аудитории, брать ответственность за собственное обучение и использовать разные ресурсы для самостоятельного развития. Это про любознательность, гибкость и постоянное саморазвитие."
+    "uz": "“Chegarasiz tahlil” — joy, vaqt yoki qurilma bilan cheklanmasdan auditoriyangizni tushunish demakdir. Imora AI real vaqtда, istalgan joydan ma’lumot beradi va sizni to‘g‘ri qarorlar sari yo‘naltiradi. Bu erkinlik, moslashuvchanlik va uzluksiz o‘sish haqidadir.",
+    "en": "“Analytics without boundaries” means understanding your audience without limits of place, time, or device. Imora AI gives you real-time data from anywhere and guides you toward the right decisions. It is about freedom, flexibility, and continuous growth.",
+    "ru": "«Аналитика без границ» — это понимание аудитории без ограничений места, времени и устройства. Imora AI даёт данные в реальном времени из любого места и направляет к верным решениям. Это про свободу, гибкость и постоянный рост."
   },
   "Our students": {
-    "uz": "Talabalarimiz",
-    "en": "Our students",
-    "ru": "Наши студенты"
+    "uz": "Mijozlarimiz",
+    "en": "Our customers",
+    "ru": "Наши клиенты"
   },
   "Trying to fit in? One size doesn’t fit all.": {
     "uz": "Moslashishga urinayapsizmi? Hamma uchun bitta qolip to‘g‘ri kelmaydi.",
