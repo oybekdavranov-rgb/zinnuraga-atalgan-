@@ -301,24 +301,24 @@
     "ru": "Кокандский университет — современный учебный центр"
   },
   "DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.": {
-    "uz": "TA’LIMINGIZNI TANLANG. KELAJAGINGIZNI O‘ZGARTIRING.",
-    "en": "DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.",
-    "ru": "СОЗДАЙТЕ СВОЕ ОБРАЗОВАНИЕ. ИЗМЕНИТЕ БУДУЩЕЕ."
+    "uz": "MA’LUMOTNI TUSHUNING. KELAJAKNI YARATING.",
+    "en": "UNDERSTAND YOUR DATA. SHAPE THE FUTURE.",
+    "ru": "ПОНИМАЙТЕ ДАННЫЕ. СОЗДАВАЙТЕ БУДУЩЕЕ."
   },
   "Bugungi kunda O'zbekiston jadal rivojlanish bosqichiga qadam qo'ymoqda. Iqtisodiyot, ta'lim va innovatsiya sohalaridagi tub islohotlar yangi avlod mutaxassislariga bo'lgan ehtiyojni yanada oshirmoqda.": {
-    "uz": "Bugungi kunda O‘zbekiston jadal rivojlanish bosqichiga qadam qo‘ymoqda. Iqtisodiyot, ta’lim va innovatsiya sohalaridagi tub islohotlar yangi avlod mutaxassislariga bo‘lgan ehtiyojni yanada oshirmoqda.",
-    "en": "Today, Uzbekistan is entering a stage of rapid development. Deep reforms in the economy, education and innovation are increasing the need for a new generation of specialists.",
-    "ru": "Сегодня Узбекистан вступает в этап стремительного развития. Глубокие реформы в экономике, образовании и инновациях повышают потребность в специалистах нового поколения."
+    "uz": "Bugungi kunda ma’lumotlar dunyoni harakatga keltiradi. Har bir sayt, ilova va xizmat ortida — real insonlar, ularning ehtiyojlari va qarorlari turadi.",
+    "en": "Today, data drives the world. Behind every website, app and service there are real people — their needs and their decisions.",
+    "ru": "Сегодня данные движут миром. За каждым сайтом, приложением и сервисом стоят реальные люди — их потребности и решения."
   },
   "Aynan shunday sharoitda bizning universitetimiz zamon talablariga mos, raqobatbardosh va amaliy bilimga ega kadrlarni tayyorlashni o'z oldiga maqsad qilib qo'ygan.": {
-    "uz": "Aynan shunday sharoitda bizning universitetimiz zamon talablariga mos, raqobatbardosh va amaliy bilimga ega kadrlarni tayyorlashni o‘z oldiga maqsad qilib qo‘ygan.",
-    "en": "In these conditions, our university aims to train competitive specialists with practical knowledge who meet the demands of the time.",
-    "ru": "В этих условиях наш университет ставит перед собой цель готовить конкурентоспособных специалистов с практическими знаниями, отвечающих требованиям времени."
+    "uz": "Aynan shu insoniy jihatni Imora AI texnologiya bilan bog‘laydi. Bizning platformamiz saytlar va ilovalar uchun jonli analitika hamda auditoriya tahlilini taqdim etadi.",
+    "en": "Imora AI connects this human dimension with technology. Our platform provides live analytics and audience insights for websites and apps.",
+    "ru": "Imora AI связывает эту человеческую сторону с технологией. Наша платформа предоставляет живую аналитику и анализ аудитории для сайтов и приложений."
   },
   "Biz ta'limda nazariya va amaliyotni uyg'unlashtirgan holda, talabalarimizga nafaqat bilim, balki real hayotda muvaffaqiyatga erishish uchun zarur bo'lgan ko'nikmalarni ham beramiz. Xalqaro tajriba, zamonaviy o'quv dasturlari, innovatsion yondashuvlar va professional muhit — bularning barchasi talabaning shaxs sifatida shakllanishiga xizmat qiladi.": {
-    "uz": "Biz ta’limda nazariya va amaliyotni uyg‘unlashtirgan holda, talabalarimizga nafaqat bilim, balki real hayotda muvaffaqiyatga erishish uchun zarur bo‘lgan ko‘nikmalarni ham beramiz. Xalqaro tajriba, zamonaviy o‘quv dasturlari, innovatsion yondashuvlar va professional muhit — bularning barchasi talabaning shaxs sifatida shakllanishiga xizmat qiladi.",
-    "en": "By combining theory and practice in education, we give our students not only knowledge, but also the skills they need to succeed in real life. International experience, modern curricula, innovative approaches and a professional environment all support each student’s personal development.",
-    "ru": "Сочетая теорию и практику в образовании, мы даем студентам не только знания, но и навыки, необходимые для успеха в реальной жизни. Международный опыт, современные учебные программы, инновационные подходы и профессиональная среда способствуют развитию личности студента."
+    "uz": "Biz sun’iy intellektni murakkab emas, balki inson uchun tushunarli va foydali qilib yaratamiz. Jonli statistika, aqlli tahlil va maxfiylik himoyasi — barchasi bitta ishonchli platformada. Imora AI bilan siz auditoriyangizni chuqurroq tushunasiz va to‘g‘ri qarorlar qabul qilasiz.",
+    "en": "We build artificial intelligence that is not complex, but clear and useful for people. Live statistics, smart analysis and privacy protection — all in one trusted platform. With Imora AI you understand your audience more deeply and make better decisions.",
+    "ru": "Мы создаём искусственный интеллект, который не сложен, а понятен и полезен человеку. Живая статистика, умный анализ и защита конфиденциальности — всё на одной надёжной платформе. С Imora AI вы глубже понимаете свою аудиторию и принимаете верные решения."
   },
   ", at any time, regardless of their location.": {
     "uz": ", istalgan vaqtda va joylashuvidan qat’i nazar.",
@@ -326,9 +326,9 @@
     "ru": ", в любое время, независимо от местоположения."
   },
   "Bu yerda har bir talaba o'z salohiyatini kashf etishi, orzularini aniq maqsadlarga aylantirishi mumkin.": {
-    "uz": "Bu yerda har bir talaba o‘z salohiyatini kashf etishi, orzularini aniq maqsadlarga aylantirishi mumkin.",
-    "en": "Here, every student can discover their potential and turn their dreams into clear goals.",
-    "ru": "Здесь каждый студент может раскрыть свой потенциал и превратить мечты в конкретные цели."
+    "uz": "Bu yerda har bir raqam — real insonni anglatadi. Imora AI sizga ularni yaxshiroq tushunish va e’tibor bilan xizmat ko‘rsatish imkonini beradi.",
+    "en": "Here, every number represents a real person. Imora AI helps you understand them better and serve them with care.",
+    "ru": "Здесь каждая цифра — это реальный человек. Imora AI помогает вам лучше понимать их и заботливо обслуживать."
   },
   ". Biz bilan birga bilim oling, rivojlaning va kelajagingizni bugundan yarating. Sizning muvaffaqiyatingiz — bizning asosiy qadriyatimiz.": {
     "uz": ". Biz bilan birga bilim oling, rivojlaning va kelajagingizni bugundan yarating. Sizning muvaffaqiyatingiz — bizning asosiy qadriyatimiz.",
