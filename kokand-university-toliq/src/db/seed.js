@@ -52,9 +52,9 @@ async function seedContent() {
   ]);
 
   await seedTable('achievements', ['name', 'subtitle', 'image', 'description', 'sort'], [
-    { name: 'Muhammadali Abbosxonov', subtitle: 'Xalqaro IT olimpiadasi g‘olibi', image: 'images/angus.jpg', description: 'Dasturlash bo‘yicha xalqaro olimpiadada oltin medalni qo‘lga kiritdi.' },
-    { name: 'Shahlo Mansurova', subtitle: 'Biznes marafon g‘olibi', image: 'images/rowena.JPG', description: 'Startap loyihasi bilan “Biznes Marafon” tanlovida birinchi o‘rinni egalladi.' },
-    { name: 'Behruz Nosirov', subtitle: 'Ilmiy loyihalar tanlovi laureati', image: 'images/lamine.jpg', description: 'Ilmiy-tadqiqot loyihasi bilan respublika tanlovida faxrli o‘rinni egalladi.' },
+    { name: 'Sardor', subtitle: 'Sayt egasi', image: 'images/angus.jpg', description: 'Imora AI bilan auditoriyamni birinchi marta chinakam tushundim — endi qarorlarim aniq ma’lumotga asoslanadi.' },
+    { name: 'Malika', subtitle: 'Kontent muallifi', image: 'images/rowena.JPG', description: 'Qaysi maqolalar o‘quvchilarga yoqishini real vaqtda ko‘raman va shunga qarab yozaman. Bu ishimni ancha osonlashtirdi.' },
+    { name: 'TechStart jamoasi', subtitle: 'Startap', image: 'images/lamine.jpg', description: 'Konversiya tahlili yordamida ro‘yxatdan o‘tish sahifamizni yaxshiladik va natija darhol sezildi.' },
   ]);
 
   await seedTable('distinctions', ['title', 'image', 'summary', 'body', 'sort'], [
