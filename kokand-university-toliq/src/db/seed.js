@@ -58,18 +58,18 @@ async function seedContent() {
   ]);
 
   await seedTable('distinctions', ['title', 'image', 'summary', 'body', 'sort'], [
-    { title: 'Yangi boshlanish', image: 'images/homepage-1.jpg', summary: 'Zamonaviy ta’lim va amaliy tajribaning uyg‘unligi.', body: 'Imora AI har bir talaba uchun yangi boshlanish imkoniyatini yaratadi. Zamonaviy ta’lim amaliy tajriba bilan uyg‘unlashtiriladi: real ko‘nikmalar, texnologiya, xalqaro imkoniyatlar va shaxsiy rivojlanish.' },
-    { title: 'Amaliyotga yo‘naltirilgan ta’lim', image: 'images/homepage-3.jpg', summary: 'Nazariya va amaliyot birligida bilim.', body: 'Ta’lim jarayoni nazariya va amaliyotni uyg‘unlashtirgan. Talabalar bilimlarini loyihalar va real vaziyatlarda qo‘llaydi, mehnat bozoriga tayyor bo‘ladi.' },
-    { title: 'Individual yondashuv', image: 'images/homepage-4.jpg', summary: 'Har bir talaba — alohida e’tiborda.', body: 'Universitet har bir talabaning kuchli tomonlari, maqsadlari va shaxsiy rivojlanishiga e’tibor beradi. Bu samarali o‘qish va ishonch hosil qilishga yordam beradi.' },
-    { title: 'Chegarasiz ta’lim', image: 'images/homepage-9-1024x884.webp', summary: 'Onlayn va oflayn imkoniyatlar.', body: 'Talabalar joylashuvidan qat’i nazar istalgan vaqtda bilim olishi mumkin. Raqamli platformalar ta’limni qulay va moslashuvchan qiladi.' },
-    { title: 'Hamkorlikda o‘qish', image: 'images/homepage-8.jpg', summary: 'Jamoaviy loyihalar va networking.', body: 'Jamoaviy loyihalar, klublar va tadbirlar orqali talabalar bir-biridan o‘rganadi va professional aloqalar o‘rnatadi.' },
-    { title: 'Ekspert yo‘riqnomasi', image: 'images/greene-s-0058-704x456.jpg', summary: 'Tajribali ustozlar va mentorlar.', body: 'Soha mutaxassislari va tajribali o‘qituvchilar talabalarga yo‘l ko‘rsatadi. Mentorlik tizimi har bir talabaning o‘sishini qo‘llab-quvvatlaydi.' },
+    { title: 'Jonli statistika', image: 'images/homepage-1.jpg', summary: 'Real vaqtda tashrifchilar va faollik.', body: 'Imora AI saytingizdagi har bir ko‘rish, bosish va qidiruvni real vaqtda kuzatadi. Kim, qachon va nimaga qiziqayotganini darhol, jonli tarzda ko‘rasiz.' },
+    { title: 'Auditoriyani tushunish', image: 'images/homepage-3.jpg', summary: 'Raqamlar ortidagi real insonlar.', body: 'Imora AI shunchaki raqam ko‘rsatmaydi — u auditoriyangiz xatti-harakatini tahlil qilib, ularning ehtiyoj va qiziqishlarini tushunishga yordam beradi.' },
+    { title: 'Maxfiylik birinchi o‘rinda', image: 'images/homepage-4.jpg', summary: 'Shaxsiy ma’lumot saqlanmaydi.', body: 'Imora AI hech qanday shaxsiy ma’lumot yig‘maydi va saqlamaydi. Har bir tashrifchi anonim qoladi, tahlil esa aniq — ishonch va xavfsizlik kafolatlanadi.' },
+    { title: 'Aqlli tavsiyalar', image: 'images/homepage-9-1024x884.webp', summary: 'AI yordamida to‘g‘ri qarorlar.', body: 'Platforma ma’lumotlarni tahlil qilib, sizga tushunarli xulosa va tavsiyalar beradi. Murakkab statistika oddiy va foydali ko‘rinishga aylanadi.' },
+    { title: 'Oson ulanish', image: 'images/homepage-8.jpg', summary: 'Bir necha daqiqada integratsiya.', body: 'Imora AI ni saytingizga ulash oson: bir necha qadam va platforma darhol ishlay boshlaydi. Chuqur texnik bilim talab qilinmaydi.' },
+    { title: 'Inson uchun yaratilgan', image: 'images/greene-s-0058-704x456.jpg', summary: 'Texnologiya — inson xizmatida.', body: 'Biz sun’iy intellektni inson uchun tushunarli va yaqin qilib yaratamiz. Imora AI — insonlar bilan texnologiya o‘rtasidagi ishonchli ko‘prik.' },
   ]);
 
   await seedTable('interests', ['title', 'image', 'body', 'link', 'sort'], [
-    { title: 'Yo‘nalishlar', image: 'images/lucia-navarrete-y3tr4-mn6es-unsplash-352x228.jpg', body: 'Imora AI turli ta’lim yo‘nalishlarini taklif etadi: axborot texnologiyalari, iqtisodiyot, biznes boshqaruvi, filologiya va boshqalar.', link: 'https://www.kokanduni.uz/uz' },
-    { title: 'Bog‘lanish', image: 'images/aptitude-test-2-352x228.jpg', body: 'Maslahatchilar yo‘nalish tanlash, qabul jarayoni va o‘quv sharoitlari bo‘yicha to‘liq ma’lumot beradi.', link: 'https://www.kokanduni.uz/uz/static/contacts' },
-    { title: 'O‘quv muddatlari', image: 'images/spires_rgb_edited-1500x500-1-352x228.jpg', body: 'O‘quv yili semestrlarga bo‘lingan; dars jadvali, imtihon sessiyalari va ta’til muddatlari oldindan e’lon qilinadi.', link: 'https://www.kokanduni.uz/uz' },
+    { title: 'Imkoniyatlar', image: 'images/lucia-navarrete-y3tr4-mn6es-unsplash-352x228.jpg', body: 'Imora AI jonli analitika, auditoriya tahlili, real vaqtli hisobotlar va maxfiylik himoyasi kabi imkoniyatlarni bitta platformada birlashtiradi.', link: 'https://www.kokanduni.uz/uz' },
+    { title: 'Bog‘lanish', image: 'images/aptitude-test-2-352x228.jpg', body: 'Jamoamiz Imora AI ni ulash, sozlash va imkoniyatlaridan to‘liq foydalanish bo‘yicha yordam beradi. Savollaringiz bilan istalgan vaqtda murojaat qiling.', link: 'https://www.kokanduni.uz/uz/static/contacts' },
+    { title: 'Yangilanishlar', image: 'images/spires_rgb_edited-1500x500-1-352x228.jpg', body: 'Imora AI doimiy rivojlanadi: yangi imkoniyatlar, yaxshilanishlar va foydali funksiyalar muntazam ravishda qo‘shib boriladi.', link: 'https://www.kokanduni.uz/uz' },
   ]);
 
   await seedTable('stories', ['title', 'date', 'category', 'image', 'excerpt', 'body', 'link', 'sort'], [
