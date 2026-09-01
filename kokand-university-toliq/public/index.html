@@ -5,9 +5,9 @@
 var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
 /* ]]> */
 </script>
-<title>Imora AI — zamonaviy taʼlim</title>
-<meta name="description" content="Imora AI — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
-<meta property="og:description" content="Imora AI — zamonaviy oʻquv dasturlari, xalqaro hamkorlik va boy talabalar hayoti. Qabul, yoʻnalishlar va imkoniyatlar bilan tanishing."/>
+<title>Imora AI — insonparvar jonli analitika</title>
+<meta name="description" content="Imora AI — saytlar uchun insonparvar, maxfiylikni saqlaydigan jonli analitika platformasi. Real vaqtda auditoriyangizni tushuning va to‘g‘ri qarorlar qabul qiling."/>
+<meta property="og:description" content="Imora AI — saytlar uchun insonparvar, maxfiylikni saqlaydigan jonli analitika platformasi. Real vaqtda auditoriyangizni tushuning va to‘g‘ri qarorlar qabul qiling."/>
 <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
 <meta content="Imora AI" name="author"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
@@ -19,7 +19,7 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <link href="https://www.kokanduni.uz/" rel="canonical"/>
 <meta content="uz_UZ" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="Imora AI — zamonaviy taʼlim" property="og:title"/>
+<meta content="Imora AI — insonparvar jonli analitika" property="og:title"/>
 <meta content="https://www.kokanduni.uz/" property="og:url"/>
 <meta content="Imora AI" property="og:site_name"/>
 <meta content="2026-02-03T16:37:45+00:00" property="og:updated_time"/>
@@ -32,7 +32,7 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <meta content="2022-04-07T13:31:13+00:00" property="article:published_time"/>
 <meta content="2026-02-03T16:37:45+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Imora AI — zamonaviy taʼlim" name="twitter:title"/>
+<meta content="Imora AI — insonparvar jonli analitika" name="twitter:title"/>
 <meta content="images/gallery/bino-1.jpg" name="twitter:image"/>
 <meta content="Written by" name="twitter:label1"/>
 <meta content="XIST2 Support" name="twitter:data1"/>

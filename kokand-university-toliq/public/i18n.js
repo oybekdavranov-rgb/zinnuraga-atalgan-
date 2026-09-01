@@ -441,19 +441,19 @@
     "ru": "Тьюторский колледж"
   },
   "“Learning without Boundaries means having access to education beyond traditional limits. Imora AI stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”": {
-    "uz": "“Chegarasiz ta’lim — an’anaviy chegaralardan tashqarida bilim olish imkoniyatidir. Imora AI talabalarni global imkoniyatlar, zamonaviy texnologiyalar, amaliy tajribalar va xalqaro qarashlarni o‘rganishga undashi bilan ajralib turadi. Bu muhit talabalar doimiy o‘qishi, rivojlanishi va dunyo bilan bog‘lanishi uchun sharoit yaratadi.”",
-    "en": "“Learning without Boundaries means having access to education beyond traditional limits. Imora AI stands out by encouraging students to explore global opportunities, modern technologies, practical experiences, and international perspectives. It creates an environment where students can continuously learn, grow, and connect with the world.”",
-    "ru": "«Обучение без границ означает доступ к образованию за пределами традиционных ограничений. Imora AI выделяется тем, что побуждает студентов изучать глобальные возможности, современные технологии, практический опыт и международные взгляды. Университет создает среду для постоянного обучения, роста и связи с миром»."
+    "uz": "“Chegarasiz tahlil — auditoriyangizni istalgan joydan va istalgan qurilmadan kuzatish demakdir. Imora AI saytga qo‘yilgan yengil kod orqali real vaqtda ishlaydi, shuning uchun uydan, ofisdan yoki yo‘lda — hamma joyda ma’lumotni ko‘rasiz. Masofa ham, qurilma ham tahlilingizni cheklamaydi.”",
+    "en": "“Analytics without boundaries means watching your audience from anywhere and any device. Imora AI works in real time through a lightweight snippet on your site, so you see your data from home, the office or on the go. Neither distance nor device limits your insight.”",
+    "ru": "«Аналитика без границ — это наблюдение за аудиторией из любого места и с любого устройства. Imora AI работает в реальном времени через лёгкий код на сайте, поэтому вы видите данные из дома, офиса или в пути. Ни расстояние, ни устройство не ограничивают ваши инсайты»."
   },
   ", a custom-built online platform, where they can upload their work and review their assessments. Students receive live feedback and can track their progress independently in their own time. Study is in person or online, so geography will not limit academic development.": {
-    "uz": ", maxsus yaratilgan onlayn platforma bo‘lib, unda talabalar ishlarini yuklashlari va baholash natijalarini ko‘rishlari mumkin. Talabalar jonli fikr-mulohaza oladi va o‘z vaqtida mustaqil ravishda rivojlanishini kuzatib boradi. O‘qish kampusda yoki onlayn shaklda bo‘lishi mumkin, shuning uchun masofa akademik rivojlanishni cheklamaydi.",
-    "en": ", a custom-built online platform, where they can upload their work and review their assessments. Students receive live feedback and can track their progress independently in their own time. Study is in person or online, so geography will not limit academic development.",
-    "ru": ", специально созданная онлайн-платформа, где студенты могут загружать работы и просматривать результаты оценивания. Студенты получают обратную связь в реальном времени и самостоятельно отслеживают прогресс. Обучение возможно очно или онлайн, поэтому география не ограничивает академическое развитие."
+    "uz": " — bulutli, xavfsiz platforma bo‘lib, unda saytlaringiz ma’lumotini real vaqtda tahlil qilib, kuzatib borasiz. Imora AI jonli xulosa beradi va o‘sishingizni mustaqil kuzatishga yordam beradi. Hammasi bulutda — istalgan qurilmadan foydalanish mumkin, shuning uchun masofa tahlilni cheklamaydi.",
+    "en": " — a secure, cloud-based platform where you analyze and track your sites' data in real time. Imora AI gives live insights and helps you follow your growth independently. Everything is in the cloud — usable from any device, so distance never limits your analytics.",
+    "ru": " — защищённая облачная платформа, где вы анализируете и отслеживаете данные сайтов в реальном времени. Imora AI даёт живые инсайты и помогает самостоятельно следить за ростом. Всё в облаке — доступно с любого устройства, поэтому расстояние не ограничивает аналитику."
   },
   "Learning can take place in our campus in Oxford, UK, or online from anywhere in the world. You can also make use of our campuses in Estoril and Lisbon, Portugal as online study spaces.": {
-    "uz": "Ta’lim Buyuk Britaniyaning Oksford shahridagi kampusda yoki dunyoning istalgan nuqtasidan onlayn shaklda olib borilishi mumkin. Shuningdek, Portugaliyaning Estoril va Lissabon shaharlaridagi kampuslardan onlayn o‘qish maydoni sifatida foydalanish mumkin.",
-    "en": "Learning can take place in our campus in Oxford, UK, or online from anywhere in the world. You can also make use of our campuses in Estoril and Lisbon, Portugal as online study spaces.",
-    "ru": "Обучение может проходить в нашем кампусе в Оксфорде, Великобритания, или онлайн из любой точки мира. Также можно использовать кампусы в Эшториле и Лиссабоне, Португалия, как пространства для онлайн-обучения."
+    "uz": "Imora AI to‘liq bulutda ishlaydi — istalgan joydan va istalgan qurilmadan. Ofisdan, uydan yoki yo‘lda — ma’lumotingiz doim yoningizda va hech narsa o‘rnatish shart emas.",
+    "en": "Imora AI runs entirely in the cloud — from anywhere and any device. From the office, home or on the go, your data is always with you, with nothing to install.",
+    "ru": "Imora AI полностью работает в облаке — из любого места и с любого устройства. Из офиса, дома или в пути ваши данные всегда с вами, и ничего не нужно устанавливать."
   },
   "Imora AI Haqida koproq bilib oling": {
     "uz": "Imora AI haqida ko‘proq bilib oling",
@@ -461,19 +461,19 @@
     "ru": "Узнайте больше о Imora AI"
   },
   "“Collaborative learning at Imora AI helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”": {
-    "uz": "“Imora AIdagi hamkorlikda o‘qish talabalarni loyihalar va muhokamalarda birga ishlash orqali jamoaviy ish, muloqot va muammolarni hal qilish ko‘nikmalarini rivojlantiradi. Bu yondashuv talabalar nafaqat o‘qituvchilardan, balki bir-biridan ham o‘rganadigan qo‘llab-quvvatlovchi akademik muhit yaratadi.”",
-    "en": "“Collaborative learning at Imora AI helps students develop teamwork, communication, and problem-solving skills by working together on projects and discussions. This approach creates a supportive academic environment where students learn not only from teachers, but also from each other.”",
-    "ru": "«Совместное обучение в Imora AI помогает студентам развивать командную работу, коммуникацию и навыки решения проблем через проекты и обсуждения. Такой подход создает поддерживающую академическую среду, где студенты учатся не только у преподавателей, но и друг у друга»."
+    "uz": "“Imora AI jamoalar uchun qulay: bitta hisobga bir necha a’zoni qo‘shib, ma’lumotni birga ko‘rish, muhokama qilish va qaror qabul qilish mumkin. Bu yondashuv jamoaviy ish, ochiq muloqot va to‘g‘ri qarorlar qabul qilishga yordam beradi.”",
+    "en": "“Imora AI is built for teams: add several members to one account to view data together, discuss it and make decisions. This approach supports teamwork, open communication and better decisions.”",
+    "ru": "«Imora AI создан для команд: добавьте несколько участников в один аккаунт, чтобы вместе смотреть данные, обсуждать их и принимать решения. Такой подход поддерживает командную работу, открытое общение и верные решения»."
   },
   "Read more about the tutorial method": {
-    "uz": "Tutorial metod haqida batafsil o‘qing",
-    "en": "Read more about the tutorial method",
-    "ru": "Подробнее о тьюторском методе"
+    "uz": "Bizning yondashuvimiz haqida batafsil o‘qing",
+    "en": "Read more about our approach",
+    "ru": "Подробнее о нашем подходе"
   },
   "“Imora AI stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”": {
-    "uz": "“Imora AI malakali o‘qituvchilar va mentorlar ko‘magi orqali talabalarni akademik hamda kasbiy jihatdan qo‘llab-quvvatlashi bilan ajralib turadi. Bu yo‘l-yo‘riq talabalarga ishonchni oshirish, ko‘nikmalarni rivojlantirish va kelajak karyera imkoniyatlariga tayyorlanishga yordam beradi.”",
-    "en": "“Imora AI stands out through expert guidance by providing students with support from qualified instructors and mentors who help them both academically and professionally. This guidance helps students build confidence, improve their skills, and prepare for future career opportunities.”",
-    "ru": "«Imora AI выделяется экспертным сопровождением: квалифицированные преподаватели и наставники поддерживают студентов в учебном и профессиональном развитии. Такая помощь укрепляет уверенность, развивает навыки и готовит к будущим карьерным возможностям»."
+    "uz": "“Imora AI ishonchli yordami bilan ajralib turadi: jamoamiz ulash, sozlash va ma’lumotni tushunishda doim yordam beradi. Bu ko‘mak sizga ishonch, tezlik va to‘g‘ri qarorlar qabul qilishda yaqindan yordam beradi.”",
+    "en": "“Imora AI stands out through reliable support: our team is always there to help with setup, integration and understanding your data. This support gives you confidence, speed and better decisions.”",
+    "ru": "«Imora AI выделяется надёжной поддержкой: наша команда всегда поможет с настройкой, интеграцией и пониманием данных. Такая поддержка даёт уверенность, скорость и верные решения»."
   },
   "OUR DIRECTOR": {
     "uz": "RAHBARIYAT",
