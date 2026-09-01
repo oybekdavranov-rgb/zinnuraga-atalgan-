@@ -296,8 +296,8 @@
     "ru": "ДОБРО ПОЖАЛОВАТЬ В"
   },
   "Kokand University oldest tutorial college": {
-    "uz": "Qo‘qon universiteti — zamonaviy tutorial ta’lim maskani",
-    "en": "Kokand University — a modern tutorial college",
+    "uz": "Qo‘qon universiteti — zamonaviy ta’lim maskani",
+    "en": "Kokand University — a modern educational institution",
     "ru": "Кокандский университет — современный учебный центр"
   },
   "DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.": {
