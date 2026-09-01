@@ -621,14 +621,14 @@
     "ru": "Пытаетесь вписаться? Один подход не подходит всем."
   },
   "Arthur, one of the students at Greene’s, shares his plans and future aspirations.": {
-    "uz": "Universitet talabalaridan biri o‘z rejalari va kelajakdagi orzulari bilan bo‘lishadi.",
-    "en": "Arthur, one of the students at Greene’s, shares his plans and future aspirations.",
-    "ru": "Артур, один из студентов Greene’s, делится своими планами и стремлениями на будущее."
+    "uz": "Foydalanuvchilarimizdan biri Imora AI bilan ish tajribasi va rejalari haqida so‘zlaydi.",
+    "en": "One of our users shares their experience with Imora AI and their plans.",
+    "ru": "Один из наших пользователей делится опытом работы с Imora AI и своими планами."
   },
   "Lucia tells us about her experiences at Greene’s and how Greene’s help her achieving her academic and personal goals.": {
-    "uz": "Talaba o‘z tajribasi va universitet unga akademik hamda shaxsiy maqsadlariga erishishda qanday yordam bergani haqida so‘zlab beradi.",
-    "en": "Lucia tells us about her experiences at Greene’s and how Greene’s help her achieving her academic and personal goals.",
-    "ru": "Лючия рассказывает о своем опыте в Greene’s и о том, как Greene’s помогает ей достигать академических и личных целей."
+    "uz": "Bir mijoz Imora AI unga auditoriyani tushunish va to‘g‘ri qarorlar qabul qilishda qanday yordam berganini so‘zlab beradi.",
+    "en": "A customer tells us how Imora AI helped them understand their audience and make better decisions.",
+    "ru": "Клиент рассказывает, как Imora AI помог понять аудиторию и принимать верные решения."
   },
   "What's On": {
     "uz": "Yangiliklar",
