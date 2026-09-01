@@ -66,9 +66,9 @@
     "ru": "Вход для сотрудников"
   },
   "Programmes": {
-    "uz": "Dasturlar",
-    "en": "Programmes",
-    "ru": "Программы"
+    "uz": "Imkoniyatlar",
+    "en": "Features",
+    "ru": "Возможности"
   },
   "Akademik litsey": {
     "uz": "Akademik litsey",
@@ -126,9 +126,9 @@
     "ru": "Индивидуальное обучение"
   },
   "Admissions": {
-    "uz": "Qabul",
-    "en": "Admissions",
-    "ru": "Прием"
+    "uz": "Boshlash",
+    "en": "Get Started",
+    "ru": "Начать"
   },
   "How to Apply": {
     "uz": "Qanday topshiriladi",
@@ -151,9 +151,9 @@
     "ru": "Стипендии Greene’s"
   },
   "Examinations": {
-    "uz": "Imtihonlar",
-    "en": "Examinations",
-    "ru": "Экзамены"
+    "uz": "Qanday ishlaydi",
+    "en": "How it works",
+    "ru": "Как это работает"
   },
   "Examinations at Greene’s": {
     "uz": "Universitetdagi imtihonlar",
@@ -191,9 +191,9 @@
     "ru": "Результаты и последующие процедуры"
   },
   "Student Life": {
-    "uz": "Talabalar hayoti",
-    "en": "Student Life",
-    "ru": "Студенческая жизнь"
+    "uz": "Yordam",
+    "en": "Support",
+    "ru": "Поддержка"
   },
   "Term Dates": {
     "uz": "O‘quv davri sanalari",
@@ -271,24 +271,24 @@
     "ru": "Узнать об Imora AI"
   },
   "Sixth Form College": {
-    "uz": "Akademik litsey",
-    "en": "Sixth Form College",
-    "ru": "Sixth Form колледж"
+    "uz": "Ko‘p sayt boshqaruvi",
+    "en": "Multi-site management",
+    "ru": "Управление сайтами"
   },
   "Tuition": {
-    "uz": "Individual repetitorlik",
-    "en": "Tuition",
-    "ru": "Обучение"
+    "uz": "Moslashuvchan integratsiya",
+    "en": "Easy integration",
+    "ru": "Простая интеграция"
   },
   "A level retakes": {
-    "uz": "Qayta topshirish",
-    "en": "A level retakes",
-    "ru": "Пересдача A level"
+    "uz": "Xatti-harakat tahlili",
+    "en": "Behavior analysis",
+    "ru": "Анализ поведения"
   },
   "Examinations & Tests": {
-    "uz": "Imtihonlar va testlar",
-    "en": "Examinations & Tests",
-    "ru": "Экзамены и тесты"
+    "uz": "Imora AI qanday ishlaydi",
+    "en": "How Imora AI works",
+    "ru": "Как работает Imora AI"
   },
   "WELCOME TO": {
     "uz": "XUSH KELIBSIZ",

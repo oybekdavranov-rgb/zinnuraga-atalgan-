@@ -114,7 +114,7 @@
 
     var hl = String(p.highlights || '').split('\n').map(function (x) { return x.trim(); }).filter(Boolean);
     if (hl.length) {
-      html += '<h3 class="ku-prog__section-title">Dastur afzalliklari</h3><div class="ku-prog__highlights">' +
+      html += '<h3 class="ku-prog__section-title">Asosiy imkoniyatlar</h3><div class="ku-prog__highlights">' +
         hl.map(function (x) { return '<div class="ku-prog__hl">' + esc(x) + '</div>'; }).join('') + '</div>';
     }
 
@@ -131,7 +131,7 @@
     }
 
     if (p.link) {
-      html += '<div class="ku-detail__actions"><a class="ku-btn" href="' + esc(p.link) + '" target="_blank" rel="noopener">Ariza topshirish →</a></div>';
+      html += '<div class="ku-detail__actions"><a class="ku-btn" href="' + esc(p.link) + '" target="_blank" rel="noopener">Bepul boshlash →</a></div>';
     }
     html += '</div>';
     return html;
