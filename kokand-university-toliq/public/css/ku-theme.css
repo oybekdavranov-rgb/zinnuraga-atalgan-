@@ -13,9 +13,15 @@
    chiroyli BEPUL zaxira (fayl bo'lmasa ham sayt tugallangan ko'rinadi). */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Dancing+Script:wght@500;700&family=Sacramento&display=swap');
 
-/* --- Premium shriftlar (fayllarini public/fonts/ ichiga qo'ysangiz ishlaydi) ---
-   Fayl bo'lmasa — pastdagi fallback (zaxira) shriftlar ishlatiladi, sayt buzilmaydi.
-   Fayl nomlari: public/fonts/README-SHRIFTLAR.txt da yozilgan. */
+/* --- Premium shriftlar (ixtiyoriy) ---
+   TAN-MERMAID, Northwell va Brittany Signature — premium (pullik) shriftlar.
+   Ularning fayllari public/fonts/ da yo'q, shuning uchun @font-face bloklari
+   VAQTINCHA izohga olindi (aks holda brauzer har sahifada 404 xatosi berardi).
+   Hozir ular o'rniga zaxira Google Fonts ishlatiladi: Playfair Display (display),
+   Dancing Script (script), Sacramento (signature) — ular yuqoridagi @import da keladi.
+   Premium fayllarni public/fonts/ ichiga qo'yib, quyidagi bloklarni izohdan
+   chiqarsangiz (README-SHRIFTLAR.txt ga qarang), ular avtomatik ishga tushadi.
+
 @font-face {
   font-family: 'TAN - MERMAID';
   src: url('/fonts/TAN-MERMAID.woff2') format('woff2'),
@@ -37,6 +43,7 @@
        url('/fonts/BrittanySignature.ttf') format('truetype');
   font-weight: normal; font-style: normal; font-display: swap;
 }
+*/
 
 :root {
   /* Shrift o'zgaruvchilari */
