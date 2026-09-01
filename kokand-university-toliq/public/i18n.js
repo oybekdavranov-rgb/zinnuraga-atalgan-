@@ -386,54 +386,54 @@
     "ru": "Новое начало?"
   },
   "Subject spotlight: A level Further Mathematics": {
-    "uz": "Yo‘nalish diqqat markazida: A level Further Mathematics",
-    "en": "Subject spotlight: A level Further Mathematics",
-    "ru": "В фокусе предмет: A level Further Mathematics"
+    "uz": "Imkoniyat diqqat markazida: Jonli analitika",
+    "en": "Feature spotlight: Live analytics",
+    "ru": "В фокусе: живая аналитика"
   },
   "Individualised Education": {
-    "uz": "Individual ta’lim",
-    "en": "Individualised Education",
-    "ru": "Индивидуализированное образование"
+    "uz": "Insonparvar yondashuv",
+    "en": "Human-centered approach",
+    "ru": "Человекоориентированный подход"
   },
   "Learning without Boundaries": {
-    "uz": "Chegarasiz ta’lim",
-    "en": "Learning without Boundaries",
-    "ru": "Обучение без границ"
+    "uz": "Chegarasiz tahlil",
+    "en": "Analytics without boundaries",
+    "ru": "Аналитика без границ"
   },
   "Collaborative Learning": {
-    "uz": "Hamkorlikda ta’lim",
-    "en": "Collaborative Learning",
-    "ru": "Совместное обучение"
+    "uz": "Jamoa bilan ishlash",
+    "en": "Built for teams",
+    "ru": "Создано для команд"
   },
   "Expert Guidance": {
-    "uz": "Mutaxassislar yo‘l-yo‘rig‘i",
-    "en": "Expert Guidance",
-    "ru": "Экспертное сопровождение"
+    "uz": "Ishonchli yordam",
+    "en": "Reliable support",
+    "ru": "Надёжная поддержка"
   },
   "“ Imora AI represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Imora AI focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”": {
-    "uz": "“Imora AI zamonaviy ta’limni amaliy tajriba bilan uyg‘unlashtirgani uchun men uchun yangi boshlanishdir. Ko‘plab an’anaviy universitetlardan farqli ravishda, Imora AI real ko‘nikmalar, texnologiyalar, xalqaro imkoniyatlar va shaxsiy rivojlanishga e’tibor qaratadi. Bu muhit meni akademik va kasbiy jihatdan rivojlantirib, global karyeraga tayyorlaydi.”",
-    "en": "“Imora AI represents a fresh start because it combines modern education with practical experience. Unlike many traditional universities, Imora AI focuses on real-world skills, technology, international opportunities, and personal development. I believe this environment will help me grow academically and professionally while preparing me for a global career.”",
-    "ru": "«Imora AI — это новое начало, потому что он объединяет современное образование с практическим опытом. В отличие от многих традиционных университетов, Imora AI делает акцент на реальных навыках, технологиях, международных возможностях и личном развитии. Я верю, что эта среда поможет мне расти академически и профессионально, готовя меня к глобальной карьере»."
+    "uz": "“Imora AI menga auditoriyamni haqiqatan tushunish imkonini berdi. Endi qaysi kontent ishlayotganini va tashrifchilar nimaga qiziqishini real vaqtda ko‘raman — hammasi oddiy, tushunarli va maxfiylik saqlangan holda. Bu qaror qabul qilishni ancha osonlashtirdi.”",
+    "en": "“Imora AI helped me truly understand my audience. Now I can see in real time what content works and what visitors care about — all simple, clear and privacy-friendly. It made decision-making much easier.”",
+    "ru": "«Imora AI помог мне по-настоящему понять свою аудиторию. Теперь я в реальном времени вижу, какой контент работает и что интересно посетителям — всё просто, понятно и с сохранением конфиденциальности. Принимать решения стало намного легче»."
   },
   "Learn more about A level retakes at Greene's": {
-    "uz": "Universitetda qayta topshirish haqida batafsil",
-    "en": "Learn more about A level retakes at Greene's",
-    "ru": "Подробнее о пересдаче A level в Greene’s"
+    "uz": "Imora AI imkoniyatlari haqida batafsil",
+    "en": "Learn more about Imora AI features",
+    "ru": "Подробнее о возможностях Imora AI"
   },
   "“I chose A-Level Further Mathematics because it develops advanced problem-solving, logical thinking, and analytical skills. What makes this subject special is that it goes beyond standard mathematics and challenges students to think deeper and apply concepts in complex situations. It also prepares students for fields like engineering, computer science, economics, and technology.”": {
-    "uz": "“Men A-Level Further Mathematicsni tanladim, chunki u murakkab muammolarni hal qilish, mantiqiy fikrlash va tahliliy ko‘nikmalarni rivojlantiradi. Bu fan standart matematikadan kengroq fikrlashga undaydi va bilimlarni murakkab vaziyatlarda qo‘llashga o‘rgatadi. Shuningdek, u muhandislik, kompyuter fanlari, iqtisodiyot va texnologiya kabi sohalarga tayyorlaydi.”",
-    "en": "“I chose A-Level Further Mathematics because it develops advanced problem-solving, logical thinking, and analytical skills. What makes this subject special is that it goes beyond standard mathematics and challenges students to think deeper and apply concepts in complex situations. It also prepares students for fields like engineering, computer science, economics, and technology.”",
-    "ru": "«Я выбрал A-Level Further Mathematics, потому что он развивает сложное решение задач, логическое мышление и аналитические навыки. Этот предмет выходит за рамки стандартной математики, заставляет мыслить глубже и применять понятия в сложных ситуациях. Он также готовит к инженерии, информатике, экономике и технологиям»."
+    "uz": "“Imora AI ni tanladim, chunki u murakkab ma’lumotni oddiy va tushunarli qiladi. Jonli statistika, aqlli tahlil va maxfiylik himoyasi — barchasi bir joyda. U menga tashrifchilarni yaxshiroq tushunish va to‘g‘ri qarorlar qabul qilishda kundalik yordam beradi.”",
+    "en": "“I chose Imora AI because it makes complex data simple and clear. Live statistics, smart analysis and privacy protection — all in one place. It helps me understand visitors better and make the right decisions every day.”",
+    "ru": "«Я выбрал Imora AI, потому что он делает сложные данные простыми и понятными. Живая статистика, умный анализ и защита конфиденциальности — всё в одном месте. Он помогает мне лучше понимать посетителей и каждый день принимать верные решения»."
   },
   "Read more about the A level in Further Mathematics here.": {
-    "uz": "A level Further Mathematics haqida batafsil shu yerda o‘qing.",
-    "en": "Read more about the A level in Further Mathematics here.",
-    "ru": "Подробнее об A level Further Mathematics читайте здесь."
+    "uz": "Imora AI haqida batafsil shu yerda o‘qing.",
+    "en": "Read more about Imora AI here.",
+    "ru": "Подробнее об Imora AI читайте здесь."
   },
   "“What makes Imora AI stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”": {
-    "uz": "“Imora AIni ajratib turadigan jihat — individual ta’lim yondashuvidir. Universitet yagona qolipdagi tizim o‘rniga har bir talabaning kuchli tomonlari, maqsadlari va shaxsiy rivojlanishiga e’tibor qaratadi. Bu talabaga samaraliroq o‘qish, o‘ziga ishonchni oshirish va kelajak karyerasiga tayyorlanish imkonini beradi.”",
-    "en": "“What makes Imora AI stand out is its individualized education approach. The university pays attention to each student’s strengths, goals, and personal development instead of using only a one-size-fits-all system. This allows students to learn more effectively, build confidence, and prepare for their future careers in a supportive environment.”",
-    "ru": "«Imora AI выделяется индивидуальным подходом к образованию. Университет уделяет внимание сильным сторонам, целям и личному развитию каждого студента, а не использует одинаковую систему для всех. Это помогает учиться эффективнее, укреплять уверенность и готовиться к будущей карьере в поддерживающей среде»."
+    "uz": "“Imora AI ni ajratib turadigan jihat — insonga yaqin yondashuvidir. Platforma har bir tashrifchini raqam sifatida emas, real inson sifatida ko‘radi va sizga aniq, tushunarli tahlil beradi. Bu auditoriyani chuqurroq tushunish, ishonch qozonish va to‘g‘ri qarorlar qabul qilish imkonini beradi.”",
+    "en": "“What makes Imora AI stand out is its human-centered approach. The platform sees every visitor not as a number but as a real person, and gives you clear, understandable insights. This helps you understand your audience more deeply, build trust and make better decisions.”",
+    "ru": "«Imora AI выделяется человекоориентированным подходом. Платформа видит каждого посетителя не как цифру, а как реального человека, и даёт понятную аналитику. Это помогает глубже понимать аудиторию, укреплять доверие и принимать верные решения»."
   },
   "The Tutorial College": {
     "uz": "Tutorial kolleji",
