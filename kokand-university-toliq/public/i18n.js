@@ -216,9 +216,9 @@
     "ru": "Отзывы"
   },
   "About Greene’s": {
-    "uz": "Universitet haqida",
-    "en": "About the University",
-    "ru": "Об университете"
+    "uz": "Imora AI haqida",
+    "en": "About Imora AI",
+    "ru": "Об Imora AI"
   },
   "Imora AI": {
     "uz": "Imora AI",
@@ -266,9 +266,9 @@
     "ru": "Сетка"
   },
   "Discover Greene’s": {
-    "uz": "Universitetni kashf eting",
+    "uz": "Imora AI ni kashf eting",
     "en": "Discover Imora AI",
-    "ru": "Узнать об университете"
+    "ru": "Узнать об Imora AI"
   },
   "Sixth Form College": {
     "uz": "Akademik litsey",
@@ -296,8 +296,8 @@
     "ru": "ДОБРО ПОЖАЛОВАТЬ В"
   },
   "Imora AI oldest tutorial college": {
-    "uz": "Imora AI — zamonaviy ta’lim maskani",
-    "en": "Imora AI — a modern educational institution",
+    "uz": "Imora AI — insonparvar sun’iy intellekt",
+    "en": "Imora AI — human-centered artificial intelligence",
     "ru": "Кокандский университет — современный учебный центр"
   },
   "DESIGN YOUR EDUCATION. TRANSFORM YOUR FUTURE.": {
@@ -366,7 +366,7 @@
     "ru": "Команда Greene’s"
   },
   "What does Imora AI do?": {
-    "uz": "Imora AI nimasi bilan ajralib turadi?",
+    "uz": "Imora AI nimasi bilan",
     "en": "What does Imora AI do?",
     "ru": "Чем выделяется Imora AI?"
   },
