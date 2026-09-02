@@ -59,6 +59,8 @@ const config = {
     // Aloqa ma'lumotlari (admin paneldan tahrirlanadi)
     'contact_email', 'contact_phone', 'contact_telegram', 'contact_instagram',
     'contact_youtube', 'contact_hours', 'contact_address', 'contact_website',
+    // Kirish ovozi (inglizcha ovozli tanishtiruv)
+    'intro_audio', 'intro_welcome_text', 'intro_about_text',
   ]),
 };
 

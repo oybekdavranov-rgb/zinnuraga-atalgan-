@@ -740,6 +740,15 @@ async function seedContent() {
     contact_hours: 'Dushanba–Shanba, 9:00–18:00',
     contact_address: '',
     contact_website: '',
+    // Kirish ovozi — saytga kirganda inglizcha ovozli tanishtiruv.
+    // 'on' yoki 'off'. Matnlar inglizcha (brauzer ovozi o'qiydi).
+    intro_audio: 'on',
+    intro_welcome_text: 'Welcome to Imora AI.',
+    intro_about_text: 'Imora AI is a human-centered, privacy-first live analytics platform. '
+      + 'It shows what happens on your website in real time — who is online, which pages they visit, '
+      + 'and what your audience cares about — without storing personal data. '
+      + 'It turns numbers into clear insights and simple recommendations, so you can make better decisions. '
+      + 'Built for people, powered by AI.',
   };
   for (const [k, v] of Object.entries(defaults)) {
     const exists = await db.get('SELECT 1 AS x FROM settings WHERE key = ?', [k]);

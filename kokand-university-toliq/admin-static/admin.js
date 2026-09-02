@@ -152,6 +152,10 @@ const SETTINGS_FIELDS = [
   { key: 'contact_hours', label: '🕒 Aloqa: Ish vaqti' },
   { key: 'contact_address', label: '📍 Aloqa: Manzil' },
   { key: 'contact_website', label: '🌐 Aloqa: Veb-sayt' },
+  // ——— Kirish ovozi (inglizcha ovozli tanishtiruv) ———
+  { key: 'intro_audio', label: '🔊 Kirish ovozi: on (brauzer ovozi) / off / mp3 (fayl)' },
+  { key: 'intro_welcome_text', label: '🔊 Salomlashuv matni (inglizcha)' },
+  { key: 'intro_about_text', label: '🔊 Imora AI haqida matn (inglizcha)', type: 'textarea' },
 ];
 
 const viewTitle = document.getElementById('viewTitle');
