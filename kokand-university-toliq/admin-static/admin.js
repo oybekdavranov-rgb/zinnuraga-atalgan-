@@ -143,6 +143,15 @@ const SETTINGS_FIELDS = [
   { key: 'castle_phone', label: 'Shaharcha telefon raqami' },
   { key: 'castle_email', label: 'Shaharcha email manzili' },
   { key: 'university_url', label: 'Universitet sayti manzili (shaharcha alohida sayt bo‘lganda)' },
+  // ——— Aloqa ma'lumotlari (footer va "Biz bilan bog‘lanish" modalida ko‘rinadi) ———
+  { key: 'contact_email', label: '📧 Aloqa: Email' },
+  { key: 'contact_phone', label: '📱 Aloqa: Telefon (masalan +998 90 123 45 67)' },
+  { key: 'contact_telegram', label: '✈️ Aloqa: Telegram (@nom yoki https://t.me/nom)' },
+  { key: 'contact_instagram', label: '📸 Aloqa: Instagram (@nom yoki havola)' },
+  { key: 'contact_youtube', label: '▶️ Aloqa: YouTube (kanal havolasi)' },
+  { key: 'contact_hours', label: '🕒 Aloqa: Ish vaqti' },
+  { key: 'contact_address', label: '📍 Aloqa: Manzil' },
+  { key: 'contact_website', label: '🌐 Aloqa: Veb-sayt' },
 ];
 
 const viewTitle = document.getElementById('viewTitle');

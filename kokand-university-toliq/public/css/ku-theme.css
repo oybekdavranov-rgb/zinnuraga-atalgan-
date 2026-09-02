@@ -183,6 +183,34 @@ blockquote, .ku-quote, .signature, .ku-signature, .quote-text {
   }
 }
 
+/* ---------------- Aloqa ma'lumotlari (contact) ---------------- */
+/* "Biz bilan bog'lanish" modalidagi aloqa qatorlari */
+.ku-contact { display: grid; gap: 10px; margin: 6px 0 4px; }
+.ku-contact__row {
+  display: grid; grid-template-columns: 28px 120px 1fr; align-items: center;
+  gap: 10px; padding: 10px 14px;
+  background: var(--ku-card-bg); border: 1px solid var(--ku-card-border);
+  border-radius: 12px;
+}
+.ku-contact__ico { font-size: 18px; text-align: center; }
+.ku-contact__label { color: #6b8593; font-weight: 600; font-size: 13px; }
+.ku-contact__val { font-weight: 600; word-break: break-word; }
+.ku-contact__val a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; }
+.ku-contact__val a:hover { opacity: .8; }
+@media (max-width: 520px) {
+  .ku-contact__row { grid-template-columns: 24px 1fr; grid-auto-flow: row; }
+  .ku-contact__label { grid-column: 2; }
+  .ku-contact__val { grid-column: 2; }
+}
+/* Footer'dagi aloqa qatori */
+.ku-foot-contact {
+  display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: center;
+  padding: 14px 16px 4px; max-width: 900px; margin: 0 auto;
+}
+.ku-foot-contact__item { color: inherit; font-size: 13.5px; opacity: .92; }
+.ku-foot-contact__item a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; }
+.ku-foot-contact__ico { margin-right: 4px; }
+
 /* ---------------- Klaviatura fokus ko'rinishi (accessibility) ---------------- */
 a:focus-visible, button:focus-visible, input:focus-visible,
 select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {

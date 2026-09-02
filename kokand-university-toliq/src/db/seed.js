@@ -730,6 +730,16 @@ async function seedContent() {
     // Shaharcha alohida sayt bo'lganda footer havolalari shu manzilga ketadi.
     // Bo'sh bo'lsa — havolalar umuman ko'rsatilmaydi.
     university_url: '',
+    // Aloqa ma'lumotlari — admin paneldan to'ldiriladi.
+    // Bo'sh qatorlar saytda ko'rsatilmaydi (faqat to'ldirilganlari chiqadi).
+    contact_email: '',
+    contact_phone: '',
+    contact_telegram: '',   // masalan: @imora_ai yoki https://t.me/imora_ai
+    contact_instagram: '',  // masalan: @imora.ai yoki to'liq havola
+    contact_youtube: '',
+    contact_hours: 'Dushanba–Shanba, 9:00–18:00',
+    contact_address: '',
+    contact_website: '',
   };
   for (const [k, v] of Object.entries(defaults)) {
     const exists = await db.get('SELECT 1 AS x FROM settings WHERE key = ?', [k]);

@@ -18,6 +18,38 @@
     });
   }
   function nl2br(s) { return esc(s).replace(/\n/g, '<br>'); }
+
+  /* ---------- aloqa (contact) yordamchilari ---------- */
+  function trim(v) { return String(v == null ? '' : v).trim(); }
+  function normUrl(v) { v = trim(v); if (!v) return ''; return /^https?:\/\//i.test(v) ? v : 'https://' + v; }
+  function normTelegram(v) { v = trim(v); if (!v) return ''; return /^https?:\/\//i.test(v) ? v : 'https://t.me/' + v.replace(/^@/, ''); }
+  function normInstagram(v) { v = trim(v); if (!v) return ''; return /^https?:\/\//i.test(v) ? v : 'https://instagram.com/' + v.replace(/^@/, ''); }
+  function telHref(v) { return 'tel:' + trim(v).replace(/[^\d+]/g, ''); }
+  // Faqat to'ldirilgan aloqa qatorlarini HTML sifatida qaytaradi.
+  function contactRows() {
+    var s = SITE.settings || {};
+    var rows = [];
+    if (trim(s.contact_email)) rows.push(['📧', 'Email', esc(s.contact_email), 'mailto:' + trim(s.contact_email)]);
+    if (trim(s.contact_phone)) rows.push(['📱', 'Telefon', esc(s.contact_phone), telHref(s.contact_phone)]);
+    if (trim(s.contact_telegram)) rows.push(['✈️', 'Telegram', esc(trim(s.contact_telegram)), normTelegram(s.contact_telegram)]);
+    if (trim(s.contact_instagram)) rows.push(['📸', 'Instagram', esc(trim(s.contact_instagram)), normInstagram(s.contact_instagram)]);
+    if (trim(s.contact_youtube)) rows.push(['▶️', 'YouTube', esc(trim(s.contact_youtube)), normUrl(s.contact_youtube)]);
+    if (trim(s.contact_website)) rows.push(['🌐', 'Veb-sayt', esc(trim(s.contact_website)), normUrl(s.contact_website)]);
+    if (trim(s.contact_hours)) rows.push(['🕒', 'Ish vaqti', esc(s.contact_hours), '']);
+    if (trim(s.contact_address)) rows.push(['📍', 'Manzil', esc(s.contact_address), '']);
+    return rows;
+  }
+  function contactBlockHtml() {
+    var rows = contactRows();
+    if (!rows.length) return '';
+    return '<h3 class="ku-prog__section-title">Aloqa ma‘lumotlari</h3><div class="ku-contact">' +
+      rows.map(function (r) {
+        var val = r[3] ? '<a href="' + r[3] + '"' + (/^https?:/.test(r[3]) ? ' target="_blank" rel="noopener"' : '') + '>' + r[2] + '</a>' : r[2];
+        return '<div class="ku-contact__row"><span class="ku-contact__ico">' + r[0] + '</span>' +
+          '<span class="ku-contact__label">' + r[1] + '</span><span class="ku-contact__val">' + val + '</span></div>';
+      }).join('') + '</div>';
+  }
+
   function elem(tag, cls, html) {
     var e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -112,8 +144,12 @@
     }
     if (p.intro) html += '<p class="ku-prog__intro">' + nl2br(p.intro) + '</p>';
 
+    // "Biz bilan bog'lanish" modali — aloqa ma'lumotlarini settings'dan chiqaramiz
+    var isContact = p.key === 'kontakt';
+    if (isContact) html += contactBlockHtml();
+
     var hl = String(p.highlights || '').split('\n').map(function (x) { return x.trim(); }).filter(Boolean);
-    if (hl.length) {
+    if (hl.length && !isContact) {
       html += '<h3 class="ku-prog__section-title">Asosiy imkoniyatlar</h3><div class="ku-prog__highlights">' +
         hl.map(function (x) { return '<div class="ku-prog__hl">' + esc(x) + '</div>'; }).join('') + '</div>';
     }
@@ -219,6 +255,34 @@
     });
   }
 
+  /* ---------- Aloqa: footer ijtimoiy havolalar + aloqa bloki ---------- */
+  function wireContact() {
+    var s = SITE.settings || {};
+    var map = {
+      Telegram: normTelegram(s.contact_telegram),
+      Instagram: normInstagram(s.contact_instagram),
+      YouTube: normUrl(s.contact_youtube),
+    };
+    Object.keys(map).forEach(function (title) {
+      var a = document.querySelector('footer .social-logos a[title="' + title + '"]');
+      if (!a) return;
+      var li = a.closest ? a.closest('li') : a.parentElement;
+      if (map[title]) { a.setAttribute('href', map[title]); if (li) li.style.display = ''; }
+      else if (li) { li.style.display = 'none'; }
+    });
+    var rows = contactRows();
+    var footer = document.querySelector('footer');
+    if (footer && rows.length && !footer.querySelector('.ku-foot-contact')) {
+      var box = elem('div', 'ku-foot-contact');
+      box.innerHTML = rows.map(function (r) {
+        var val = r[3] ? '<a href="' + r[3] + '"' + (/^https?:/.test(r[3]) ? ' target="_blank" rel="noopener"' : '') + '>' + r[2] + '</a>' : r[2];
+        return '<span class="ku-foot-contact__item"><span class="ku-foot-contact__ico">' + r[0] + '</span> ' + val + '</span>';
+      }).join('');
+      var container = footer.querySelector('.site-footer-container');
+      if (container) footer.insertBefore(box, container); else footer.appendChild(box);
+    }
+  }
+
   /* ---------- ishga tushirish ---------- */
   function init() {
     // Results ni darhol ulaymiz (ma'lumotsiz ham bosilsa modal ochiladi)
@@ -239,6 +303,7 @@
         wireDistinctions();
         wireInterests();
         wireProgrammes();
+        wireContact();
       })
       .catch(function () {});
   }

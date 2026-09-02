@@ -56,6 +56,9 @@ const config = {
     'gallery_title', 'gallery_intro', 'gallery_video_url',
     'castle_title', 'castle_intro', 'castle_phone', 'castle_email',
     'university_url',
+    // Aloqa ma'lumotlari (admin paneldan tahrirlanadi)
+    'contact_email', 'contact_phone', 'contact_telegram', 'contact_instagram',
+    'contact_youtube', 'contact_hours', 'contact_address', 'contact_website',
   ]),
 };
 
