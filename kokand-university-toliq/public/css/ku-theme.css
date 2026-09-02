@@ -315,6 +315,47 @@ button.imora-intro.is-playing {
   .imora-intro, .imora-intro.is-playing .imora-intro__ico { transition: none; animation: none; }
 }
 
+/* ============================================================
+   Maxsus kursor (UI/UX) + scroll animatsiyali effekt
+   ============================================================ */
+html.imora-cursor-on, html.imora-cursor-on * { cursor: none !important; }
+.imora-cur {
+  position: fixed; top: 0; left: 0; z-index: 99999; pointer-events: none;
+  opacity: 0; transform: translate(-50%, -50%);
+  transition: opacity .25s ease;
+  will-change: left, top;
+}
+.imora-cur--dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #0e8f83; box-shadow: 0 0 0 2px rgba(255,255,255,.55), 0 2px 6px rgba(8,20,30,.35);
+  transition: opacity .25s ease, width .18s ease, height .18s ease, background .2s ease;
+}
+.imora-cur--dot.is-hover { width: 10px; height: 10px; background: #ffd60a; }
+.imora-cur--ring {
+  width: 42px; height: 42px;
+  transition: opacity .25s ease, width .22s cubic-bezier(.22,1,.36,1), height .22s cubic-bezier(.22,1,.36,1);
+}
+.imora-cur--ring .imora-cur__svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.imora-cur--ring .imora-cur__svg circle {
+  fill: rgba(14,143,131,.06); stroke: #0e8f83; stroke-width: 2;
+  transition: stroke .2s ease, fill .2s ease, stroke-width .2s ease;
+}
+/* hover — halqa kattalashadi va urg'u rangiga o'tadi */
+.imora-cur--ring.is-hover { width: 62px; height: 62px; }
+.imora-cur--ring.is-hover .imora-cur__svg circle { fill: rgba(255,214,10,.12); stroke: #f0b400; }
+/* bosilганда — biroz qisiladi */
+.imora-cur--ring.is-down { width: 34px; height: 34px; }
+/* SCROLL animatsiyasi — halqa aylanadi va yo'nalish ko'rsatadi */
+.imora-cur--ring.is-scrolling .imora-cur__svg {
+  animation: imora-cur-spin .7s linear infinite;
+}
+.imora-cur--ring.is-scrolling .imora-cur__svg circle {
+  stroke-dasharray: 30 90; stroke: #0e8f83; fill: rgba(14,143,131,.10);
+}
+.imora-cur--ring.is-scrolling.is-up-dir .imora-cur__svg { animation-direction: reverse; }
+@keyframes imora-cur-spin { to { transform: rotate(360deg); } }
+.imora-cur--ring.is-scrolling { width: 52px; height: 52px; }
+
 /* ---------------- Klaviatura fokus ko'rinishi (accessibility) ---------------- */
 a:focus-visible, button:focus-visible, input:focus-visible,
 select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
