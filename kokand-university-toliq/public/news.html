@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yangiliklar | Kokand University</title>
+<title>Yangiliklar | Imora AI</title>
 <meta name="robots" content="index, follow"/>
-<meta name="description" content="Kokand University yangiliklari, tadbirlar va rasmiy eʼlonlar."/>
-<meta property="og:description" content="Kokand University yangiliklari, tadbirlar va rasmiy eʼlonlar."/>
+<meta name="description" content="Imora AI yangiliklari, tadbirlar va rasmiy eʼlonlar."/>
+<meta property="og:description" content="Imora AI yangiliklari, tadbirlar va rasmiy eʼlonlar."/>
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/images/cropped-favicon-32x32.png" sizes="32x32">
 <style>
@@ -54,7 +54,7 @@
 </head>
 <body>
 <header class="ku-page-header">
-  <a href="/"><img class="ku-logo-light" src="/images/logo2.png" alt="Kokand University"><img class="ku-logo-dark" src="/images/logo2-white.png" alt="Kokand University"></a>
+  <a href="/"><img class="ku-logo-light" src="/images/logo2.png" alt="Imora AI"><img class="ku-logo-dark" src="/images/logo2-white.png" alt="Imora AI"></a>
   <a class="home-link" href="/">← Bosh sahifa</a>
 </header>
 <main id="ku-news-root">
@@ -74,7 +74,7 @@
   }).catch(function(){ root.innerHTML = '<div class="ku-empty">Maʼlumotni yuklab boʻlmadi.</div>'; });
 
   function renderList(news, title){
-    document.title = title + ' | Kokand University';
+    document.title = title + ' | Imora AI';
     var hero = '<section class="ku-hero"><h1>' + esc(title) + '</h1><p>Universitet hayotidagi soʻnggi voqealar</p></section>';
     if (!news.length){ root.innerHTML = hero + '<div class="ku-empty">Hozircha yangilik yoʻq.</div>'; return; }
     var cards = news.map(function(n){
@@ -92,7 +92,7 @@
   function renderDetail(news, title){
     var n = news.filter(function(x){ return String(x.id) === String(id); })[0];
     if (!n){ root.innerHTML = '<div class="ku-detail-view"><a class="back" href="/news.html">← Barcha yangiliklar</a><div class="ku-empty">Yangilik topilmadi.</div></div>'; return; }
-    document.title = n.title + ' | Kokand University';
+    document.title = n.title + ' | Imora AI';
     root.innerHTML = '<article class="ku-detail-view">' +
       '<a class="back" href="/news.html">← Barcha yangiliklar</a>' +
       '<p class="date">' + esc(n.date||'') + '</p>' +
