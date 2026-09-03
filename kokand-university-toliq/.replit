@@ -1,0 +1,24 @@
+# Replit konfiguratsiyasi — Imora AI sayti (Node.js)
+# Import qilgandan so'ng "Run" tugmasini bosing — sayt ishga tushadi.
+run = "npm install && npm start"
+entrypoint = "server.js"
+modules = ["nodejs-22"]
+
+# Node 22 uchun paketlar (node:sqlite dev bazasi shu versiyani talab qiladi)
+[nix]
+channel = "stable-24_05"
+
+# "Run" paytida foydalaniladigan muhit o'zgaruvchilari
+[env]
+SITE_PROFILE = "all"
+
+# Ichki 3000-port -> tashqi 80 (jonli havola shu orqali ochiladi)
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+# "Deploy" (Reserved VM / Autoscale) uchun
+[deployment]
+build = ["sh", "-c", "npm install"]
+run = ["sh", "-c", "npm start"]
+deploymentTarget = "cloudrun"
