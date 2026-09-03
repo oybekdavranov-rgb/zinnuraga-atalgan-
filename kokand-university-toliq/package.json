@@ -1,0 +1,22 @@
+{
+  "name": "kokand-university-toliq",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Kokand University + Shaharcha",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "SITE_PROFILE=all node server.js",
+    "dev": "node server.js",
+    "test": "node --test",
+    "lint": "eslint . || true"
+  },
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0"
+  }
+}

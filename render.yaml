@@ -1,0 +1,32 @@
+# Render.com "Blueprint" — Kokand University CMS
+# Ilova repo ichidagi `kokand-university-toliq/` papkasida (rootDir).
+# Ma'lumotlar bazasi: Neon (bepul PostgreSQL) — DATABASE_URL ni Render
+# Dashboard'da qo'lda kiritasiz. To'liq yo'riqnoma:
+#   kokand-university-toliq/RENDER-DEPLOY.md
+services:
+  - type: web
+    name: kokand-university
+    runtime: node
+    plan: free
+    rootDir: kokand-university-toliq
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      # Neon bazasidan olingan ulanish satri (Dashboard'da qo'lda, sync=false):
+      - key: DATABASE_URL
+        sync: false
+      - key: DEFAULT_STAFF_EMAIL
+        value: staff@kokandu.uz
+      # Kuchli parollar — Dashboard'da qo'lda kiritiladi (kodda saqlanmaydi):
+      - key: DEFAULT_STAFF_PASSWORD
+        sync: false
+      - key: DEFAULT_EDITOR_EMAIL
+        value: admin@kokandu.uz
+      - key: DEFAULT_EDITOR_PASSWORD
+        sync: false
